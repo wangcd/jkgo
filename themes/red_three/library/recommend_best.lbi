@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $best_goods} -->
+<!-- {if $cat_rec_sign neq 1} -->
+<div class="show_best_area" class="clearfix">
+  <!-- {/if} -->
+  <!--{foreach from=$best_goods item=goods}-->
+  <div class="goodsItem">   
+           <a href="{$goods.url}" class="goodsimg">
+           <img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+           </a><br />
+           <p class="f1"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+               <!-- {if $goods.promote_price neq ""} -->
+              {$goods.promote_price}
+              <!-- {else}-->
+              {$goods.shop_price}
+              <!--{/if}-->
+               </font> <br/>  
+               <font class="market">{$goods.market_price}</font> 
+           </p>
+           <a href="" style="float:right"><img src="images/qgm.png" width="80" height="30"></a>   
+  </div>
+  <!--{/foreach}-->
+  <!-- {if $cat_rec_sign neq 1} -->
+</div>
+  <!-- {/if} -->
+<!-- {/if} -->
