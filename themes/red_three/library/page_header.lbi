@@ -16,7 +16,7 @@ function s_h(id){
     <div class=" hd_topbar_left clearfix "  id="ECS_MEMBERZONE">
     	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
     	<!-- 客服电话{if $service_phone} -->
-		<span class="rs_head_phone"> 服务热线: {$service_phone}</span>
+		<span class="rs_head_phone"> 服务热线: <span style="color:#B20000;">{$service_phone}</span></span>
 		<!-- 结束客服电话{/if} -->
     </div>
     <div class="hd_top_manu clearfix">
@@ -24,22 +24,6 @@ function s_h(id){
         <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>报货平台</a> </li>
         <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>客户服务</a> </li>
         <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>帮助中心</a> </li>
-        <!--{if $navigator_list.top}--> 
-        <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
-        <li class="hd_menu_tit" 
-               
-        <!-- {if $smarty.foreach.nav_top_list.last} --> 
-        style="background:none;" 
-        <!-- {/if} --> 
-        > <a href="{$nav.url}" 
-         
-        <!-- {if $nav.opennew eq 1} --> 
-        target="_blank" 
-        <!-- {/if} --> 
-        >{$nav.name}</a>
-        </li>
-        <!-- {/foreach} --> 
-        <!-- {/if} -->
       </ul>
       <a title="加入收藏" class="favorite" href="javascript:bookmark();">加入收藏</a> <a title="关注{$shop_name}新浪微博" class="sina_weibo" href="http://weibo.com/dsdmall" id="weibo" target="_blank">关注{$shop_name}新浪微博</a>
       </div>
@@ -49,7 +33,7 @@ function s_h(id){
 
 <!-- 顶部LOGO搜索 start -->
 <div id="logo_box" class="wrap clearfix">
-  <div id="logo_areaID" class="hd_logo_area fl clearfix"> <a href="index.php" class="fl"> <img src="images/logo.gif"> </a> </div>
+  <div id="logo_areaID" class="hd_logo_area fl clearfix"> <a href="index.php" class="fl"> <img src="images/logo.jpg"> </a> </div>
   <script type="text/javascript">
     function checkSearchForm()
     {
@@ -93,13 +77,15 @@ function s_h(id){
       <!-- {/foreach} -->
     </div>
     <div class="wcd_gyjkbl" onMouseOver="s_h(1);" onMouseOut="s_h(2)">
- 			<ul class="cd_now_order">
-            	<li><a href="http://www.10086.cn/" target="_blank">移动充值</a></li>
-                <li><a href="https://upay.10010.com/npfweb/npfcellweb/phone_recharge_fill.htm?orignalresource=2" target="_blank">联通充值</a></li>
-                <li><a href="https://kyfw.12306.cn/otn/leftTicket/init" target="_blank">火车票预订</a></li>
-                <li><a href="http://www.airchina.com.cn/" target="_blank">飞机票预定</a></li>
-                <li><a href="http://weather.news.sina.com.cn/" target="_blank">天气预报</a></li>
-            </ul>       
+ 		<ul class="cd_now_order">  
+        <!--{if $navigator_list.top}--> 
+        <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
+        <li <!-- {if $smarty.foreach.nav_top_list.last} --> style="background:none;"   <!-- {/if} --> > 
+        	<a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->  >{$nav.name}</a>
+        </li>
+        <!-- {/foreach} --> 
+        <!-- {/if} -->     
+        </ul>
     </div>
   </div>
 </div>

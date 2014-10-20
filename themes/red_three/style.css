@@ -3965,8 +3965,8 @@ padding: 10px 15px;}
 
 /*联系我们*/
 .cd_block{ width:900px; height:100px; border:1px solid;}
-#logo_box{ height:100px; padding-top:10px; margin:0px auto;}
-#ECS_CARTINFO{ float:left; margin-top:20px; display: inline-block; width:130px; height:31px; background:url(images/gwc.jpg) no-repeat;cursor: pointer; padding-left:40px; padding-top:10px;}
+#logo_box{ height:90px; padding-top:10px; margin:0px auto;}
+#ECS_CARTINFO{ float:left; margin-top:20px; display: inline-block; width:162px; height:31px; background:url(images/gwc.jpg) no-repeat;cursor: pointer; padding-left:40px; padding-top:10px;}
 #ECS_CARTINFO a{ color:#cc0001 !important; font-size:14px !important;}
 #ECS_CARTINFO span{ color:#cc0001 !important; font-size:14px !important;}
 .cd_all_categroy{ width:240px; height:40px; background: url(images/all_category.jpg) no-repeat;}
@@ -4004,7 +4004,7 @@ padding: 10px 15px;}
 /*.cd_menu{ padding-left:260px;height: 40px;line-height: 40px;}*/
 .index_page .menu_box .cd_menu {
 	padding-left:260px;
-	width:750px;
+	width:770px;
 	float:left;
 	overflow:hidden;
 }
