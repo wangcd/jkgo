@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:4;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:60:"F:/wamp/www/jkgo/themes/red_three/library/recommend_best.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413794847;s:8:"maketime";i:1413791247;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:4;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:5;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:6;s:60:"F:/wamp/www/jkgo/themes/red_three/library/recommend_best.lbi";i:7;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:8;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:9;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413797825;s:8:"maketime";i:1413794225;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -117,11 +117,11 @@ function s_h(id){
         </ul>
     </div>
   </div>
-</div>
-<div class="block clearfix">
-	<div class="AreaL">
-    <div id="cd_all_category"></div>
-	<script type="text/javascript">
+</div><div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+	<div class="banan" style="width:1207px; margin:0px auto;">
+    <div class="AreaL">
+        <div id="cd_all_category"></div>
+        <script type="text/javascript">
           //初始化主菜单
             function sw_nav2(obj,tag)
             {		
@@ -1303,18 +1303,19 @@ function s_h(id){
 </div>
 	 
 </dl>
-</div></div>
-<div style="float:left; width:744px; margin: 0px 0 5px 0px;"> 
- 
-<style type="text/css"> 
+</div>	</div>
+	</div>
+        
+        <div style="float:left; width:1350px;"> 
+        <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
-.container{width:744px; height:355px; overflow:hidden;position:relative;}
+.container{width:1350px; height:355px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
 .slider li{list-style:none;display:inline;}
-.slider img{width:744px; height:355px; display:block;}
+.slider img{width:1350px; height:355px; display:block;}
 .slider2{width:2000px;}
 .slider2 li{float:left;}
-.num{position:absolute; right:5px; bottom:5px;}
+.num{position:absolute; right:100px; bottom:5px;}
 .num li{
 	float: left;
 	color: #333;
@@ -1344,9 +1345,9 @@ function s_h(id){
 </style>
 <div class="container" id="idTransformView">
   <ul class="slider" id="idSlider">
-      <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319pvyxto.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319mnwkxe.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20140319jiplxq.jpg"/></a></li>
+      <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020ajzfgg.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020sdqvfj.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020jqnrly.jpg"/></a></li>
       </ul>
   <ul class="num" id="idNum">
  
@@ -1523,68 +1524,7 @@ window.onload=function(){
 	}
 	*/
 }
-</script>
- 
-  <div class="goods_show_Item">
-      <a href="goods-120.html"><img src="images/201403/thumb_img/120_thumb_G_1396208789802.jpg" alt="200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 " height="168" /></a><br />  
-  </div>
-  <div class="goods_show_Item">
-      <a href="goods-125.html"><img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" height="168" /></a><br />  
-  </div>
-  <div class="goods_show_Item">
-      <a href="goods-126.html"><img src="images/201403/thumb_img/126_thumb_G_1396209328116.jpg" alt="运动服" height="168" /></a><br />  
-  </div>
-  <div class="goods_show_Item">
-      <a href="goods-128.html"><img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" height="168" /></a><br />  
-  </div>
-</div>
-<div class="rs_bn_rt">
-	
-	<div class="rs_bnr_box">
-		<div class="rs_bnr_boxtit">
-			<h2><a href="article_cat-4.html">商城资讯</a></h2>
-			<div class="fr"><a href="article_cat-4.html">更多&nbsp;&gt;&gt;</a></div>
-		</div>
-		<div class="rs_bnr_boxdl">
-			<ul class="rs_bnr_newslist">
-								<li><a href="article-35.html" title="关于集成吊灯的通知">关于集成吊灯的通知</a></li>
-								<li><a href="article-34.html" title="金江商贸感恩回馈">金江商贸感恩回馈</a></li>
-								<li><a href="article-33.html" title="关于电视类订单的通知">关于电视类订单的通知</a></li>
-								<li><a href="article-32.html" title="金江贸易有限公司">金江贸易有限公司</a></li>
-								<li><a href="article-12.html" title="商城向您承诺">商城向您承诺</a></li>
-							</ul>
-		</div>
-	</div>
-	<div id="" class="cd_jq_bnr">
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">热卖商品</span>
-					<span class="cd_p_r">运动包</span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="goods-130.html" class="rs_bnr_gimg_a"><img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price">￥120.00</span>
-                    <span class="top_best_old_price">￥144.00</span>
-                    <a href=""><img src="themes/red_three/images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">精品推荐</span>
-					<span class="cd_p_r">200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 </span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="goods-120.html" class="rs_bnr_gimg_a"><img src="images/201403/thumb_img/120_thumb_G_1396208789802.jpg" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price">￥27.00</span>
-                    <span class="top_best_old_price">￥32.40</span>
-                    <a href=""><img src="themes/red_three/images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
-	</div>
+</script>        </div>
     
 </div>
 <div class="blank"></div>
@@ -1634,34 +1574,17 @@ function countDown(time, elemId){
 	<ul class="rs_pbox_ul">
 										<li>
 			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Dec 24,2014 16:00:00</span>
+				<span class="rs_jq_timer">Aug 30,2015 16:00:00</span>
 			</div>    
 	        <div class="cd_rp_con">      
                 <div class="rs_gl_img">
-                    <a href="goods-89.html" target="_blank"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" border="0" alt="紫丁香优质酱醋瓶" /></a>
+                    <a href="goods-117.html" target="_blank"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" border="0" alt="运动鞋" /></a>
                 </div>
-    <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
+    <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
                <p style="float:left; ">	      
                    <font class="f1 big_red">
-                                    ￥19.80                                     </font> <br/>  
-                   <font class="market">￥24.00</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-								<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Dec 24,2014 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-93.html" target="_blank"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" border="0" alt="项链" /></a>
-                </div>
-    <p class="f1"><a href="goods-93.html" title="项链">项链</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥4999.00                                     </font> <br/>  
-                   <font class="market">￥6000.00</font> 
+                                    ￥11.00                                     </font> <br/>  
+                   <font class="market">￥150.00</font> 
                </p>
                <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
           	</div>  
@@ -1696,6 +1619,23 @@ function countDown(time, elemId){
                    <font class="f1 big_red">
                                     ￥11.00                                     </font> <br/>  
                    <font class="market">￥432.00</font> 
+               </p>
+               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
+          	</div>  
+		</li>
+								<li>
+			<div class="rs_pbox_n">
+				<span class="rs_jq_timer">Dec 24,2014 16:00:00</span>
+			</div>    
+	        <div class="cd_rp_con">      
+                <div class="rs_gl_img">
+                    <a href="goods-89.html" target="_blank"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" border="0" alt="紫丁香优质酱醋瓶" /></a>
+                </div>
+    <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
+               <p style="float:left; ">	      
+                   <font class="f1 big_red">
+                                    ￥19.80                                     </font> <br/>  
+                   <font class="market">￥24.00</font> 
                </p>
                <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
           	</div>  
@@ -1757,56 +1697,68 @@ function change(id){
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-126.html" class="goodsimg">
-           <img src="images/201403/thumb_img/126_thumb_G_1396209328116.jpg" alt="运动服" />
+           <a href="goods-124.html" class="goodsimg">
+           <img src="images/201403/thumb_img/124_thumb_G_1396209072261.jpg" alt="防水户外服装" />
            </a><br />
-           <p class="f1"><a href="goods-126.html" title="运动服">运动服</a></p>
+           <p class="f1"><a href="goods-124.html" title="防水户外服装">防水户外服装</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
                              ￥0.00                             </font> <br/>  
-               <font class="market">￥360.00</font> 
+               <font class="market">￥0.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-128.html" class="goodsimg">
-           <img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" />
+           <a href="goods-130.html" class="goodsimg">
+           <img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" alt="运动包" />
            </a><br />
-           <p class="f1"><a href="goods-128.html" title="运动包">运动包</a></p>
+           <p class="f1"><a href="goods-130.html" title="运动包">运动包</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                             ￥480.00                             </font> <br/>  
-               <font class="market">￥576.00</font> 
+                             ￥120.00                             </font> <br/>  
+               <font class="market">￥144.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-129.html" class="goodsimg">
-           <img src="images/201403/thumb_img/129_thumb_G_1396209416830.jpg" alt="运动包" />
+           <a href="goods-119.html" class="goodsimg">
+           <img src="images/201403/thumb_img/119_thumb_G_1396208697963.jpg" alt="  135g德芙m&amp;ms逗趣礼盒 [花生] " />
            </a><br />
-           <p class="f1"><a href="goods-129.html" title="运动包">运动包</a></p>
+           <p class="f1"><a href="goods-119.html" title="  135g德芙m&amp;ms逗趣礼盒 [花生] ">135g德芙m&ms逗趣礼...</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                             ￥420.00                             </font> <br/>  
-               <font class="market">￥504.00</font> 
+                             ￥38.00                             </font> <br/>  
+               <font class="market">￥45.60</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-127.html" class="goodsimg">
-           <img src="images/201403/thumb_img/127_thumb_G_1396209343614.jpg" alt="运动服" />
+           <a href="goods-116.html" class="goodsimg">
+           <img src="images/201403/thumb_img/116_thumb_G_1396208602103.jpg" alt="耐克" />
            </a><br />
-           <p class="f1"><a href="goods-127.html" title="运动服">运动服</a></p>
+           <p class="f1"><a href="goods-116.html" title="耐克">耐克</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                             ￥0.00                             </font> <br/>  
-               <font class="market">￥400.00</font> 
+                             ￥360.00                             </font> <br/>  
+               <font class="market">￥432.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     </div>
   <div class="show_best_area" class="clearfix cd_hot_area">
       <div class="goodsItem">   
+           <a href="goods-121.html" class="goodsimg">
+           <img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" />
+           </a><br />
+           <p class="f1"><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥260.00                             </font> <br/>  
+               <font class="market">￥312.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
            <a href="goods-130.html" class="goodsimg">
            <img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" alt="运动包" />
            </a><br />
@@ -1819,38 +1771,26 @@ function change(id){
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-127.html" class="goodsimg">
-           <img src="images/201403/thumb_img/127_thumb_G_1396209343614.jpg" alt="运动服" />
+           <a href="goods-128.html" class="goodsimg">
+           <img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" />
            </a><br />
-           <p class="f1"><a href="goods-127.html" title="运动服">运动服</a></p>
+           <p class="f1"><a href="goods-128.html" title="运动包">运动包</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥0.00                             </font> <br/>  
-               <font class="market">￥400.00</font> 
+                            ￥480.00                             </font> <br/>  
+               <font class="market">￥576.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-119.html" class="goodsimg">
-           <img src="images/201403/thumb_img/119_thumb_G_1396208697963.jpg" alt="  135g德芙m&amp;ms逗趣礼盒 [花生] " />
+           <a href="goods-129.html" class="goodsimg">
+           <img src="images/201403/thumb_img/129_thumb_G_1396209416830.jpg" alt="运动包" />
            </a><br />
-           <p class="f1"><a href="goods-119.html" title="  135g德芙m&amp;ms逗趣礼盒 [花生] ">  135g德芙m&amp;ms逗趣礼盒 [花生] </a></p>
+           <p class="f1"><a href="goods-129.html" title="运动包">运动包</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥38.00                             </font> <br/>  
-               <font class="market">￥45.60</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-114.html" class="goodsimg">
-           <img src="images/201403/thumb_img/114_thumb_G_1396208578955.jpg" alt="李宁" />
-           </a><br />
-           <p class="f1"><a href="goods-114.html" title="李宁">李宁</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥450.00                             </font> <br/>  
-               <font class="market">￥540.00</font> 
+                            ￥420.00                             </font> <br/>  
+               <font class="market">￥504.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1869,8 +1809,7 @@ function change(id){
     </div>
 <div class="blank"></div>
   
-554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"6";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
-<div class="rs_idx_gl">
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"6";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_1">
         <div class="rs_igl_tit_img">1F食品零食<span></span></div>
         <div class="rs_igl_tit_blank">
@@ -3569,5 +3508,5 @@ return; //结束函式
 document.getElementById("divMenu").style.display = "block";
 document.getElementById("divOnline").style.display = "none";
 }
-</script> </body>
+</script></body>
 </html>

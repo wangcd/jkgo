@@ -26,94 +26,36 @@
 <!-- TemplateEndEditable -->
 </div>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="block clearfix">
-	<div class="AreaL">
-    <div id="cd_all_category"></div>
-	<!-- #BeginLibraryItem "/library/category_tree_index.lbi" -->
-	  <div id="category_tree">
-	  <div class="tit"><img src="../images/category_tit.gif"> </div>
-	  <div class="clearfix" style=" border:1px solid #ccc; border-top:none">
-	    <!--{foreach from=$categories item=cat}-->
-	     <dl>
-	     <dt><a href="{$cat.url}">{$cat.name|escape:html}</a></dt>
-		 
-	     <dd>
-		 <!--{foreach from=$cat.cat_id item=child}-->
-	     <a href="{$child.url}">{$child.name|escape:html}</a>
-	      
-	     <!--{/foreach}-->
-	       </dd>
-	       </dl>
-	    <!--{/foreach}--> 
-	  </div>
+<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+	<div class="banan" style="width:1207px; margin:0px auto;">
+    <div class="AreaL">
+        <div id="cd_all_category"></div>
+        <!-- #BeginLibraryItem "/library/category_tree_index.lbi" -->
+          <div id="category_tree">
+          <div class="tit"><img src="../images/category_tit.gif"> </div>
+          <div class="clearfix" style=" border:1px solid #ccc; border-top:none">
+            <!--{foreach from=$categories item=cat}-->
+             <dl>
+             <dt><a href="{$cat.url}">{$cat.name|escape:html}</a></dt>
+             
+             <dd>
+             <!--{foreach from=$cat.cat_id item=child}-->
+             <a href="{$child.url}">{$child.name|escape:html}</a>
+              
+             <!--{/foreach}-->
+               </dd>
+               </dl>
+            <!--{/foreach}--> 
+          </div>
+        </div>
+        <div class="blank"></div>
+        <!-- #EndLibraryItem -->
 	</div>
-	<div class="blank"></div>
-	<!-- #EndLibraryItem -->
-</div>
-
-
-
-<div style="float:left; width:744px; margin: 0px 0 5px 0px;"> 
-<!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
- 
-<!--bannan下方-->
-<!-- {if $new_goods} --><!--{foreach from=$new_goods item=goods}-->
-  <div class="goods_show_Item">
-      <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" height="168" /></a><br />  
-  </div>
-<!--{/foreach}--><!-- {/if} -->
-<!--bannan下方-->
-
-</div>
-<div class="rs_bn_rt">
-	<!-- TemplateBeginEditable name="banner右侧区域" -->
-<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
-
-	<div class="rs_bnr_box">
-		<div class="rs_bnr_boxtit">
-			<h2><a href="{$articles_cat.url}">{$articles_cat.name|escape:html}</a></h2>
-			<div class="fr"><a href="{$articles_cat.url}">更多&nbsp;&gt;&gt;</a></div>
-		</div>
-		<div class="rs_bnr_boxdl">
-			<ul class="rs_bnr_newslist">
-				<!--{foreach from=$articles item=article_item}-->
-				<li><a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a></li>
-				<!--{/foreach}-->
-			</ul>
-		</div>
 	</div>
- <!-- #EndLibraryItem -->
-<!-- TemplateEndEditable -->
-	<div id="" class="cd_jq_bnr">
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">热卖商品</span>
-					<span class="cd_p_r">{$hot_goods[0][name]|escape:html}</span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="{$hot_goods[0][url]}" class="rs_bnr_gimg_a"><img src="{$hot_goods[0][thumb]}" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price">{$hot_goods[0][shop_price]}</span>
-                    <span class="top_best_old_price">{$hot_goods[0][market_price]}</span>
-                    <a href=""><img src="images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">精品推荐</span>
-					<span class="cd_p_r">{$best_goods[0][name]|escape:html}</span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="{$best_goods[0][url]}" class="rs_bnr_gimg_a"><img src="{$best_goods[0][thumb]}" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price">{$best_goods[0][shop_price]}</span>
-                    <span class="top_best_old_price">{$best_goods[0][market_price]}</span>
-                    <a href=""><img src="images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
-	</div>
+        <!-- bannan -->
+        <div style="float:left; width:1350px;"> 
+        <!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
+        </div>
     
 </div>
 

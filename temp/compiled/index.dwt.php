@@ -24,62 +24,17 @@
 
 </div>
 <?php echo $this->fetch('library/page_header.lbi'); ?>
-<div class="block clearfix">
-	<div class="AreaL">
-    <div id="cd_all_category"></div>
-	<?php echo $this->fetch('library/category_tree_index.lbi'); ?>
-</div>
-
-
-
-<div style="float:left; width:744px; margin: 0px 0 5px 0px;"> 
-<?php echo $this->fetch('library/index_ad.lbi'); ?>
- 
-
-<?php if ($this->_var['new_goods']): ?><?php $_from = $this->_var['new_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');if (count($_from)):
-    foreach ($_from AS $this->_var['goods']):
-?>
-  <div class="goods_show_Item">
-      <a href="<?php echo $this->_var['goods']['url']; ?>"><img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" height="168" /></a><br />  
-  </div>
-<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><?php endif; ?>
-
-
-</div>
-<div class="rs_bn_rt">
-	
-<?php $this->assign('articles',$this->_var['articles_4']); ?><?php $this->assign('articles_cat',$this->_var['articles_cat_4']); ?><?php echo $this->fetch('library/cat_articles.lbi'); ?>
-
-	<div id="" class="cd_jq_bnr">
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">热卖商品</span>
-					<span class="cd_p_r"><?php echo htmlspecialchars($this->_var['hot_goods']['0']['name']); ?></span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="<?php echo $this->_var['hot_goods']['0']['url']; ?>" class="rs_bnr_gimg_a"><img src="<?php echo $this->_var['hot_goods']['0']['thumb']; ?>" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price"><?php echo $this->_var['hot_goods']['0']['shop_price']; ?></span>
-                    <span class="top_best_old_price"><?php echo $this->_var['hot_goods']['0']['market_price']; ?></span>
-                    <a href=""><img src="themes/red_three/images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
-		<div class="rs_bnr_g">
-			<div class="rs_bnr_gname">
-					<span class="cd_p_l">精品推荐</span>
-					<span class="cd_p_r"><?php echo htmlspecialchars($this->_var['best_goods']['0']['name']); ?></span>
-			</div>        
-			<div class="rs_bnr_gimg">
-            	<a href="<?php echo $this->_var['best_goods']['0']['url']; ?>" class="rs_bnr_gimg_a"><img src="<?php echo $this->_var['best_goods']['0']['thumb']; ?>" border="0" width="130" height="130"/></a>
-            	<div class="price">
-                	<span class="top_best_price"><?php echo $this->_var['best_goods']['0']['shop_price']; ?></span>
-                    <span class="top_best_old_price"><?php echo $this->_var['best_goods']['0']['market_price']; ?></span>
-                    <a href=""><img src="themes/red_three/images/qgm.jpg" width="65" height="25"/></a>
-                </div>
-            </div>
-		</div>
+<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+	<div class="banan" style="width:1207px; margin:0px auto;">
+    <div class="AreaL">
+        <div id="cd_all_category"></div>
+        <?php echo $this->fetch('library/category_tree_index.lbi'); ?>
 	</div>
+	</div>
+        
+        <div style="float:left; width:1350px;"> 
+        <?php echo $this->fetch('library/index_ad.lbi'); ?>
+        </div>
     
 </div>
 

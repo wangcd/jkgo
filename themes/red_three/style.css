@@ -290,7 +290,7 @@ h6 span {
 	float: left;
 }
 .index_page .AreaL {
-	position: relative;
+	position: absolute;
 	margin-top: -40px;
 	z-index: 99999;
 	width:240px;
@@ -4078,7 +4078,7 @@ ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height
 /*人气排行*/
 .cd_title_rq{ display:block; width:140px; height:35px; overflow: hidden;}
 /*便民服务*/
-.cd_now_order{ position: absolute; background: #CC0001; width:162px; display:none;}
+.cd_now_order{ position: absolute; background: #CC0001; width:162px; display:none; z-index:50;}
 .cd_now_order li{ width:150px; text-align:center; border-bottom:1px solid #990304; margin:0px auto;}
 
 /* 关于今客便利**/
