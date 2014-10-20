@@ -291,9 +291,9 @@ h6 span {
 }
 .index_page .AreaL {
 	position: relative;
-/*	margin-top: -46px;*/
+	margin-top: -40px;
 	z-index: 99999;
-	width:264px;
+	width:240px;
 }
 .AreaR {
 	width: 950px;
@@ -852,7 +852,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 #category_tree {
 /*	height:400px;
 	border:1px solid #7C0000;*/
-	width:264px;
+	width:240px;
 }
 #category_tree .tit {
 	height: 35px;
@@ -868,8 +868,8 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 }
 #category_tree dl {
 	float: left;
-	width:264px;
-
+	width:240px;
+	background:#f4f4f4;
 	position: relative;
 }
 /*首页菜单*/
@@ -880,10 +880,11 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	border-top: solid #C50000 1px;*/
 /*	background: #f4f4f4;
 	background: #b22825;*/
-	width:244px;
-	padding-left:8px;
+	width:220px;
+	padding-left:20px;
 	float:left;
-	height:50px;
+	height:73px;
+	border-bottom:1px solid #ccc;
 /*	margin-bottom:1px;*/
 }
 
@@ -894,36 +895,14 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 /*	padding: 7px 20px 0px 20px;*/
 	padding-top:7px;
 	padding-bottom:3px;
-	height:40px;
+	height:50px;
 	overflow: hidden;
-	width: 204px;
-	padding-left: 40px;
+	width: 220px;
 }
-/*一级菜单初始图标*/
-.rs_cate_li_1{	background:#B20000 url(images/11.jpg) 1px no-repeat;}
-.rs_cate_li_2{	background:#B20000 url(images/12.jpg) 1px no-repeat;}
-.rs_cate_li_3{	background:#B20000 url(images/13.jpg) 1px no-repeat;}
-.rs_cate_li_4{	background:#B20000 url(images/14.jpg) 1px no-repeat;}
-.rs_cate_li_5{	background:#B20000 url(images/15.jpg) 1px no-repeat;}
-.rs_cate_li_6{	background:#B20000 url(images/16.jpg) 1px no-repeat;}
-.rs_cate_li_7{	background:#B20000 url(images/17.jpg) 1px no-repeat;}
-.rs_cate_li_8{	background:#B20000 url(images/18.jpg) 1px no-repeat;}
-.rs_cate_li_9{	background:#B20000 url(images/19.jpg) 1px no-repeat;}
-.rs_cate_li_10{	background:#B20000 url(images/20.jpg) 1px no-repeat;}
-/*当前一级菜单图标*/
-.rs_cate_li_on_1 {	background:#f4f4f4 url(images/1.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_2 {	background:#f4f4f4 url(images/2.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_3 {	background:#f4f4f4 url(images/3.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_4 {	background:#f4f4f4 url(images/4.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_5 {	background:#f4f4f4 url(images/5.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_6 {	background:#f4f4f4 url(images/6.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_7 {	background:#f4f4f4 url(images/7.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_8 {	background:#f4f4f4 url(images/8.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_9 {	background:#f4f4f4 url(images/9.jpg) no-repeat 1px !important;}
-.rs_cate_li_on_10 {	background:#f4f4f4 url(images/10.jpg) no-repeat 1px !important;}
+
 /*----------------*/
 #category_tree .rs_cate_li a {
-	color: #fff;
+	color: #300;
 	display: block;
 }
 #category_tree .current {
@@ -935,15 +914,15 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	color: #B20000;
 }
 #category_tree a.rs_cate_tit {
-	height: 20px;
-	line-height: 20px;
+	height: 30px;
+	line-height: 30px;
 	font-size: 14px;
 	font-weight: bold;
 }
 #category_tree a.rs_cate_a {
 	height: 20px;
 	line-height: 20px;
-	color: #DFACAB;
+	color: #131212;
 	float: left;
 }
 .rs_cate_jt {
@@ -971,7 +950,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	padding: 10px 0px 0px 30px;
 	line-height: 24px;
 	position: absolute;
-	left: 250px;
+	left: 240px;
 	top: 0;
 	width: 600px;
 	background: #fff;
@@ -3972,7 +3951,7 @@ padding: 10px 15px;}
 .cd_all_categroy{ width:240px; height:40px; background: url(images/all_category.jpg) no-repeat;}
 
 /*所有分类*/
-#cd_all_category{ width:264px; height:45px; background:url(images/all_category.jpg) no-repeat;}
+#cd_all_category{ width:240px; height:40px; background: url(images/all_category.jpg) no-repeat;}
 .cd_on_bg{ background:url(images/next_bg.jpg) !important;}
 
 /*商城资讯下方*/

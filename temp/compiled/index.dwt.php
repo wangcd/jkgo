@@ -32,7 +32,7 @@
 
 
 
-<div style="float:left; width:744px; margin: 0px 0 5px -11px;"> 
+<div style="float:left; width:744px; margin: 0px 0 5px 0px;"> 
 <?php echo $this->fetch('library/index_ad.lbi'); ?>
  
 
