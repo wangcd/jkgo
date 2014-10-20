@@ -291,7 +291,7 @@ h6 span {
 }
 .index_page .AreaL {
 	position: relative;
-	margin-top: -46px;
+/*	margin-top: -46px;*/
 	z-index: 99999;
 	width:264px;
 }
@@ -821,7 +821,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	display: inline-block;
 	_display: inline;
 	_zoom: 1;
-	line-height: 35px;
+	line-height: 40px;
 	color: #fff;
 	font-size: 14px;
 	width: 95px;
@@ -2916,11 +2916,11 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 }
 .hd_head_search {
 	float: left;
-	margin: 20px 80px 0 50px;
+	margin: 20px 30px 0 150px;
 }
 .hd_head_search .hd_search_wrap {
 	float: left;
-	border: 2px solid #CCC;
+	border:2px solid #e60012;
 	background: #fff;
 }
 .hd_head_search label {
@@ -2942,7 +2942,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	height: 32px;
 	line-height: 32px\0;
  *line-height:32px;
-	width: 280px;
+	width: 400px;
 
 	border: 0 none;
 	color: #333;
@@ -3966,7 +3966,7 @@ padding: 10px 15px;}
 /*联系我们*/
 .cd_block{ width:900px; height:100px; border:1px solid;}
 #logo_box{ height:100px; padding-top:10px; margin:0px auto;}
-#ECS_CARTINFO{ margin-top:20px; display: inline-block; width:108px; height:31px; background:url(images/wdgwc.jpg) no-repeat;cursor: pointer; padding-left:60px; padding-top:10px;}
+#ECS_CARTINFO{ float:left; margin-top:20px; display: inline-block; width:130px; height:31px; background:url(images/gwc.jpg) no-repeat;cursor: pointer; padding-left:40px; padding-top:10px;}
 #ECS_CARTINFO a{ color:#cc0001 !important; font-size:14px !important;}
 #ECS_CARTINFO span{ color:#cc0001 !important; font-size:14px !important;}
 .cd_all_categroy{ width:240px; height:40px; background: url(images/all_category.jpg) no-repeat;}
@@ -4004,6 +4004,9 @@ padding: 10px 15px;}
 /*.cd_menu{ padding-left:260px;height: 40px;line-height: 40px;}*/
 .index_page .menu_box .cd_menu {
 	padding-left:260px;
+	width:750px;
+	float:left;
+	overflow:hidden;
 }
 
 /*树型菜单*/
@@ -4096,5 +4099,8 @@ ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height
 /*人气排行*/
 .cd_title_rq{ display:block; width:140px; height:35px; overflow: hidden;}
 /*便民服务*/
-.cd_now_order{ position: absolute; border:1px solid #ccc; left:-5px; display:none; }
-.cd_now_order li{ width:70px; text-align:center; background:#FFF;}
+.cd_now_order{ position: absolute; background: #CC0001; width:162px; display:none;}
+.cd_now_order li{ width:150px; text-align:center; border-bottom:1px solid #990304; margin:0px auto;}
+
+/* 关于今客便利**/
+.wcd_gyjkbl{ width:162px; height:0px; padding-top:40px; background:url(images/gyjkbl.jpg); float:left;}

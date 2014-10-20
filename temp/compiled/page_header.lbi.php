@@ -25,16 +25,9 @@ echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
     </div>
     <div class="hd_top_manu clearfix">
       <ul class="clearfix">
-        <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>我的订单</a> </li>
-        <li class="cd_my_order" onMouseOver="s_h(1);" onMouseOut="s_h(2)"> <a href="" target="_blank"><s></s>便民服务</a> 
- 			<ul class="cd_now_order">
-            	<li><a href="http://www.10086.cn/" target="_blank">移动充值</a></li>
-                <li><a href="https://upay.10010.com/npfweb/npfcellweb/phone_recharge_fill.htm?orignalresource=2" target="_blank">联通充值</a></li>
-                <li><a href="https://kyfw.12306.cn/otn/leftTicket/init" target="_blank">火车票预订</a></li>
-                <li><a href="http://www.airchina.com.cn/" target="_blank">飞机票预定</a></li>
-                <li><a href="http://weather.news.sina.com.cn/" target="_blank">天气预报</a></li>
-            </ul>       
-        </li>
+        <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>报货平台</a> </li>
+        <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>客户服务</a> </li>
+        <li class="hd_my_order"> <a href="user.php?act=order_list" target="_blank"><s></s>帮助中心</a> </li>
         <?php if ($this->_var['navigator_list']['top']): ?> 
         <?php $_from = $this->_var['navigator_list']['top']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav');$this->_foreach['nav_top_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_top_list']['total'] > 0):
@@ -56,6 +49,7 @@ if ($this->_foreach['nav_top_list']['total'] > 0):
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
         <?php endif; ?>
       </ul>
+      <a title="加入收藏" class="favorite" href="javascript:bookmark();">加入收藏</a> <a title="关注<?php echo $this->_var['shop_name']; ?>新浪微博" class="sina_weibo" href="http://weibo.com/dsdmall" id="weibo" target="_blank">关注<?php echo $this->_var['shop_name']; ?>新浪微博</a>
       </div>
   </div>
 </div>
@@ -63,7 +57,7 @@ if ($this->_foreach['nav_top_list']['total'] > 0):
 
 
 <div id="logo_box" class="wrap clearfix">
-  <div id="logo_areaID" class="hd_logo_area fl clearfix"> <a href="index.php" class="fl"> <img src="themes/red_three/images/logo.jpg"> </a> </div>
+  <div id="logo_areaID" class="hd_logo_area fl clearfix"> <a href="index.php" class="fl"> <img src="themes/red_three/images/logo.gif"> </a> </div>
   <script type="text/javascript">
     function checkSearchForm()
     {
@@ -102,6 +96,7 @@ $k = array (
 );
 echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 ?></span>
+  <img src="themes/red_three/images/two.jpg" style="float:left;">
 </div>
 
 <div class="menu_box clearfix">
@@ -115,6 +110,15 @@ if ($this->_foreach['nav_middle_list']['total'] > 0):
 ?> 
       <a href="<?php echo $this->_var['nav']['url']; ?>" <?php if ($this->_var['nav']['opennew'] == 1): ?>target="_blank" <?php endif; ?> <?php if ($this->_var['nav']['active'] == 1): ?> class="cur"<?php endif; ?>> <?php echo $this->_var['nav']['name']; ?> <span></span> </a> 
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+    </div>
+    <div class="wcd_gyjkbl" onMouseOver="s_h(1);" onMouseOut="s_h(2)">
+ 			<ul class="cd_now_order">
+            	<li><a href="http://www.10086.cn/" target="_blank">移动充值</a></li>
+                <li><a href="https://upay.10010.com/npfweb/npfcellweb/phone_recharge_fill.htm?orignalresource=2" target="_blank">联通充值</a></li>
+                <li><a href="https://kyfw.12306.cn/otn/leftTicket/init" target="_blank">火车票预订</a></li>
+                <li><a href="http://www.airchina.com.cn/" target="_blank">飞机票预定</a></li>
+                <li><a href="http://weather.news.sina.com.cn/" target="_blank">天气预报</a></li>
+            </ul>       
     </div>
   </div>
 </div>

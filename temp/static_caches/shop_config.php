@@ -1,9 +1,9 @@
 <?php
 $data = array (
-  'shop_name' => '金江商贸',
-  'shop_title' => '金江商贸',
-  'shop_desc' => '金江商贸',
-  'shop_keywords' => '金江商贸',
+  'shop_name' => '今客快购',
+  'shop_title' => '今客快购',
+  'shop_desc' => '今客快购',
+  'shop_keywords' => '今客快购',
   'shop_country' => '',
   'shop_province' => '',
   'shop_city' => '',
@@ -14,7 +14,7 @@ $data = array (
   'ym' => '',
   'msn' => '',
   'service_email' => '',
-  'service_phone' => '0379-68317585 0379-80886678',
+  'service_phone' => '18639800587',
   'shop_closed' => '0',
   'close_comment' => '',
   'shop_logo' => '../themes/red_three/images/logo.gif',

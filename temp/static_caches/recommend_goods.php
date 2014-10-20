@@ -4,52 +4,52 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '120',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '119',
+      'goods_id' => '123',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '125',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '124',
+      'goods_id' => '126',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '120',
+      'goods_id' => '124',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '123',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     6 => 
     array (
-      'goods_id' => '125',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     7 => 
     array (
-      'goods_id' => '126',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     8 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     9 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '119',
       'sort_order' => '100',
     ),
     10 => 
@@ -67,62 +67,62 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '120',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '122',
+      'goods_id' => '121',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '123',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '124',
+      'goods_id' => '125',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '120',
+      'goods_id' => '126',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '121',
+      'goods_id' => '124',
       'sort_order' => '100',
     ),
     6 => 
     array (
-      'goods_id' => '123',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     7 => 
     array (
-      'goods_id' => '125',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     8 => 
     array (
-      'goods_id' => '126',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     9 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     10 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '117',
       'sort_order' => '100',
     ),
     11 => 
     array (
-      'goods_id' => '117',
+      'goods_id' => '122',
       'sort_order' => '100',
     ),
     12 => 
@@ -135,57 +135,57 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '121',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '119',
+      'goods_id' => '123',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '125',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '124',
+      'goods_id' => '126',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '121',
+      'goods_id' => '124',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '123',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     6 => 
     array (
-      'goods_id' => '125',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     7 => 
     array (
-      'goods_id' => '126',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     8 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     9 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '118',
       'sort_order' => '100',
     ),
     10 => 
     array (
-      'goods_id' => '118',
+      'goods_id' => '119',
       'sort_order' => '100',
     ),
     11 => 
@@ -201,12 +201,12 @@ $data = array (
   ),
   'brand' => 
   array (
-    129 => '威王',
-    119 => '德芙',
     120 => '德芙',
     123 => '木林森',
+    129 => '威王',
     128 => '威王',
     118 => '德芙',
+    119 => '德芙',
     115 => '好时',
     113 => '金莱克',
     114 => '李宁',
