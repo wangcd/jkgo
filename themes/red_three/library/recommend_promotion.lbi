@@ -1,40 +1,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $promotion_goods} -->
-<div class="rs_pbox">
-	<div class="rs_pbox_tit">
-    	<span style="font-size:22px;">限时</span>
-        <span style="font-size:22px; color:#b22825;">抢购</span>
-        <img src="../images/tjxsqg.jpg">
-        <span style="float:right;"><a href="search-promotion.html" style="color:#cc0001;">更多优惠</a><img src="../images/gdyh.jpg"></span>
-    </div>
-	<ul class="rs_pbox_ul">
-		<!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
-		<!--{if !$smarty.foreach.promotion_foreach.first}-->
-		<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">{$goods.end_date_str}</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}" /></a>
-                </div>
-    <p class="f1"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                  <!-- {if $goods.promote_price neq ""} -->
-                  {$goods.promote_price}
-                  <!-- {else}-->
-                  {$goods.shop_price}
-                  <!--{/if}-->
-                   </font> <br/>  
-                   <font class="market">{$goods.market_price}</font> 
-               </p>
-               <a href="" style="float:right"><img src="images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-		<!--{/if}-->
-		<!--{/foreach}-->
-	</ul>
+<div class="show_best_area" class="clearfix cd_hot_area">
+<!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+  <div class="goodsItem">   
+           <a href="{$goods.url}" class="goodsimg">
+           <img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
+           </a><br />
+           <p class="f1"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+              <!-- {if $goods.promote_price neq ""} -->
+              {$goods.promote_price}
+              <!-- {else}-->
+              {$goods.shop_price}
+              <!--{/if}-->
+               </font> <br/>  
+               <font class="market">{$goods.market_price}</font> 
+           </p>
+           <a href="" style="float:right"><img src="images/qgm.png" width="80" height="30"></a>   
+  </div>
+  <!--{/foreach}-->
 </div>
 <div class="blank"></div>
 <!-- {/if} -->

@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:4;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:5;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:6;s:60:"F:/wamp/www/jkgo/themes/red_three/library/recommend_best.lbi";i:7;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:8;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:9;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413797825;s:8:"maketime";i:1413794225;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413887286;s:8:"maketime";i:1413883686;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -117,11 +117,303 @@ function s_h(id){
         </ul>
     </div>
   </div>
-</div><div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
-	<div class="banan" style="width:1207px; margin:0px auto;">
-    <div class="AreaL">
+</div>
+<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+        
+        <div style="float:left; width:1350px;"> 
+         
+<style type="text/css"> 
+.container, .container *{margin:0; padding:0;}
+.container{width:1350px; height:355px; overflow:hidden;position:relative;}
+.slider{position:absolute;}
+.slider li{list-style:none;display:inline;}
+.slider img{width:1350px; height:355px; display:block;}
+.slider2{width:2000px;}
+.slider2 li{float:left;}
+.num{position:absolute; right:100px; bottom:5px;}
+.num li{
+	float: left;
+	color: #333;
+	text-align: center;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;
+	border: 1px solid #E60012;
+	background-color: #fff;
+}
+.num li.on{
+	color: #fff;
+	line-height: 21px;
+	width: 21px;
+	height: 21px;
+	font-size: 16px;
+	margin: 0 1px;
+	border: 0;
+	background-color: #E60012;
+	font-weight: bold;
+}
+</style>
+<div class="container" id="idTransformView">
+  <ul class="slider" id="idSlider">
+      <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020sdqvfj.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020jqnrly.jpg"/></a></li>
+        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020ajzfgg.jpg"/></a></li>
+      </ul>
+  <ul class="num" id="idNum">
+ 
+    
+          <li>
+    1    </li> 
+         <li>
+    2    </li> 
+         <li>
+    3    </li> 
+        
+  </ul>
+</div>
+<script type="text/javascript">
+var Class = {
+  create: function() {
+	return function() {
+	  this.initialize.apply(this, arguments);
+	}
+  }
+}
+Object.extend = function(destination, source) {
+	for (var property in source) {
+		destination[property] = source[property];
+	}
+	return destination;
+}
+var TransformView = Class.create();
+TransformView.prototype = {
+  //容器对象,滑动对象,切换参数,切换数量
+  initialize: function(container, slider, parameter, count, options) {
+	if(parameter <= 0 || count <= 0) return;
+	var oContainer = $$(container), oSlider = $$(slider), oThis = this;
+	this.Index = 0;//当前索引
+	
+	this._timer = null;//定时器
+	this._slider = oSlider;//滑动对象
+	this._parameter = parameter;//切换参数
+	this._count = count || 0;//切换数量
+	this._target = 0;//目标参数
+	
+	this.SetOptions(options);
+	
+	this.Up = !!this.options.Up;
+	this.Step = Math.abs(this.options.Step);
+	this.Time = Math.abs(this.options.Time);
+	this.Auto = !!this.options.Auto;
+	this.Pause = Math.abs(this.options.Pause);
+	this.onStart = this.options.onStart;
+	this.onFinish = this.options.onFinish;
+	
+	oContainer.style.overflow = "hidden";
+	oContainer.style.position = "relative";
+	
+	oSlider.style.position = "absolute";
+	oSlider.style.top = oSlider.style.left = 0;
+  },
+  //设置默认属性
+  SetOptions: function(options) {
+	this.options = {//默认值
+		Up:			true,//是否向上(否则向左)
+		Step:		5,//滑动变化率
+		Time:		10,//滑动延时
+		Auto:		true,//是否自动转换
+		Pause:		2000,//停顿时间(Auto为true时有效)
+		onStart:	function(){},//开始转换时执行
+		onFinish:	function(){}//完成转换时执行
+	};
+	Object.extend(this.options, options || {});
+  },
+  //开始切换设置
+  Start: function() {
+	if(this.Index < 0){
+		this.Index = this._count - 1;
+	} else if (this.Index >= this._count){this.Index = 0;}
+	
+	this._target = -1 * this._parameter * this.Index;
+	this.onStart();
+	this.Move();
+  },
+  //移动
+  Move: function() {
+	clearTimeout(this._timer);
+	var oThis = this, style = this.Up ? "top" : "left", iNow = parseInt(this._slider.style[style]) || 0, iStep = this.GetStep(this._target, iNow);
+	
+	if (iStep != 0) {
+		this._slider.style[style] = (iNow + iStep) + "px";
+		this._timer = setTimeout(function(){oThis.Move();}, this.Time);
+	} else {
+		this._slider.style[style] = this._target + "px";
+		this.onFinish();
+		if (this.Auto) { this._timer = setTimeout(function(){oThis.Index++; oThis.Start();}, this.Pause); }
+	}
+  },
+  //获取步长
+  GetStep: function(iTarget, iNow) {
+	var iStep = (iTarget - iNow) / this.Step;
+	if (iStep == 0) return 0;
+	if (Math.abs(iStep) < 1) return (iStep > 0 ? 1 : -1);
+	return iStep;
+  },
+  //停止
+  Stop: function(iTarget, iNow) {
+	clearTimeout(this._timer);
+	this._slider.style[this.Up ? "top" : "left"] = this._target + "px";
+  }
+};
+window.onload=function(){
+	function Each(list, fun){
+		for (var i = 0, len = list.length; i < len; i++) {fun(list[i], i);}
+	};
+	
+	var objs = $$("idNum").getElementsByTagName("li");
+	
+	var tv = new TransformView("idTransformView", "idSlider", 355, 3, {
+		onStart : function(){ Each(objs, function(o, i){o.className = tv.Index == i ? "on" : "";}) }//按钮样式
+	});
+	
+	tv.Start();
+	
+	Each(objs, function(o, i){
+		o.onmouseover = function(){
+			o.className = "on";
+			tv.Auto = false;
+			tv.Index = i;
+			tv.Start();
+		}
+		o.onmouseout = function(){
+			o.className = "";
+			tv.Auto = true;
+			tv.Start();
+		}
+	})
+	
+	////////////////////////test2
+	/*
+	var objs2 = $$("idNum2").getElementsByTagName("li");
+	
+	var tv2 = new TransformView("idTransformView2", "idSlider2", 744, 3, {
+		onStart: function(){ Each(objs2, function(o, i){o.className = tv2.Index == i ? "on" : "";}) },//按钮样式
+		Up: false
+	});
+	
+	tv2.Start();
+	
+	Each(objs2, function(o, i){
+		o.onmouseover = function(){
+			o.className = "on";
+			tv2.Auto = false;
+			tv2.Index = i;
+			tv2.Start();
+		}
+		o.onmouseout = function(){
+			o.className = "";
+			tv2.Auto = true;
+			tv2.Start();
+		}
+	})
+	
+	$$("idStop").onclick = function(){tv2.Auto = false; tv2.Stop();}
+	$$("idStart").onclick = function(){tv2.Auto = true; tv2.Start();}
+	$$("idNext").onclick = function(){tv2.Index++; tv2.Start();}
+	$$("idPre").onclick = function(){tv2.Index--;tv2.Start();}
+	$$("idFast").onclick = function(){ if(--tv2.Step <= 0){tv2.Step = 1;} }
+	$$("idSlow").onclick = function(){ if(++tv2.Step >= 10){tv2.Step = 10;} }
+	$$("idReduce").onclick = function(){ tv2.Pause-=1000; if(tv2.Pause <= 0){tv2.Pause = 0;} }
+	$$("idAdd").onclick = function(){ tv2.Pause+=1000; if(tv2.Pause >= 5000){tv2.Pause = 5000;} }
+	
+	$$("idReset").onclick = function(){
+		tv2.Step = Math.abs(tv2.options.Step);
+		tv2.Time = Math.abs(tv2.options.Time);
+		tv2.Auto = !!tv2.options.Auto;
+		tv2.Pause = Math.abs(tv2.options.Pause);
+	}
+	*/
+}
+</script>
+        </div>
+    
+</div>
+<div class="blank"></div>
+<script type="text/javascript">
+var cate_step = 1;
+$(function(){
+	$(".rs_jq_timer").each(function(){
+		countDown($(this).html(), this);
+	});
+});
+function countDown(time, elemId){
+	//if(typeof end_time == "string")
+	var end_time = new Date(time).getTime();//月份是实际月份-1
+	//current_time = new Date().getTime(),
+	var sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(
+		function(){
+			var elemText = "剩余： ";
+			if (sys_second > 0) {
+				sys_second -= 1;
+				var day = Math.floor((sys_second / 3600) / 24);
+				var hour = Math.floor((sys_second / 3600) % 24);
+				var minute = Math.floor((sys_second / 60) % 60);
+				var second = Math.floor(sys_second % 60);
+				if(day > 0){
+					elemText += "<b>" + day + "</b>天";
+				}
+				elemText += "<b>" + hour + "</b>时";
+				elemText += '<b>' + minute + "</b>分";
+				elemText += '<b>' + second + "</b>秒";
+				$(elemId).html(elemText);
+			} else { 
+				clearInterval(timer);
+				$(elemId).text("活动结束");
+			}
+		}, 1000);
+}
+</script>
+<script>
+$(function(){
+	$(".show_best_area:eq(1)").hide();
+	$(".show_best_area:eq(2)").hide();
+})
+function change(id){
+	if(id==1){
+		$(".best_hot").css("color","#333");
+		$("#best").css("color","#b22825");
+		$(".show_best_area").hide();
+		$(".show_best_area:eq(0)").show();
+	}else if(id==2){ 
+		$(".best_hot").css("color","#333");
+		$("#hot").css("color","#b22825");
+		$(".show_best_area").hide();
+		$(".show_best_area:eq(1)").show();
+	}else{
+		$(".best_hot").css("color","#333");
+		$("#hot").css("color","#b22825");
+		$(".show_best_area").hide();
+		$(".show_best_area:eq(2)").show();	
+	}
+}
+/* 横排三个广告中间距离 */
+$(function(){
+	$(".width_three:eq(1)").css("margin-left","5px");
+	$(".width_three:eq(1)").css("margin-right","5px");
+})
+width_three
+</script>
+<div class="block clearfix">
+    
+    <div class="cd_left">
         <div id="cd_all_category"></div>
-        <script type="text/javascript">
+    <script type="text/javascript">
           //初始化主菜单
             function sw_nav2(obj,tag)
             {		
@@ -1303,462 +1595,181 @@ function s_h(id){
 </div>
 	 
 </dl>
-</div>	</div>
-	</div>
-        
-        <div style="float:left; width:1350px;"> 
-        <style type="text/css"> 
-.container, .container *{margin:0; padding:0;}
-.container{width:1350px; height:355px; overflow:hidden;position:relative;}
-.slider{position:absolute;}
-.slider li{list-style:none;display:inline;}
-.slider img{width:1350px; height:355px; display:block;}
-.slider2{width:2000px;}
-.slider2 li{float:left;}
-.num{position:absolute; right:100px; bottom:5px;}
-.num li{
-	float: left;
-	color: #333;
-	text-align: center;
-	line-height: 16px;
-	width: 16px;
-	height: 16px;
-	font-family: Arial;
-	font-size: 12px;
-	cursor: pointer;
-	overflow: hidden;
-	margin: 3px 1px;
-	border: 1px solid #E60012;
-	background-color: #fff;
-}
-.num li.on{
-	color: #fff;
-	line-height: 21px;
-	width: 21px;
-	height: 21px;
-	font-size: 16px;
-	margin: 0 1px;
-	border: 0;
-	background-color: #E60012;
-	font-weight: bold;
-}
-</style>
-<div class="container" id="idTransformView">
-  <ul class="slider" id="idSlider">
-      <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020ajzfgg.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020sdqvfj.jpg"/></a></li>
-        <li><a href="http://" target="_blank"><img src="data/afficheimg/20141020jqnrly.jpg"/></a></li>
-      </ul>
-  <ul class="num" id="idNum">
- 
-    
-          <li>
-    1    </li> 
-         <li>
-    2    </li> 
-         <li>
-    3    </li> 
-        
-  </ul>
 </div>
-<script type="text/javascript">
-var Class = {
-  create: function() {
-	return function() {
-	  this.initialize.apply(this, arguments);
-	}
-  }
-}
-Object.extend = function(destination, source) {
-	for (var property in source) {
-		destination[property] = source[property];
-	}
-	return destination;
-}
-var TransformView = Class.create();
-TransformView.prototype = {
-  //容器对象,滑动对象,切换参数,切换数量
-  initialize: function(container, slider, parameter, count, options) {
-	if(parameter <= 0 || count <= 0) return;
-	var oContainer = $$(container), oSlider = $$(slider), oThis = this;
-	this.Index = 0;//当前索引
 	
-	this._timer = null;//定时器
-	this._slider = oSlider;//滑动对象
-	this._parameter = parameter;//切换参数
-	this._count = count || 0;//切换数量
-	this._target = 0;//目标参数
-	
-	this.SetOptions(options);
-	
-	this.Up = !!this.options.Up;
-	this.Step = Math.abs(this.options.Step);
-	this.Time = Math.abs(this.options.Time);
-	this.Auto = !!this.options.Auto;
-	this.Pause = Math.abs(this.options.Pause);
-	this.onStart = this.options.onStart;
-	this.onFinish = this.options.onFinish;
-	
-	oContainer.style.overflow = "hidden";
-	oContainer.style.position = "relative";
-	
-	oSlider.style.position = "absolute";
-	oSlider.style.top = oSlider.style.left = 0;
-  },
-  //设置默认属性
-  SetOptions: function(options) {
-	this.options = {//默认值
-		Up:			true,//是否向上(否则向左)
-		Step:		5,//滑动变化率
-		Time:		10,//滑动延时
-		Auto:		true,//是否自动转换
-		Pause:		2000,//停顿时间(Auto为true时有效)
-		onStart:	function(){},//开始转换时执行
-		onFinish:	function(){}//完成转换时执行
-	};
-	Object.extend(this.options, options || {});
-  },
-  //开始切换设置
-  Start: function() {
-	if(this.Index < 0){
-		this.Index = this._count - 1;
-	} else if (this.Index >= this._count){this.Index = 0;}
-	
-	this._target = -1 * this._parameter * this.Index;
-	this.onStart();
-	this.Move();
-  },
-  //移动
-  Move: function() {
-	clearTimeout(this._timer);
-	var oThis = this, style = this.Up ? "top" : "left", iNow = parseInt(this._slider.style[style]) || 0, iStep = this.GetStep(this._target, iNow);
-	
-	if (iStep != 0) {
-		this._slider.style[style] = (iNow + iStep) + "px";
-		this._timer = setTimeout(function(){oThis.Move();}, this.Time);
-	} else {
-		this._slider.style[style] = this._target + "px";
-		this.onFinish();
-		if (this.Auto) { this._timer = setTimeout(function(){oThis.Index++; oThis.Start();}, this.Pause); }
-	}
-  },
-  //获取步长
-  GetStep: function(iTarget, iNow) {
-	var iStep = (iTarget - iNow) / this.Step;
-	if (iStep == 0) return 0;
-	if (Math.abs(iStep) < 1) return (iStep > 0 ? 1 : -1);
-	return iStep;
-  },
-  //停止
-  Stop: function(iTarget, iNow) {
-	clearTimeout(this._timer);
-	this._slider.style[this.Up ? "top" : "left"] = this._target + "px";
-  }
-};
-window.onload=function(){
-	function Each(list, fun){
-		for (var i = 0, len = list.length; i < len; i++) {fun(list[i], i);}
-	};
-	
-	var objs = $$("idNum").getElementsByTagName("li");
-	
-	var tv = new TransformView("idTransformView", "idSlider", 355, 3, {
-		onStart : function(){ Each(objs, function(o, i){o.className = tv.Index == i ? "on" : "";}) }//按钮样式
-	});
-	
-	tv.Start();
-	
-	Each(objs, function(o, i){
-		o.onmouseover = function(){
-			o.className = "on";
-			tv.Auto = false;
-			tv.Index = i;
-			tv.Start();
-		}
-		o.onmouseout = function(){
-			o.className = "";
-			tv.Auto = true;
-			tv.Start();
-		}
-	})
-	
-	////////////////////////test2
-	/*
-	var objs2 = $$("idNum2").getElementsByTagName("li");
-	
-	var tv2 = new TransformView("idTransformView2", "idSlider2", 744, 3, {
-		onStart: function(){ Each(objs2, function(o, i){o.className = tv2.Index == i ? "on" : "";}) },//按钮样式
-		Up: false
-	});
-	
-	tv2.Start();
-	
-	Each(objs2, function(o, i){
-		o.onmouseover = function(){
-			o.className = "on";
-			tv2.Auto = false;
-			tv2.Index = i;
-			tv2.Start();
-		}
-		o.onmouseout = function(){
-			o.className = "";
-			tv2.Auto = true;
-			tv2.Start();
-		}
-	})
-	
-	$$("idStop").onclick = function(){tv2.Auto = false; tv2.Stop();}
-	$$("idStart").onclick = function(){tv2.Auto = true; tv2.Start();}
-	$$("idNext").onclick = function(){tv2.Index++; tv2.Start();}
-	$$("idPre").onclick = function(){tv2.Index--;tv2.Start();}
-	$$("idFast").onclick = function(){ if(--tv2.Step <= 0){tv2.Step = 1;} }
-	$$("idSlow").onclick = function(){ if(++tv2.Step >= 10){tv2.Step = 10;} }
-	$$("idReduce").onclick = function(){ tv2.Pause-=1000; if(tv2.Pause <= 0){tv2.Pause = 0;} }
-	$$("idAdd").onclick = function(){ tv2.Pause+=1000; if(tv2.Pause >= 5000){tv2.Pause = 5000;} }
-	
-	$$("idReset").onclick = function(){
-		tv2.Step = Math.abs(tv2.options.Step);
-		tv2.Time = Math.abs(tv2.options.Time);
-		tv2.Auto = !!tv2.options.Auto;
-		tv2.Pause = Math.abs(tv2.options.Pause);
-	}
-	*/
-}
-</script>        </div>
-    
-</div>
-<div class="blank"></div>
-<script type="text/javascript">
-var cate_step = 1;
-$(function(){
-	$(".rs_jq_timer").each(function(){
-		countDown($(this).html(), this);
-	});
-});
-function countDown(time, elemId){
-	//if(typeof end_time == "string")
-	var end_time = new Date(time).getTime();//月份是实际月份-1
-	//current_time = new Date().getTime(),
-	var sys_second = (end_time-new Date().getTime())/1000;
-	var timer = setInterval(
-		function(){
-			var elemText = "剩余： ";
-			if (sys_second > 0) {
-				sys_second -= 1;
-				var day = Math.floor((sys_second / 3600) / 24);
-				var hour = Math.floor((sys_second / 3600) % 24);
-				var minute = Math.floor((sys_second / 60) % 60);
-				var second = Math.floor(sys_second % 60);
-				if(day > 0){
-					elemText += "<b>" + day + "</b>天";
-				}
-				elemText += "<b>" + hour + "</b>时";
-				elemText += '<b>' + minute + "</b>分";
-				elemText += '<b>' + second + "</b>秒";
-				$(elemId).html(elemText);
-			} else { 
-				clearInterval(timer);
-				$(elemId).text("活动结束");
-			}
-		}, 1000);
-}
-</script>
-<div class="block clearfix">
-<div class="rs_pbox">
-	<div class="rs_pbox_tit">
-    	<span style="font-size:22px;">限时</span>
-        <span style="font-size:22px; color:#b22825;">抢购</span>
-        <img src="themes/red_three/images/tjxsqg.jpg">
-        <span style="float:right;"><a href="search-promotion.html" style="color:#cc0001;">更多优惠</a><img src="themes/red_three/images/gdyh.jpg"></span>
+	<div class="rs_bnr_box">
+		<div class="rs_bnr_boxtit">
+			<h2><a href="article_cat-4.html">商城资讯</a></h2>
+			<div class="cd_more"><a href="article_cat-4.html">更多&nbsp;&gt;&gt;</a></div>
+		</div>
+			<ul class="rs_bnr_newslist">
+								<li><a href="article-35.html" title="关于集成吊灯的通知">关于集成吊灯的通知</a></li>
+								<li><a href="article-34.html" title="金江商贸感恩回馈">金江商贸感恩回馈</a></li>
+								<li><a href="article-33.html" title="关于电视类订单的通知">关于电视类订单的通知</a></li>
+								<li><a href="article-32.html" title="金江贸易有限公司">金江贸易有限公司</a></li>
+								<li><a href="article-12.html" title="商城向您承诺">商城向您承诺</a></li>
+								<li><a href="article-11.html" title="商城2014运营通告">商城2014运营通告</a></li>
+								<li><a href="article-10.html" title="关于生鲜蔬菜类订单的通知">关于生鲜蔬菜类订单的通知</a></li>
+							</ul>
+	</div>    
     </div>
-	<ul class="rs_pbox_ul">
-										<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Aug 30,2015 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-117.html" target="_blank"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" border="0" alt="运动鞋" /></a>
-                </div>
-    <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥11.00                                     </font> <br/>  
-                   <font class="market">￥150.00</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-								<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Nov 25,2014 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-104.html" target="_blank"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" border="0" alt="拉杆箱" /></a>
-                </div>
-    <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥199.00                                     </font> <br/>  
-                   <font class="market">￥240.00</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-								<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Aug 28,2015 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-122.html" target="_blank"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" border="0" alt="冲锋衣" /></a>
-                </div>
-    <p class="f1"><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥11.00                                     </font> <br/>  
-                   <font class="market">￥432.00</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-								<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Dec 24,2014 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-89.html" target="_blank"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" border="0" alt="紫丁香优质酱醋瓶" /></a>
-                </div>
-    <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥19.80                                     </font> <br/>  
-                   <font class="market">￥24.00</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-								<li>
-			<div class="rs_pbox_n">
-				<span class="rs_jq_timer">Dec 24,2014 16:00:00</span>
-			</div>    
-	        <div class="cd_rp_con">      
-                <div class="rs_gl_img">
-                    <a href="goods-103.html" target="_blank"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" border="0" alt="117g农心辣白菜辛拉面（桶面） " /></a>
-                </div>
-    <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
-               <p style="float:left; ">	      
-                   <font class="f1 big_red">
-                                    ￥6.99                                     </font> <br/>  
-                   <font class="market">￥7.43</font> 
-               </p>
-               <a href="" style="float:right"><img src="themes/red_three/images/ljqg.jpg" width="80" height="30"></a>  
-          	</div>  
-		</li>
-					</ul>
-</div>
-<div class="blank"></div>
-<script>
-$(function(){
-	$(".show_best_area:eq(1)").hide();
-})
-function change(id){
-	if(id==1){
-		$(".best_hot").css("color","#333");
-		$("#best").css("color","#b22825");
-		$(".show_best_area").hide();
-		$(".show_best_area:eq(0)").show();
-	}else{ 
-		$(".best_hot").css("color","#333");
-		$("#hot").css("color","#b22825");
-		$(".show_best_area").hide();
-		$(".show_best_area:eq(1)").show();
-	}
-}
-</script>
-<p class="rs_pbox_tit">
-	<a class="best_hot" id="best" onclick="change(1)">精品推荐</a>　｜　
-	<a class="best_hot" id="hot" onclick="change(2)">热卖商品</a>
-    <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多优惠</a><img src="themes/red_three/images/gdyh.jpg"></span>
-</p>
-<div class="show_best_area" class="clearfix">
-      <div class="goodsItem">   
-           <a href="goods-120.html" class="goodsimg">
-           <img src="images/201403/thumb_img/120_thumb_G_1396208789802.jpg" alt="200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 " />
+    
+    <div class="cd_right">
+    	
+        <p class="rs_pbox_tit">
+            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
+            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
+        </p>
+<div class="show_best_area" class="clearfix cd_hot_area">
+  <div class="goodsItem">   
+           <a href="goods-117.html" class="goodsimg">
+           <img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" />
            </a><br />
-           <p class="f1"><a href="goods-120.html" title="200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 ">200g雨润肉枣 餐桌特色...</a></p>
+           <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                             ￥27.00                             </font> <br/>  
-               <font class="market">￥32.40</font> 
+                            ￥11.00                             </font> <br/>  
+               <font class="market">￥150.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-124.html" class="goodsimg">
-           <img src="images/201403/thumb_img/124_thumb_G_1396209072261.jpg" alt="防水户外服装" />
+           <a href="goods-122.html" class="goodsimg">
+           <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
            </a><br />
-           <p class="f1"><a href="goods-124.html" title="防水户外服装">防水户外服装</a></p>
+           <p class="f1"><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                             ￥0.00                             </font> <br/>  
-               <font class="market">￥0.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-130.html" class="goodsimg">
-           <img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" alt="运动包" />
-           </a><br />
-           <p class="f1"><a href="goods-130.html" title="运动包">运动包</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                             ￥120.00                             </font> <br/>  
-               <font class="market">￥144.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-119.html" class="goodsimg">
-           <img src="images/201403/thumb_img/119_thumb_G_1396208697963.jpg" alt="  135g德芙m&amp;ms逗趣礼盒 [花生] " />
-           </a><br />
-           <p class="f1"><a href="goods-119.html" title="  135g德芙m&amp;ms逗趣礼盒 [花生] ">135g德芙m&ms逗趣礼...</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                             ￥38.00                             </font> <br/>  
-               <font class="market">￥45.60</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-116.html" class="goodsimg">
-           <img src="images/201403/thumb_img/116_thumb_G_1396208602103.jpg" alt="耐克" />
-           </a><br />
-           <p class="f1"><a href="goods-116.html" title="耐克">耐克</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                             ￥360.00                             </font> <br/>  
+                            ￥11.00                             </font> <br/>  
                <font class="market">￥432.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
-    </div>
-  <div class="show_best_area" class="clearfix cd_hot_area">
-      <div class="goodsItem">   
-           <a href="goods-121.html" class="goodsimg">
-           <img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" />
+    <div class="goodsItem">   
+           <a href="goods-103.html" class="goodsimg">
+           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
            </a><br />
-           <p class="f1"><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
+           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥260.00                             </font> <br/>  
-               <font class="market">￥312.00</font> 
+                            ￥6.99                             </font> <br/>  
+               <font class="market">￥7.43</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
+           <a href="goods-104.html" class="goodsimg">
+           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
+           </a><br />
+           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥199.00                             </font> <br/>  
+               <font class="market">￥240.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+  </div>
+<div class="blank"></div>
+        
+        <p class="rs_pbox_tit">
+            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
+            <a class="best_hot" id="hot" onclick="change(2)">热卖商品</a>
+            <a class="best_hot" id="group" onclick="change(3)">团购商品</a>
+            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
+        </p>
+<div class="show_best_area" class="clearfix cd_hot_area">
+  <div class="goodsItem">   
+           <a href="goods-117.html" class="goodsimg">
+           <img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" />
+           </a><br />
+           <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥11.00                             </font> <br/>  
+               <font class="market">￥150.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg">
+           <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
+           </a><br />
+           <p class="f1"><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥11.00                             </font> <br/>  
+               <font class="market">￥432.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-103.html" class="goodsimg">
+           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
+           </a><br />
+           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥6.99                             </font> <br/>  
+               <font class="market">￥7.43</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-104.html" class="goodsimg">
+           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
+           </a><br />
+           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥199.00                             </font> <br/>  
+               <font class="market">￥240.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+  </div>
+<div class="blank"></div>
+<div class="show_best_area" class="clearfix cd_hot_area">
+    <div class="goodsItem">   
+           <a href="group_buy-3.html" class="goodsimg">
+           <img src="images/201403/thumb_img/18_thumb_G_1396205074979.jpg" alt="" />
+           </a><br />
+           <p class="f1"><a href="group_buy-3.html" title=""></a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                                                         </font> <br/>  
+               <font class="market"></font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="group_buy-2.html" class="goodsimg">
+           <img src="images/201403/thumb_img/7_thumb_G_1396204465855.jpg" alt="" />
+           </a><br />
+           <p class="f1"><a href="group_buy-2.html" title=""></a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                                                         </font> <br/>  
+               <font class="market"></font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="group_buy-1.html" class="goodsimg">
+           <img src="images/201403/thumb_img/1_thumb_G_1396121017928.jpg" alt="" />
+           </a><br />
+           <p class="f1"><a href="group_buy-1.html" title=""></a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                                                         </font> <br/>  
+               <font class="market"></font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+  </div>
+<div class="blank"></div>
+<div class="show_best_area" class="clearfix cd_hot_area">
+      <div class="goodsItem">   
            <a href="goods-130.html" class="goodsimg">
            <img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" alt="运动包" />
            </a><br />
@@ -1771,14 +1782,26 @@ function change(id){
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-128.html" class="goodsimg">
-           <img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" />
+           <a href="goods-123.html" class="goodsimg">
+           <img src="images/201403/thumb_img/123_thumb_G_1396209007293.jpg" alt="木林森户外鞋" />
            </a><br />
-           <p class="f1"><a href="goods-128.html" title="运动包">运动包</a></p>
+           <p class="f1"><a href="goods-123.html" title="木林森户外鞋">木林森户外鞋</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥480.00                             </font> <br/>  
-               <font class="market">￥576.00</font> 
+                            ￥450.00                             </font> <br/>  
+               <font class="market">￥540.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-125.html" class="goodsimg">
+           <img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" />
+           </a><br />
+           <p class="f1"><a href="goods-125.html" title="运动服">运动服</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥0.00                             </font> <br/>  
+               <font class="market">￥220.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1794,34 +1817,19 @@ function change(id){
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
-    <div class="goodsItem">   
-           <a href="goods-1.html" class="goodsimg">
-           <img src="images/201403/thumb_img/1_thumb_G_1396121017928.jpg" alt="青岛崂山啤酒 330ml" />
-           </a><br />
-           <p class="f1"><a href="goods-1.html" title="青岛崂山啤酒 330ml">青岛崂山啤酒 330ml</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥2.80                             </font> <br/>  
-               <font class="market">￥3.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
     </div>
 <div class="blank"></div>
-  
+  554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"8";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"9";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"10";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
+	</div>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"6";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_1">
-        <div class="rs_igl_tit_img">1F食品零食<span></span></div>
-        <div class="rs_igl_tit_blank">
-																																	<a href="category-9-b0.html">罐头食品</a>
-																							<a href="category-10-b0.html">厨房调料</a>
-																							<a href="category-31-b0.html">休闲零食</a>
-																							<a href="category-47-b0.html">饼干糕点</a>
-																																																																																																																																																																																						        
-        <a href="category-1-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">1&nbsp;F</span>
+            <span class="floot_name">食品零食</span>
+        </div>
+        <a href="category-1-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(themes/red_three/images/1f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 																																<li><a href="category-9-b0.html">罐头食品</a></li>
 																			<li><a href="category-203-b0.html">鱼雷罐头</a></li>
@@ -1922,11 +1930,12 @@ function change(id){
 																																	<li><a href="category-70-b0.html">进口食品</a></li>
 																			<li><a href="category-242-b0.html">进口营养补剂</a></li>
 																																																																																																	</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="themes/red_three/images/1f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 												<a href='affiche.php?ad_id=4&amp;uri='
-                target='_blank'><img src='data/afficheimg/1409419014498521110.jpg' width='723' height='200'
+                target='_blank'><img src='data/afficheimg/1413847398908546887.jpg' width='670' height='200'
                 border='0' /></a>																																						</div>
 			<ul class="rs_iglr_ul">
 								<li>
@@ -2090,68 +2099,17 @@ function change(id){
 					</div>
 				</li>
 							</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-                                                                                                                                                                                            <li>
-                    	<img src="images/201403/thumb_img/111_thumb_G_1396208495463.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-111.html">240g好时黑巧克力家庭装 </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥40.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/110_thumb_G_1396208361120.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-110.html">120g*5农心乌龙面</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥20.80                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/108_thumb_G_1396208274652.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-108.html">120g*5农心辣白菜五连包 </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥19.80                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/106_thumb_G_1396208166012.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-106.html">70g农心上海汤面（鸡肉面）</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥4.20                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-103.html">117g农心辣白菜辛拉面（桶面） </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥6.99                                                            </span>                        
-                        </p>
-                    </li>
-                                    </ul>
-    </div>
+	  </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_2">
-        <div class="rs_igl_tit_img">2F美容美妆<span></span></div>
-        <div class="rs_igl_tit_blank">
-																																																																	<a href="category-12-b0.html">口腔护理</a>
-																							<a href="category-13-b0.html">面部护理</a>
-																							<a href="category-93-b0.html">脸部保养品</a>
-																							<a href="category-94-b0.html">美发护理</a>
-																																																																																																																																											        
-        <a href="category-2-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">2&nbsp;F</span>
+            <span class="floot_name">美容美妆</span>
+        </div>
+        <a href="category-2-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(themes/red_three/images/2f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 																																																																<li><a href="category-12-b0.html">口腔护理</a></li>
 																			<li><a href="category-42-b0.html">牙膏</a></li>
@@ -2201,11 +2159,12 @@ function change(id){
 																																	<li><a href="category-103-b0.html">香水</a></li>
 																			<li><a href="category-409-b0.html">女士香水</a></li>
 																																																																	</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="themes/red_three/images/2f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 																			<a href='affiche.php?ad_id=13&amp;uri='
-                target='_blank'><img src='data/afficheimg/1409419029465125551.jpg' width='723' height='200'
+                target='_blank'><img src='data/afficheimg/1413847439619772315.jpg' width='670' height='200'
                 border='0' /></a>																															</div>
 			<ul class="rs_iglr_ul">
 								<li>
@@ -2321,44 +2280,17 @@ function change(id){
 					</div>
 				</li>
 							</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-                                                                                                                                                                                            <li>
-                    	<img src="images/201403/thumb_img/34_thumb_G_1396205793363.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-34.html">佳洁士珍珠盐白牙膏(柠檬清新)140g </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥7.90                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/31_thumb_G_1396205655690.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-31.html">高露洁旅行套装/折叠牙刷加50克高露洁冰爽防蛀牙膏</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥12.90                                                            </span>                        
-                        </p>
-                    </li>
-                                    </ul>
-    </div>
+	  </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_3">
-        <div class="rs_igl_tit_img">3F清洁护理<span></span></div>
-        <div class="rs_igl_tit_blank">
-																																																																																									<a href="category-14-b0.html">家居清洁</a>
-																							<a href="category-15-b0.html">清洁用品</a>
-																							<a href="category-43-b0.html">纸制品</a>
-																							<a href="category-114-b0.html">衣物清洁</a>
-																																																																							        
-        <a href="category-3-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">3&nbsp;F</span>
+            <span class="floot_name">清洁护理</span>
+        </div>
+        <a href="category-3-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(themes/red_three/images/3f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 																																																																																								<li><a href="category-14-b0.html">家居清洁</a></li>
 																			<li><a href="category-510-b0.html">家居清洁剂/蜡</a></li>
@@ -2422,11 +2354,12 @@ function change(id){
 																									<li><a href="category-555-b0.html">成人尿裤/尿垫</a></li>
 																									<li><a href="category-556-b0.html">计生保健</a></li>
 																																									</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="themes/red_three/images/3f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 																										<a href='affiche.php?ad_id=14&amp;uri='
-                target='_blank'><img src='data/afficheimg/1409419044598290994.jpg' width='723' height='200'
+                target='_blank'><img src='data/afficheimg/1413847464132676179.jpg' width='670' height='200'
                 border='0' /></a>																								</div>
 			<ul class="rs_iglr_ul">
 								<li>
@@ -2590,68 +2523,17 @@ function change(id){
 					</div>
 				</li>
 							</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-                                                                                                                                                                                            <li>
-                    	<img src="images/201403/thumb_img/63_thumb_G_1396206441154.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-63.html">10片清风绿茶湿巾 </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥3.90                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/60_thumb_G_1396206368412.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-60.html">珍爱80P筒装湿巾 [80片] </a><br>
-                            售价：<span class="sml_red">
-                                                                ￥14.20                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/58_thumb_G_1396206316633.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-58.html">舒洁200抽盒抽</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥10.50                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/54_thumb_G_1396206266372.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-54.html">舒洁200抽迪士尼软抽</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥0.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/50_thumb_G_1396206202084.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-50.html">清风200抽*3原木纯品抽取式面纸 [200张*3包]</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥12.20                                                            </span>                        
-                        </p>
-                    </li>
-                                    </ul>
-    </div>
+	  </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_4">
-        <div class="rs_igl_tit_img">4F母婴中心<span></span></div>
-        <div class="rs_igl_tit_blank">
-																																																									<a href="category-16-b0.html">奶粉</a>
-																							<a href="category-17-b0.html">营养品</a>
-																							<a href="category-18-b0.html">幼婴辅食</a>
-																							<a href="category-87-b0.html">喂养用品</a>
-																																																																																																																		        
-        <a href="category-4-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">4&nbsp;F</span>
+            <span class="floot_name">母婴中心</span>
+        </div>
+        <a href="category-4-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(themes/red_three/images/4f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 																																																								<li><a href="category-16-b0.html">奶粉</a></li>
 																			<li><a href="category-30-b0.html">幼婴配方奶粉</a></li>
@@ -2701,11 +2583,12 @@ function change(id){
 																									<li><a href="category-393-b0.html">产后恢复</a></li>
 																									<li><a href="category-394-b0.html">哺乳用品</a></li>
 																																																																									</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="themes/red_three/images/4f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 																																	<a href='affiche.php?ad_id=15&amp;uri='
-                target='_blank'><img src='data/afficheimg/1409419053393826849.jpg' width='723' height='200'
+                target='_blank'><img src='data/afficheimg/1413847488029273035.jpg' width='670' height='200'
                 border='0' /></a>																	</div>
 			<ul class="rs_iglr_ul">
 								<li>
@@ -2869,68 +2752,17 @@ function change(id){
 					</div>
 				</li>
 							</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-                                                                                                                                                                                            <li>
-                    	<img src="images/201403/thumb_img/19_thumb_G_1396205102360.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-19.html">280g百乐麦阶段面(1)</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥9.80                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/18_thumb_G_1396205074979.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-18.html">208g贝因美黑芝麻营养面条</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥12.30                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/no_picture.gif" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-17.html">225g贝因美DHA蔬菜营养米粉</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥22.50                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/no_picture.gif" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-16.html">225g亨氏淮山薏米米粉(1段)</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥100.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/14_thumb_G_1396204872253.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-14.html">64g亨氏磨牙棒 [牛奶味]</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥100.00                                                            </span>                        
-                        </p>
-                    </li>
-                                    </ul>
-    </div>
+	  </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_5">
-        <div class="rs_igl_tit_img">5F家居百货<span></span></div>
-        <div class="rs_igl_tit_blank">
-																																																	<a href="category-19-b0.html">餐具餐饮</a>
-																							<a href="category-25-b0.html">珠宝黄金</a>
-																							<a href="category-20-b0.html">厨房用品</a>
-																							<a href="category-104-b0.html">文体玩具</a>
-																																																																																																																																																																																	        
-        <a href="category-5-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">5&nbsp;F</span>
+            <span class="floot_name">家居百货</span>
+        </div>
+        <a href="category-5-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(themes/red_three/images/5f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 																																																<li><a href="category-19-b0.html">餐具餐饮</a></li>
 																			<li><a href="category-283-b0.html">塑料水杯</a></li>
@@ -3050,11 +2882,12 @@ function change(id){
 																			<li><a href="category-363-b0.html">烧烤工具</a></li>
 																									<li><a href="category-364-b0.html">户外帐篷</a></li>
 																																																																																	</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="themes/red_three/images/5f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 																																								<a href='affiche.php?ad_id=16&amp;uri='
-                target='_blank'><img src='data/afficheimg/1409419063639007150.jpg' width='723' height='200'
+                target='_blank'><img src='data/afficheimg/1413847574586669204.jpg' width='670' height='200'
                 border='0' /></a>										</div>
 			<ul class="rs_iglr_ul">
 								<li>
@@ -3218,56 +3051,9 @@ function change(id){
 					</div>
 				</li>
 							</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-                                                                                                                                                                                            <li>
-                    	<img src="images/201403/thumb_img/66_thumb_G_1396206501441.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-66.html">张小泉中片刀N5472</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥30.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/65_thumb_G_1396206479297.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-65.html">张小泉咖啡彩木系列切片刀D11102300</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥20.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/64_thumb_G_1396206453033.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-64.html">巧媳妇钢塑柄磨刀棒AM-006</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥20.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/62_thumb_G_1396206406581.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-62.html">富尔兴欧派不锈钢勺FC-222</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥10.00                                                            </span>                        
-                        </p>
-                    </li>
-                                                                <li>
-                    	<img src="images/201403/thumb_img/61_thumb_G_1396206372531.jpg" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="goods-61.html">富尔兴欧派不锈钢主食匙FC-225</a><br>
-                            售价：<span class="sml_red">
-                                                                ￥10.00                                                            </span>                        
-                        </p>
-                    </li>
-                                    </ul>
-    </div>
+	  </div>
 </div>
-<div class="blank"></div>
-554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
+<div class="blank"></div>554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
 </div>
 </div>
 <div id="footerServiceLinkId">
@@ -3317,11 +3103,8 @@ function change(id){
   </div>
 </div>
 <div id="footer">
-  	<div class="ft_footer_service"> 
-		<img src="themes/red_three/images/zpbz.jpg">
-     </div>
   
-  <p class="ft_footer_link"> 
+  <p class="ft_footer_link foot_red"> 
      
      
     <a href="#" 
@@ -3353,39 +3136,10 @@ function change(id){
      
   </p>
    
-    <p>ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">豫ICP备88888888</a></p>
-    
-  <p>  
-    </p>
-    
-  <p>  
-     
-    <!--<a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=123456789&amp;Site=今客快购&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:123456789:4" height="16" border="0" alt="QQ" /> 123456789</a> -->
-     
-     
-    
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-    </p>
+    <p class="foot_yellow">ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">豫ICP备88888888</a></p>
+    <p class="foot_blue">技术支持万谦科技</p>
+  
 <!--  <p>&copy; 2012-2014 RockSnap 版权所有，并保留所有权利。</p>    <p>金江商贸 </p>-->
-</div>
-<div class="ft_pic_link" id="footerbanner2LazyLoad"> 
-    <a href="http://index.php"><img src="data/afficheimg/1409357981667460535.jpg"></a>| 
-    <a href="http://www.baidu.com"><img src="data/afficheimg/1409358126845699883.jpg"></a>| 
-    <a href="http://www.baidu.com"><img src="data/afficheimg/1409358138369631228.jpg"></a>| 
-    <a href="http://www.baidu.com"><img src="data/afficheimg/1409358148431562603.jpg"></a>| 
-    <a href="http://www.baidu.com"><img src="data/afficheimg/1409358159519653500.jpg"></a>| 
-    <a href="http://www.baidu.com"><img src="data/afficheimg/1409358172909979985.jpg"></a>| 
-    
 </div>
 <div id="rk_kfbox">
 	<div id="rk_kfbox_top">
@@ -3508,5 +3262,5 @@ return; //结束函式
 document.getElementById("divMenu").style.display = "block";
 document.getElementById("divOnline").style.display = "none";
 }
-</script></body>
+</script> </body>
 </html>

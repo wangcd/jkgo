@@ -2,21 +2,13 @@
 
 <div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_{$goods_cat.id}">
-        <div class="rs_igl_tit_img">{$goods_cat.id}F{$goods_cat.name}<span></span></div>
-        <div class="rs_igl_tit_blank">
-				<!--{foreach from=$categories item=cates name="cate_foreach"}-->
-				<!-- {if $cates.id eq $goods_cat.id} -->
-					<!--{foreach from=$cates.cat_id item=cate_child2 name="cate2_foreach" key=key}-->
-						<!--{if $smarty.foreach.cate2_foreach.iteration < 5}-->
-						<a href="{$cate_child2.url}">{$cate_child2.name|escape:html}</a>
-						<!--{/if}-->
-					<!--{/foreach}-->
-				<!--{/if}-->
-				<!--{/foreach}-->        
-        <a href="category-{$goods_cat.id}-b0.html" style="float:right; padding-left:30px;">更多>></a></div>
+        <div class="rs_igl_tit_img">
+        	<span class="Hanzel_Bold">{$goods_cat.id}&nbsp;F</span>
+            <span class="floot_name">{$goods_cat.name}</span>
+        </div>
+        <a href="category-{$goods_cat.id}-b0.html" class="floor_more">更多+</a>
     </div>
-	<div class="rs_ig_l">
-		<div class="rs_igl_l" style="background:url(../images/{$goods_cat.id}f.jpg)">
+    <div class="rs_igl_l">
 			<ul class="rs_igll_cate">
 				<!--{foreach from=$categories item=cates name="cate_foreach"}-->
 				<!-- {if $cates.id eq $goods_cat.id} -->
@@ -33,8 +25,9 @@
 				<!--{/if}-->
 				<!--{/foreach}-->
 			</ul>
-		</div>
-		<div class="rs_igl_r">
+            <img src="../images/{$goods_cat.id}f.jpg" width="250" height="302">
+	  </div>
+      <div class="rs_igl_r">
 			<div class="rs_iglr_ad">
 			<!--{foreach from=$rs_idx_ads['idx_step_mid'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
@@ -67,29 +60,6 @@
 				</li>
 				<!--{/foreach}-->
 			</ul>
-		</div>
-	</div>
-    <div class="cd_rqph">
-    	<p class="cd_rqph_tit">人气排行</>
-        <ul>
-            <!--{foreach from=$cat_goods item=goods name=goods_foreach key=key}-->
-                <!--{if $key == 5 || $key ==6 || $key == 7 || $key == 8 || $key == 9 }-->
-                    <li>
-                    	<img src="{$goods.thumb}" width="60" style="float:left;">
-                        <p style="float:right;">
-                            <a class="cd_title_rq" href="{$goods.url}">{$goods.name|escape:html}</a><br>
-                            售价：<span class="sml_red">
-                                <!-- {if $goods.promote_price neq ""} -->
-                                {$goods.promote_price}
-                                <!-- {else}-->
-                                {$goods.shop_price}
-                                <!--{/if}-->
-                            </span>                        
-                        </p>
-                    </li>
-                <!--{/if}-->
-            <!--{/foreach}-->
-        </ul>
-    </div>
+	  </div>
 </div>
 <div class="blank"></div>

@@ -25,12 +25,6 @@
 </div>
 <?php echo $this->fetch('library/page_header.lbi'); ?>
 <div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
-	<div class="banan" style="width:1207px; margin:0px auto;">
-    <div class="AreaL">
-        <div id="cd_all_category"></div>
-        <?php echo $this->fetch('library/category_tree_index.lbi'); ?>
-	</div>
-	</div>
         
         <div style="float:left; width:1350px;"> 
         <?php echo $this->fetch('library/index_ad.lbi'); ?>
@@ -75,12 +69,12 @@ function countDown(time, elemId){
 		}, 1000);
 }
 </script>
-<div class="block clearfix">
 
-<?php echo $this->fetch('library/recommend_promotion.lbi'); ?>
 <script>
+
 $(function(){
 	$(".show_best_area:eq(1)").hide();
+	$(".show_best_area:eq(2)").hide();
 })
 function change(id){
 	if(id==1){
@@ -88,22 +82,58 @@ function change(id){
 		$("#best").css("color","#b22825");
 		$(".show_best_area").hide();
 		$(".show_best_area:eq(0)").show();
-	}else{ 
+	}else if(id==2){ 
 		$(".best_hot").css("color","#333");
 		$("#hot").css("color","#b22825");
 		$(".show_best_area").hide();
 		$(".show_best_area:eq(1)").show();
+	}else{
+		$(".best_hot").css("color","#333");
+		$("#hot").css("color","#b22825");
+		$(".show_best_area").hide();
+		$(".show_best_area:eq(2)").show();	
 	}
 }
-
+/* 横排三个广告中间距离 */
+$(function(){
+	$(".width_three:eq(1)").css("margin-left","5px");
+	$(".width_three:eq(1)").css("margin-right","5px");
+})
+width_three
 </script>
-<p class="rs_pbox_tit">
-	<a class="best_hot" id="best" onclick="change(1)">精品推荐</a>　｜　
-	<a class="best_hot" id="hot" onclick="change(2)">热卖商品</a>
-    <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多优惠</a><img src="themes/red_three/images/gdyh.jpg"></span>
-</p>
-<?php echo $this->fetch('library/recommend_best.lbi'); ?>
+<div class="block clearfix">
+    
+    <div class="cd_left">
+        <div id="cd_all_category"></div>
+    <?php echo $this->fetch('library/category_tree_index.lbi'); ?>
+	
+<?php $this->assign('articles',$this->_var['articles_4']); ?><?php $this->assign('articles_cat',$this->_var['articles_cat_4']); ?><?php echo $this->fetch('library/cat_articles.lbi'); ?>
+    
+    </div>
+    
+    <div class="cd_right">
+    	
+        <p class="rs_pbox_tit">
+            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
+            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
+        </p>
+<?php echo $this->fetch('library/recommend_promotion.lbi'); ?>
+        
+        <p class="rs_pbox_tit">
+            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
+            <a class="best_hot" id="hot" onclick="change(2)">热卖商品</a>
+            <a class="best_hot" id="group" onclick="change(3)">团购商品</a>
+            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
+        </p>
+
+<?php echo $this->fetch('library/recommend_promotion.lbi'); ?>
+<?php echo $this->fetch('library/group_buy.lbi'); ?>
 <?php echo $this->fetch('library/recommend_hot.lbi'); ?>
+<?php $this->assign('ads_id','8'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
+<?php $this->assign('ads_id','9'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
+<?php $this->assign('ads_id','10'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
+
+	</div>
 
 
 <?php $this->assign('ads_id','6'); ?><?php $this->assign('ads_num','1'); ?><?php echo $this->fetch('library/ad_position.lbi'); ?>
