@@ -9,7 +9,7 @@
         <a href="category-{$goods_cat.id}-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 				<!--{foreach from=$categories item=cates name="cate_foreach"}-->
 				<!-- {if $cates.id eq $goods_cat.id} -->
 					<!--{foreach from=$cates.cat_id item=cate_child2 name="cate2_foreach"}-->
@@ -24,10 +24,11 @@
 					<!--{/foreach}-->
 				<!--{/if}-->
 				<!--{/foreach}-->
-			</ul>
-            <img src="../images/{$goods_cat.id}f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+		 </ul>
+         <img src="../images/{$goods_cat.id}f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 			<!--{foreach from=$rs_idx_ads['idx_step_mid'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
@@ -35,8 +36,9 @@
 				<!--{/if}-->
 			<!--{/foreach}-->
 			</div>
-			<ul class="rs_iglr_ul">
-				<!--{foreach from=$cat_goods item=goods name="goods_foreach"}-->
+        </div>
+        <ul class="rs_iglr_ul">
+        	<!--{foreach from=$cat_goods item=goods name="goods_foreach"}-->
 				<li>
 					<div class="rs_iglr_img">
 						<a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}" /></a>
@@ -58,8 +60,15 @@
                     	<a href="{$goods.url}" style="float:right;" title="{$goods.name|escape:html}" target="_blank"><img src="images/gwc.jpg" /></a>
 					</div>
 				</li>
-				<!--{/foreach}-->
-			</ul>
-	  </div>
+			 <!--{/foreach}-->
+        </ul>
+    </div>
+    <div class="cd_rqph">
+    	<!--{foreach from=$rs_idx_ads['idx_step_right'] item=ads key=adkey name="ads_foreach"}-->
+				<!-- {if $adkey eq $goods_cat.id} -->
+					{$ads[0]}
+				<!--{/if}-->
+			<!--{/foreach}-->
+    </div>
 </div>
 <div class="blank"></div>

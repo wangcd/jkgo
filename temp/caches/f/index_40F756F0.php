@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413887286;s:8:"maketime";i:1413883686;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413966505;s:8:"maketime";i:1413962905;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -117,12 +117,10 @@ function s_h(id){
         </ul>
     </div>
   </div>
-</div>
-<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+</div><div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
         
         <div style="float:left; width:1350px;"> 
-         
-<style type="text/css"> 
+        <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 .container{width:1350px; height:355px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
@@ -339,8 +337,7 @@ window.onload=function(){
 	}
 	*/
 }
-</script>
-        </div>
+</script>        </div>
     
 </div>
 <div class="blank"></div>
@@ -1595,9 +1592,8 @@ width_three
 </div>
 	 
 </dl>
-</div>
-	
-	<div class="rs_bnr_box">
+</div>	
+<div class="rs_bnr_box">
 		<div class="rs_bnr_boxtit">
 			<h2><a href="article_cat-4.html">商城资讯</a></h2>
 			<div class="cd_more"><a href="article_cat-4.html">更多&nbsp;&gt;&gt;</a></div>
@@ -1634,6 +1630,18 @@ width_three
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
+           <a href="goods-93.html" class="goodsimg">
+           <img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" />
+           </a><br />
+           <p class="f1"><a href="goods-93.html" title="项链">项链</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥4999.00                             </font> <br/>  
+               <font class="market">￥6000.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
            <a href="goods-122.html" class="goodsimg">
            <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
            </a><br />
@@ -1654,18 +1662,6 @@ width_three
                <font class="f1 big_red">
                             ￥6.99                             </font> <br/>  
                <font class="market">￥7.43</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-104.html" class="goodsimg">
-           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
-           </a><br />
-           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥199.00                             </font> <br/>  
-               <font class="market">￥240.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1692,6 +1688,18 @@ width_three
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
+           <a href="goods-93.html" class="goodsimg">
+           <img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" />
+           </a><br />
+           <p class="f1"><a href="goods-93.html" title="项链">项链</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥4999.00                             </font> <br/>  
+               <font class="market">￥6000.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
            <a href="goods-122.html" class="goodsimg">
            <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
            </a><br />
@@ -1712,18 +1720,6 @@ width_three
                <font class="f1 big_red">
                             ￥6.99                             </font> <br/>  
                <font class="market">￥7.43</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-104.html" class="goodsimg">
-           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
-           </a><br />
-           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥199.00                             </font> <br/>  
-               <font class="market">￥240.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1782,26 +1778,14 @@ width_three
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-123.html" class="goodsimg">
-           <img src="images/201403/thumb_img/123_thumb_G_1396209007293.jpg" alt="木林森户外鞋" />
+           <a href="goods-121.html" class="goodsimg">
+           <img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" />
            </a><br />
-           <p class="f1"><a href="goods-123.html" title="木林森户外鞋">木林森户外鞋</a></p>
+           <p class="f1"><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥450.00                             </font> <br/>  
-               <font class="market">￥540.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-125.html" class="goodsimg">
-           <img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" />
-           </a><br />
-           <p class="f1"><a href="goods-125.html" title="运动服">运动服</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥0.00                             </font> <br/>  
-               <font class="market">￥220.00</font> 
+                            ￥260.00                             </font> <br/>  
+               <font class="market">￥312.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1814,6 +1798,18 @@ width_three
                <font class="f1 big_red">
                             ￥420.00                             </font> <br/>  
                <font class="market">￥504.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-127.html" class="goodsimg">
+           <img src="images/201403/thumb_img/127_thumb_G_1396209343614.jpg" alt="运动服" />
+           </a><br />
+           <p class="f1"><a href="goods-127.html" title="运动服">运动服</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥0.00                             </font> <br/>  
+               <font class="market">￥400.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1830,7 +1826,7 @@ width_three
         <a href="category-1-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 																																<li><a href="category-9-b0.html">罐头食品</a></li>
 																			<li><a href="category-203-b0.html">鱼雷罐头</a></li>
 																									<li><a href="category-204-b0.html">肉类罐头</a></li>
@@ -1929,16 +1925,18 @@ width_three
 																									<li><a href="category-241-b0.html">中老年保健</a></li>
 																																	<li><a href="category-70-b0.html">进口食品</a></li>
 																			<li><a href="category-242-b0.html">进口营养补剂</a></li>
-																																																																																																	</ul>
-            <img src="themes/red_three/images/1f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+																																																																																																 </ul>
+         <img src="themes/red_three/images/1f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 												<a href='affiche.php?ad_id=4&amp;uri='
                 target='_blank'><img src='data/afficheimg/1413847398908546887.jpg' width='670' height='200'
                 border='0' /></a>																																						</div>
-			<ul class="rs_iglr_ul">
-								<li>
+        </div>
+        <ul class="rs_iglr_ul">
+        					<li>
 					<div class="rs_iglr_img">
 						<a href="goods-120.html" target="_blank"><img src="images/201403/thumb_img/120_thumb_G_1396208789802.jpg" border="0" alt="200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 " /></a>
 					</div>
@@ -1954,7 +1952,7 @@ width_three
                     	<a href="goods-120.html" style="float:right;" title="200g雨润肉枣 餐桌特色食品 腊味小香肠 腊枣 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-119.html" target="_blank"><img src="images/201403/thumb_img/119_thumb_G_1396208697963.jpg" border="0" alt="  135g德芙m&amp;ms逗趣礼盒 [花生] " /></a>
 					</div>
@@ -1970,7 +1968,7 @@ width_three
                     	<a href="goods-119.html" style="float:right;" title="  135g德芙m&amp;ms逗趣礼盒 [花生] " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-118.html" target="_blank"><img src="images/201403/thumb_img/118_thumb_G_1396208651139.jpg" border="0" alt="216g德芙脆香米（碗装） " /></a>
 					</div>
@@ -1986,7 +1984,7 @@ width_three
                     	<a href="goods-118.html" style="float:right;" title="216g德芙脆香米（碗装） " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-115.html" target="_blank"><img src="images/201403/thumb_img/115_thumb_G_1396208593275.jpg" border="0" alt="100g好时精选巧克力礼盒(牛奶巧克力) " /></a>
 					</div>
@@ -2002,7 +2000,7 @@ width_three
                     	<a href="goods-115.html" style="float:right;" title="100g好时精选巧克力礼盒(牛奶巧克力) " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-112.html" target="_blank"><img src="images/201403/thumb_img/112_thumb_G_1396208545474.jpg" border="0" alt="240g好时曲奇奶香白巧克力 " /></a>
 					</div>
@@ -2018,7 +2016,7 @@ width_three
                     	<a href="goods-112.html" style="float:right;" title="240g好时曲奇奶香白巧克力 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-111.html" target="_blank"><img src="images/201403/thumb_img/111_thumb_G_1396208495463.jpg" border="0" alt="240g好时黑巧克力家庭装 " /></a>
 					</div>
@@ -2034,7 +2032,7 @@ width_three
                     	<a href="goods-111.html" style="float:right;" title="240g好时黑巧克力家庭装 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-110.html" target="_blank"><img src="images/201403/thumb_img/110_thumb_G_1396208361120.jpg" border="0" alt="120g*5农心乌龙面" /></a>
 					</div>
@@ -2050,7 +2048,7 @@ width_three
                     	<a href="goods-110.html" style="float:right;" title="120g*5农心乌龙面" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-108.html" target="_blank"><img src="images/201403/thumb_img/108_thumb_G_1396208274652.jpg" border="0" alt="120g*5农心辣白菜五连包 " /></a>
 					</div>
@@ -2066,7 +2064,7 @@ width_three
                     	<a href="goods-108.html" style="float:right;" title="120g*5农心辣白菜五连包 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-106.html" target="_blank"><img src="images/201403/thumb_img/106_thumb_G_1396208166012.jpg" border="0" alt="70g农心上海汤面（鸡肉面）" /></a>
 					</div>
@@ -2082,7 +2080,7 @@ width_three
                     	<a href="goods-106.html" style="float:right;" title="70g农心上海汤面（鸡肉面）" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-103.html" target="_blank"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" border="0" alt="117g农心辣白菜辛拉面（桶面） " /></a>
 					</div>
@@ -2098,10 +2096,15 @@ width_three
                     	<a href="goods-103.html" style="float:right;" title="117g农心辣白菜辛拉面（桶面） " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-							</ul>
-	  </div>
+			         </ul>
+    </div>
+    <div class="cd_rqph">
+    										<a href='affiche.php?ad_id=2&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932814668241688.jpg' width='252' height='148'
+                border='0' /></a>																																			    </div>
 </div>
-<div class="blank"></div><div class="rs_idx_gl">
+<div class="blank"></div>
+<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_2">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">2&nbsp;F</span>
@@ -2110,7 +2113,7 @@ width_three
         <a href="category-2-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 																																																																<li><a href="category-12-b0.html">口腔护理</a></li>
 																			<li><a href="category-42-b0.html">牙膏</a></li>
 																									<li><a href="category-395-b0.html">牙刷/牙线</a></li>
@@ -2158,16 +2161,18 @@ width_three
 																									<li><a href="category-426-b0.html">洗手液</a></li>
 																																	<li><a href="category-103-b0.html">香水</a></li>
 																			<li><a href="category-409-b0.html">女士香水</a></li>
-																																																																	</ul>
-            <img src="themes/red_three/images/2f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+																																																																 </ul>
+         <img src="themes/red_three/images/2f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 																			<a href='affiche.php?ad_id=13&amp;uri='
                 target='_blank'><img src='data/afficheimg/1413847439619772315.jpg' width='670' height='200'
                 border='0' /></a>																															</div>
-			<ul class="rs_iglr_ul">
-								<li>
+        </div>
+        <ul class="rs_iglr_ul">
+        					<li>
 					<div class="rs_iglr_img">
 						<a href="goods-134.html" target="_blank"><img src="images/201409/thumb_img/134_thumb_G_1410454770826.jpg" border="0" alt="折叠牙刷加50克高" /></a>
 					</div>
@@ -2183,7 +2188,7 @@ width_three
                     	<a href="goods-134.html" style="float:right;" title="折叠牙刷加50克高" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-133.html" target="_blank"><img src="images/201409/thumb_img/133_thumb_G_1410454807919.jpg" border="0" alt="折叠牙刷加50克高露洁冰爽防蛀牙膏" /></a>
 					</div>
@@ -2199,7 +2204,7 @@ width_three
                     	<a href="goods-133.html" style="float:right;" title="折叠牙刷加50克高露洁冰爽防蛀牙膏" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-44.html" target="_blank"><img src="images/201403/thumb_img/44_thumb_G_1396205999173.jpg" border="0" alt="120g佳洁士茶爽炫白牙膏" /></a>
 					</div>
@@ -2215,7 +2220,7 @@ width_three
                     	<a href="goods-44.html" style="float:right;" title="120g佳洁士茶爽炫白牙膏" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-41.html" target="_blank"><img src="images/201403/thumb_img/41_thumb_G_1396205932159.jpg" border="0" alt="90g佳洁士全优7效牙膏 " /></a>
 					</div>
@@ -2231,7 +2236,7 @@ width_three
                     	<a href="goods-41.html" style="float:right;" title="90g佳洁士全优7效牙膏 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-38.html" target="_blank"><img src="images/201403/thumb_img/38_thumb_G_1396205869977.jpg" border="0" alt="佳洁士防蛀修护牙膏(晶莹薄荷香型)200g " /></a>
 					</div>
@@ -2247,7 +2252,7 @@ width_three
                     	<a href="goods-38.html" style="float:right;" title="佳洁士防蛀修护牙膏(晶莹薄荷香型)200g " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-34.html" target="_blank"><img src="images/201403/thumb_img/34_thumb_G_1396205793363.jpg" border="0" alt="佳洁士珍珠盐白牙膏(柠檬清新)140g " /></a>
 					</div>
@@ -2263,7 +2268,7 @@ width_three
                     	<a href="goods-34.html" style="float:right;" title="佳洁士珍珠盐白牙膏(柠檬清新)140g " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-31.html" target="_blank"><img src="images/201403/thumb_img/31_thumb_G_1396205655690.jpg" border="0" alt="高露洁旅行套装/折叠牙刷加50克高露洁冰爽防蛀牙膏" /></a>
 					</div>
@@ -2279,10 +2284,15 @@ width_three
                     	<a href="goods-31.html" style="float:right;" title="高露洁旅行套装/折叠牙刷加50克高露洁冰爽防蛀牙膏" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-							</ul>
-	  </div>
+			         </ul>
+    </div>
+    <div class="cd_rqph">
+    																	<a href='affiche.php?ad_id=6&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932742203881873.jpg' width='252' height='148'
+                border='0' /></a>																												    </div>
 </div>
-<div class="blank"></div><div class="rs_idx_gl">
+<div class="blank"></div>
+<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_3">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">3&nbsp;F</span>
@@ -2291,7 +2301,7 @@ width_three
         <a href="category-3-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 																																																																																								<li><a href="category-14-b0.html">家居清洁</a></li>
 																			<li><a href="category-510-b0.html">家居清洁剂/蜡</a></li>
 																									<li><a href="category-511-b0.html">洗洁精</a></li>
@@ -2353,16 +2363,18 @@ width_three
 																									<li><a href="category-554-b0.html">家庭护理</a></li>
 																									<li><a href="category-555-b0.html">成人尿裤/尿垫</a></li>
 																									<li><a href="category-556-b0.html">计生保健</a></li>
-																																									</ul>
-            <img src="themes/red_three/images/3f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+																																								 </ul>
+         <img src="themes/red_three/images/3f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 																										<a href='affiche.php?ad_id=14&amp;uri='
                 target='_blank'><img src='data/afficheimg/1413847464132676179.jpg' width='670' height='200'
                 border='0' /></a>																								</div>
-			<ul class="rs_iglr_ul">
-								<li>
+        </div>
+        <ul class="rs_iglr_ul">
+        					<li>
 					<div class="rs_iglr_img">
 						<a href="goods-80.html" target="_blank"><img src="images/201403/thumb_img/80_thumb_G_1396206917658.jpg" border="0" alt="思高灵巧洁地擦促销装" /></a>
 					</div>
@@ -2378,7 +2390,7 @@ width_three
                     	<a href="goods-80.html" style="float:right;" title="思高灵巧洁地擦促销装" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-78.html" target="_blank"><img src="images/201403/thumb_img/78_thumb_G_1396206843610.jpg" border="0" alt="美丽雅两个装钢丝球(促销装)" /></a>
 					</div>
@@ -2394,7 +2406,7 @@ width_three
                     	<a href="goods-78.html" style="float:right;" title="美丽雅两个装钢丝球(促销装)" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-75.html" target="_blank"><img src="images/201403/thumb_img/75_thumb_G_1396206776211.jpg" border="0" alt="思高动感吸尘魔力洁地擦促销装" /></a>
 					</div>
@@ -2410,7 +2422,7 @@ width_three
                     	<a href="goods-75.html" style="float:right;" title="思高动感吸尘魔力洁地擦促销装" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-71.html" target="_blank"><img src="images/201403/thumb_img/71_thumb_G_1396206676745.jpg" border="0" alt="思高第二代魔力地圈(平拖)" /></a>
 					</div>
@@ -2426,7 +2438,7 @@ width_three
                     	<a href="goods-71.html" style="float:right;" title="思高第二代魔力地圈(平拖)" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-67.html" target="_blank"><img src="images/201403/thumb_img/67_thumb_G_1396206596967.jpg" border="0" alt="妙洁MOPFD套布拖" /></a>
 					</div>
@@ -2442,7 +2454,7 @@ width_three
                     	<a href="goods-67.html" style="float:right;" title="妙洁MOPFD套布拖" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-63.html" target="_blank"><img src="images/201403/thumb_img/63_thumb_G_1396206441154.jpg" border="0" alt="10片清风绿茶湿巾 " /></a>
 					</div>
@@ -2458,7 +2470,7 @@ width_three
                     	<a href="goods-63.html" style="float:right;" title="10片清风绿茶湿巾 " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-60.html" target="_blank"><img src="images/201403/thumb_img/60_thumb_G_1396206368412.jpg" border="0" alt="珍爱80P筒装湿巾 [80片] " /></a>
 					</div>
@@ -2474,7 +2486,7 @@ width_three
                     	<a href="goods-60.html" style="float:right;" title="珍爱80P筒装湿巾 [80片] " target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-58.html" target="_blank"><img src="images/201403/thumb_img/58_thumb_G_1396206316633.jpg" border="0" alt="舒洁200抽盒抽" /></a>
 					</div>
@@ -2490,7 +2502,7 @@ width_three
                     	<a href="goods-58.html" style="float:right;" title="舒洁200抽盒抽" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-54.html" target="_blank"><img src="images/201403/thumb_img/54_thumb_G_1396206266372.jpg" border="0" alt="舒洁200抽迪士尼软抽" /></a>
 					</div>
@@ -2506,7 +2518,7 @@ width_three
                     	<a href="goods-54.html" style="float:right;" title="舒洁200抽迪士尼软抽" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-50.html" target="_blank"><img src="images/201403/thumb_img/50_thumb_G_1396206202084.jpg" border="0" alt="清风200抽*3原木纯品抽取式面纸 [200张*3包]" /></a>
 					</div>
@@ -2522,10 +2534,15 @@ width_three
                     	<a href="goods-50.html" style="float:right;" title="清风200抽*3原木纯品抽取式面纸 [200张*3包]" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-							</ul>
-	  </div>
+			         </ul>
+    </div>
+    <div class="cd_rqph">
+    																																						<a href='affiche.php?ad_id=12&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932753728973318.jpg' width='252' height='148'
+                border='0' /></a>							    </div>
 </div>
-<div class="blank"></div><div class="rs_idx_gl">
+<div class="blank"></div>
+<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_4">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">4&nbsp;F</span>
@@ -2534,7 +2551,7 @@ width_three
         <a href="category-4-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 																																																								<li><a href="category-16-b0.html">奶粉</a></li>
 																			<li><a href="category-30-b0.html">幼婴配方奶粉</a></li>
 																									<li><a href="category-32-b0.html">孕产奶粉</a></li>
@@ -2582,16 +2599,18 @@ width_three
 																									<li><a href="category-392-b0.html">去妊辰纹</a></li>
 																									<li><a href="category-393-b0.html">产后恢复</a></li>
 																									<li><a href="category-394-b0.html">哺乳用品</a></li>
-																																																																									</ul>
-            <img src="themes/red_three/images/4f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+																																																																								 </ul>
+         <img src="themes/red_three/images/4f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 																																	<a href='affiche.php?ad_id=15&amp;uri='
                 target='_blank'><img src='data/afficheimg/1413847488029273035.jpg' width='670' height='200'
                 border='0' /></a>																	</div>
-			<ul class="rs_iglr_ul">
-								<li>
+        </div>
+        <ul class="rs_iglr_ul">
+        					<li>
 					<div class="rs_iglr_img">
 						<a href="goods-26.html" target="_blank"><img src="images/201403/thumb_img/26_thumb_G_1396205298296.jpg" border="0" alt="115g贝因美胡萝卜营养肉酥" /></a>
 					</div>
@@ -2607,7 +2626,7 @@ width_three
                     	<a href="goods-26.html" style="float:right;" title="115g贝因美胡萝卜营养肉酥" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-25.html" target="_blank"><img src="images/201403/thumb_img/25_thumb_G_1396205265027.jpg" border="0" alt="115g贝因美宝宝原味肉酥" /></a>
 					</div>
@@ -2623,7 +2642,7 @@ width_three
                     	<a href="goods-25.html" style="float:right;" title="115g贝因美宝宝原味肉酥" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-24.html" target="_blank"><img src="images/201403/thumb_img/24_thumb_G_1396205200532.jpg" border="0" alt="120g亨氏苹果玉米南瓜泥" /></a>
 					</div>
@@ -2639,7 +2658,7 @@ width_three
                     	<a href="goods-24.html" style="float:right;" title="120g亨氏苹果玉米南瓜泥" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-22.html" target="_blank"><img src="images/201403/thumb_img/22_thumb_G_1396205180918.jpg" border="0" alt="亨氏乐维滋蔬乐2+2苹果草莓番茄胡萝卜泥 120g" /></a>
 					</div>
@@ -2655,7 +2674,7 @@ width_three
                     	<a href="goods-22.html" style="float:right;" title="亨氏乐维滋蔬乐2+2苹果草莓番茄胡萝卜泥 120g" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-21.html" target="_blank"><img src="images/201403/thumb_img/21_thumb_G_1396205163818.jpg" border="0" alt="120g亨氏猕猴桃豌豆菠菜泥" /></a>
 					</div>
@@ -2671,7 +2690,7 @@ width_three
                     	<a href="goods-21.html" style="float:right;" title="120g亨氏猕猴桃豌豆菠菜泥" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-19.html" target="_blank"><img src="images/201403/thumb_img/19_thumb_G_1396205102360.jpg" border="0" alt="280g百乐麦阶段面(1)" /></a>
 					</div>
@@ -2687,7 +2706,7 @@ width_three
                     	<a href="goods-19.html" style="float:right;" title="280g百乐麦阶段面(1)" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-18.html" target="_blank"><img src="images/201403/thumb_img/18_thumb_G_1396205074979.jpg" border="0" alt="208g贝因美黑芝麻营养面条" /></a>
 					</div>
@@ -2703,7 +2722,7 @@ width_three
                     	<a href="goods-18.html" style="float:right;" title="208g贝因美黑芝麻营养面条" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-17.html" target="_blank"><img src="images/no_picture.gif" border="0" alt="225g贝因美DHA蔬菜营养米粉" /></a>
 					</div>
@@ -2719,7 +2738,7 @@ width_three
                     	<a href="goods-17.html" style="float:right;" title="225g贝因美DHA蔬菜营养米粉" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-16.html" target="_blank"><img src="images/no_picture.gif" border="0" alt="225g亨氏淮山薏米米粉(1段)" /></a>
 					</div>
@@ -2735,7 +2754,7 @@ width_three
                     	<a href="goods-16.html" style="float:right;" title="225g亨氏淮山薏米米粉(1段)" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-14.html" target="_blank"><img src="images/201403/thumb_img/14_thumb_G_1396204872253.jpg" border="0" alt="64g亨氏磨牙棒 [牛奶味]" /></a>
 					</div>
@@ -2751,10 +2770,15 @@ width_three
                     	<a href="goods-14.html" style="float:right;" title="64g亨氏磨牙棒 [牛奶味]" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-							</ul>
-	  </div>
+			         </ul>
+    </div>
+    <div class="cd_rqph">
+    																															<a href='affiche.php?ad_id=11&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932762937969162.jpg' width='252' height='148'
+                border='0' /></a>														    </div>
 </div>
-<div class="blank"></div><div class="rs_idx_gl">
+<div class="blank"></div>
+<div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_5">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">5&nbsp;F</span>
@@ -2763,7 +2787,7 @@ width_three
         <a href="category-5-b0.html" class="floor_more">更多+</a>
     </div>
     <div class="rs_igl_l">
-			<ul class="rs_igll_cate">
+		<ul class="rs_igll_cate">
 																																																<li><a href="category-19-b0.html">餐具餐饮</a></li>
 																			<li><a href="category-283-b0.html">塑料水杯</a></li>
 																									<li><a href="category-284-b0.html">口杯</a></li>
@@ -2881,16 +2905,18 @@ width_three
 																																	<li><a href="category-86-b0.html">户外用品</a></li>
 																			<li><a href="category-363-b0.html">烧烤工具</a></li>
 																									<li><a href="category-364-b0.html">户外帐篷</a></li>
-																																																																																	</ul>
-            <img src="themes/red_three/images/5f.jpg" width="250" height="302">
-	  </div>
-      <div class="rs_igl_r">
+																																																																																 </ul>
+         <img src="themes/red_three/images/5f.jpg" width="255" height="302">   
+	</div>
+    <div class="rs_igl_r">
+        <div class="rs_iglr_ad">
 			<div class="rs_iglr_ad">
 																																								<a href='affiche.php?ad_id=16&amp;uri='
                 target='_blank'><img src='data/afficheimg/1413847574586669204.jpg' width='670' height='200'
                 border='0' /></a>										</div>
-			<ul class="rs_iglr_ul">
-								<li>
+        </div>
+        <ul class="rs_iglr_ul">
+        					<li>
 					<div class="rs_iglr_img">
 						<a href="goods-96.html" target="_blank"><img src="images/201403/thumb_img/96_thumb_G_1396207764125.jpg" border="0" alt="耳饰" /></a>
 					</div>
@@ -2906,7 +2932,7 @@ width_three
                     	<a href="goods-96.html" style="float:right;" title="耳饰" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-94.html" target="_blank"><img src="images/201403/thumb_img/94_thumb_G_1396207733790.jpg" border="0" alt="戒指" /></a>
 					</div>
@@ -2922,7 +2948,7 @@ width_three
                     	<a href="goods-94.html" style="float:right;" title="戒指" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-93.html" target="_blank"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" border="0" alt="项链" /></a>
 					</div>
@@ -2938,7 +2964,7 @@ width_three
                     	<a href="goods-93.html" style="float:right;" title="项链" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-92.html" target="_blank"><img src="images/201403/thumb_img/92_thumb_G_1396207677407.jpg" border="0" alt="戒指" /></a>
 					</div>
@@ -2954,7 +2980,7 @@ width_three
                     	<a href="goods-92.html" style="float:right;" title="戒指" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-90.html" target="_blank"><img src="images/201403/thumb_img/90_thumb_G_1396207634132.jpg" border="0" alt="胸花" /></a>
 					</div>
@@ -2970,7 +2996,7 @@ width_three
                     	<a href="goods-90.html" style="float:right;" title="胸花" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-66.html" target="_blank"><img src="images/201403/thumb_img/66_thumb_G_1396206501441.jpg" border="0" alt="张小泉中片刀N5472" /></a>
 					</div>
@@ -2986,7 +3012,7 @@ width_three
                     	<a href="goods-66.html" style="float:right;" title="张小泉中片刀N5472" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-65.html" target="_blank"><img src="images/201403/thumb_img/65_thumb_G_1396206479297.jpg" border="0" alt="张小泉咖啡彩木系列切片刀D11102300" /></a>
 					</div>
@@ -3002,7 +3028,7 @@ width_three
                     	<a href="goods-65.html" style="float:right;" title="张小泉咖啡彩木系列切片刀D11102300" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-64.html" target="_blank"><img src="images/201403/thumb_img/64_thumb_G_1396206453033.jpg" border="0" alt="巧媳妇钢塑柄磨刀棒AM-006" /></a>
 					</div>
@@ -3018,7 +3044,7 @@ width_three
                     	<a href="goods-64.html" style="float:right;" title="巧媳妇钢塑柄磨刀棒AM-006" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-62.html" target="_blank"><img src="images/201403/thumb_img/62_thumb_G_1396206406581.jpg" border="0" alt="富尔兴欧派不锈钢勺FC-222" /></a>
 					</div>
@@ -3034,7 +3060,7 @@ width_three
                     	<a href="goods-62.html" style="float:right;" title="富尔兴欧派不锈钢勺FC-222" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-								<li>
+			 				<li>
 					<div class="rs_iglr_img">
 						<a href="goods-61.html" target="_blank"><img src="images/201403/thumb_img/61_thumb_G_1396206372531.jpg" border="0" alt="富尔兴欧派不锈钢主食匙FC-225" /></a>
 					</div>
@@ -3050,55 +3076,70 @@ width_three
                     	<a href="goods-61.html" style="float:right;" title="富尔兴欧派不锈钢主食匙FC-225" target="_blank"><img src="themes/red_three/images/gwc.jpg" /></a>
 					</div>
 				</li>
-							</ul>
-	  </div>
+			         </ul>
+    </div>
+    <div class="cd_rqph">
+    																								<a href='affiche.php?ad_id=10&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932773714084093.jpg' width='252' height='148'
+                border='0' /></a>																					    </div>
 </div>
-<div class="blank"></div>554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
+<div class="blank"></div>
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
 </div>
 </div>
+<script>
+$(function(){
+	$(".ft_service_link dl").hover(
+		function()	)
+})
+</script>
 <div id="footerServiceLinkId">
   <div class="ft_service_link clearfix">
     <div class="ft_help_list clearfix" id="bottomHelpLinkId"> 
             <dl>
-        <dt><a href='article_cat-6.html' title="商城指南">商城指南</a></dt>
-                <dd><a href="article-36.html" title="用户协议">用户协议</a></dd>
-                <dd><a href="article-37.html" title="如何购物">如何购物</a></dd>
-                <dd><a href="article-38.html" title="购物保障">购物保障</a></dd>
-                <dd><a href="article-39.html" title="购物安全">购物安全</a></dd>
-                <dd><a href="article-40.html" title="购物建议">购物建议</a></dd>
+      	<dt class="bg_url"></dt>
+        <dt><a href='article_cat-12.html' title="新手入门" class="on_yellow">新手入门</a></dt>
+                <dd><a href="article-64.html" title="购物须知" class="on_red">购物须知</a></dd>
+                <dd><a href="article-65.html" title="会员注册" class="on_red">会员注册</a></dd>
+                <dd><a href="article-66.html" title="会员登录" class="on_red">会员登录</a></dd>
               </dl>
             <dl>
-        <dt><a href='article_cat-8.html' title="付款方式">付款方式</a></dt>
-                <dd><a href="article-41.html" title="货到付款">货到付款</a></dd>
-                <dd><a href="article-42.html" title="支付宝付款">支付宝付款</a></dd>
-                <dd><a href="article-43.html" title="银行支付">银行支付</a></dd>
+      	<dt class="bg_url"></dt>
+        <dt><a href='article_cat-6.html' title="购物指南" class="on_yellow">购物指南</a></dt>
+                <dd><a href="article-67.html" title="购物说明" class="on_red">购物说明</a></dd>
+                <dd><a href="article-68.html" title="购物流程" class="on_red">购物流程</a></dd>
               </dl>
             <dl>
-        <dt><a href='article_cat-9.html' title="用户中心">用户中心</a></dt>
-                <dd><a href="article-44.html" title="新用户注册">新用户注册</a></dd>
-                <dd><a href="article-45.html" title="隐私保护">隐私保护</a></dd>
-                <dd><a href="article-46.html" title="如何将个人支付宝转为商家版">如何将个人支付宝转为商家版</a></dd>
-                <dd><a href="article-47.html" title="独立网站如何绑定财付通账号，">独立网站如何绑定财付通账号，</a></dd>
+      	<dt class="bg_url"></dt>
+        <dt><a href='article_cat-8.html' title="支付方式" class="on_yellow">支付方式</a></dt>
+                <dd><a href="article-69.html" title="货到付款或刷卡" class="on_red">货到付款或刷卡</a></dd>
+                <dd><a href="article-70.html" title="电子券支付" class="on_red">电子券支付</a></dd>
+                <dd><a href="article-71.html" title="网上支付" class="on_red">网上支付</a></dd>
               </dl>
             <dl>
-        <dt><a href='article_cat-10.html' title="配送服务">配送服务</a></dt>
-                <dd><a href="article-51.html" title="配送流程">配送流程</a></dd>
-                <dd><a href="article-52.html" title="配送时间">配送时间</a></dd>
-                <dd><a href="article-63.html" title="运费说明">运费说明</a></dd>
+      	<dt class="bg_url"></dt>
+        <dt><a href='article_cat-10.html' title="配送方式" class="on_yellow">配送方式</a></dt>
+                <dd><a href="article-63.html" title="运费说明" class="on_red">运费说明</a></dd>
+                <dd><a href="article-72.html" title="订单受理时间" class="on_red">订单受理时间</a></dd>
+                <dd><a href="article-73.html" title="商品验货与签收" class="on_red">商品验货与签收</a></dd>
               </dl>
             <dl>
-        <dt><a href='article_cat-11.html' title="订购方式">订购方式</a></dt>
-                <dd><a href="article-56.html" title="在线订购">在线订购</a></dd>
-                <dd><a href="article-57.html" title="电话订购">电话订购</a></dd>
-              </dl>
-            <dl>
-        <dt><a href='article_cat-7.html' title="售后服务">售后服务</a></dt>
-                <dd><a href="article-24.html" title="服务承诺">服务承诺</a></dd>
-                <dd><a href="article-25.html" title="补发货政策">补发货政策</a></dd>
-                <dd><a href="article-58.html" title="退换货政策">退换货政策</a></dd>
-                <dd><a href="article-59.html" title="发票随附单政策">发票随附单政策</a></dd>
+      	<dt class="bg_url"></dt>
+        <dt><a href='article_cat-7.html' title="售后服务" class="on_yellow">售后服务</a></dt>
+                <dd><a href="article-74.html" title="退货说明" class="on_red">退货说明</a></dd>
+                <dd><a href="article-75.html" title="退货地址" class="on_red">退货地址</a></dd>
+                <dd><a href="article-76.html" title="退款说明" class="on_red">退款说明</a></dd>
               </dl>
        
+     <span class="cd_phone">
+     	<span style="color:#ba0c0d;">客服热线 HOTLINE</span><br><span style="font-size:28px">18639800587</span>
+     </span><br>	
+     <span class="cd_qq">
+     	<span style="color:#fea500;">客服QQ ONLINE</span><br><span></span>
+     </span><br>
+     <span class="cd_address">
+     	<span style="color:#154edd;">公司地址 ADDRESS</span><br><span>河南省 三门峡市</span>
+     </span><br>
     </div>
   </div>
 </div>
@@ -3139,7 +3180,7 @@ width_three
     <p class="foot_yellow">ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">豫ICP备88888888</a></p>
     <p class="foot_blue">技术支持万谦科技</p>
   
-<!--  <p>&copy; 2012-2014 RockSnap 版权所有，并保留所有权利。</p>    <p>金江商贸 </p>-->
+<!--  <p>&copy; 2012-2014 RockSnap 版权所有，并保留所有权利。</p>    <p> </p>-->
 </div>
 <div id="rk_kfbox">
 	<div id="rk_kfbox_top">
@@ -3262,5 +3303,5 @@ return; //结束函式
 document.getElementById("divMenu").style.display = "block";
 document.getElementById("divOnline").style.display = "none";
 }
-</script> </body>
+</script></body>
 </html>

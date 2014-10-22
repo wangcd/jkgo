@@ -1,5 +1,10 @@
-
-
+<script>
+$(function(){
+	$(".ft_service_link dl").hover(
+		function()<?php echo $this->_var['("bg_url")']['css("background","url(images/foot_2']['jpg)");']; ?>
+	)
+})
+</script>
 <?php if ($this->_var['helps']): ?>
 <div id="footerServiceLinkId">
   <div class="ft_service_link clearfix">
@@ -10,14 +15,24 @@ if ($this->_foreach['foo']['total'] > 0):
         $this->_foreach['foo']['iteration']++;
 ?>
       <dl>
-        <dt><a href='<?php echo $this->_var['help_cat']['cat_id']; ?>' title="<?php echo $this->_var['help_cat']['cat_name']; ?>"><?php echo $this->_var['help_cat']['cat_name']; ?></a></dt>
+      	<dt class="bg_url"></dt>
+        <dt><a href='<?php echo $this->_var['help_cat']['cat_id']; ?>' title="<?php echo $this->_var['help_cat']['cat_name']; ?>" class="on_yellow"><?php echo $this->_var['help_cat']['cat_name']; ?></a></dt>
         <?php $_from = $this->_var['help_cat']['article']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'item');if (count($_from)):
     foreach ($_from AS $this->_var['item']):
 ?>
-        <dd><a href="<?php echo $this->_var['item']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['item']['title']); ?>"><?php echo $this->_var['item']['short_title']; ?></a></dd>
+        <dd><a href="<?php echo $this->_var['item']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['item']['title']); ?>" class="on_red"><?php echo $this->_var['item']['short_title']; ?></a></dd>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       </dl>
       <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?> 
+     <span class="cd_phone">
+     	<span style="color:#ba0c0d;">客服热线 HOTLINE</span><br><span style="font-size:28px"><?php echo $this->_var['service_phone']; ?></span>
+     </span><br>	
+     <span class="cd_qq">
+     	<span style="color:#fea500;">客服QQ ONLINE</span><br><span><?php echo $this->_var['im']; ?></span>
+     </span><br>
+     <span class="cd_address">
+     	<span style="color:#154edd;">公司地址 ADDRESS</span><br><span>河南省 三门峡市</span>
+     </span><br>
     </div>
   </div>
 </div>
@@ -27,16 +42,16 @@ if ($this->_foreach['foo']['total'] > 0):
   
   <p class="ft_footer_link foot_red"> 
     <?php if ($this->_var['navigator_list']): ?> 
-    <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_17604300_1413878833');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
+    <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_03426100_1413962906');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav_0_17604300_1413878833']):
+    foreach ($_from AS $this->_var['nav_0_03426100_1413962906']):
         $this->_foreach['nav_bottom_list']['iteration']++;
 ?> 
-    <a href="<?php echo $this->_var['nav_0_17604300_1413878833']['url']; ?>" 
-    <?php if ($this->_var['nav_0_17604300_1413878833']['opennew'] == 1): ?> 
+    <a href="<?php echo $this->_var['nav_0_03426100_1413962906']['url']; ?>" 
+    <?php if ($this->_var['nav_0_03426100_1413962906']['opennew'] == 1): ?> 
     target="_blank" 
     <?php endif; ?> 
-    ><?php echo $this->_var['nav_0_17604300_1413878833']['name']; ?></a> 
+    ><?php echo $this->_var['nav_0_03426100_1413962906']['name']; ?></a> 
     <?php if (! ($this->_foreach['nav_bottom_list']['iteration'] == $this->_foreach['nav_bottom_list']['total'])): ?> 
     | 
     <?php endif; ?> 
