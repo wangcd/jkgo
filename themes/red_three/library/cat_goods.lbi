@@ -64,11 +64,27 @@
         </ul>
     </div>
     <div class="cd_rqph">
-    	<!--{foreach from=$rs_idx_ads['idx_step_right'] item=ads key=adkey name="ads_foreach"}-->
+    	<div  style="padding-bottom:3px;">
+    	<!--{foreach from=$rs_idx_ads['top_1'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
 					{$ads[0]}
 				<!--{/if}-->
-			<!--{/foreach}-->
+		<!--{/foreach}-->
+        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        <!--{foreach from=$rs_idx_ads['top_2'] item=ads key=adkey name="ads_foreach"}-->
+				<!-- {if $adkey eq $goods_cat.id} -->
+					{$ads[0]}
+				<!--{/if}-->
+		<!--{/foreach}-->
+        </div>
+        <div style="padding-top:3px;">
+        <!--{foreach from=$rs_idx_ads['top_3'] item=ads key=adkey name="ads_foreach"}-->
+				<!-- {if $adkey eq $goods_cat.id} -->
+					{$ads[0]}
+				<!--{/if}-->
+		<!--{/foreach}-->
+        </div>
     </div>
 </div>
 <div class="blank"></div>

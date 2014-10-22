@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413966505;s:8:"maketime";i:1413962905;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1413967998;s:8:"maketime";i:1413964398;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -117,10 +117,12 @@ function s_h(id){
         </ul>
     </div>
   </div>
-</div><div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+</div>
+<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
         
         <div style="float:left; width:1350px;"> 
-        <style type="text/css"> 
+         
+<style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 .container{width:1350px; height:355px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
@@ -337,7 +339,8 @@ window.onload=function(){
 	}
 	*/
 }
-</script>        </div>
+</script>
+        </div>
     
 </div>
 <div class="blank"></div>
@@ -1592,8 +1595,9 @@ width_three
 </div>
 	 
 </dl>
-</div>	
-<div class="rs_bnr_box">
+</div>
+	
+	<div class="rs_bnr_box">
 		<div class="rs_bnr_boxtit">
 			<h2><a href="article_cat-4.html">商城资讯</a></h2>
 			<div class="cd_more"><a href="article_cat-4.html">更多&nbsp;&gt;&gt;</a></div>
@@ -1618,18 +1622,6 @@ width_three
         </p>
 <div class="show_best_area" class="clearfix cd_hot_area">
   <div class="goodsItem">   
-           <a href="goods-117.html" class="goodsimg">
-           <img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" />
-           </a><br />
-           <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥11.00                             </font> <br/>  
-               <font class="market">￥150.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
            <a href="goods-93.html" class="goodsimg">
            <img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" />
            </a><br />
@@ -1638,6 +1630,18 @@ width_three
                <font class="f1 big_red">
                             ￥4999.00                             </font> <br/>  
                <font class="market">￥6000.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-103.html" class="goodsimg">
+           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
+           </a><br />
+           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥6.99                             </font> <br/>  
+               <font class="market">￥7.43</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1654,14 +1658,14 @@ width_three
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg">
-           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
+           <a href="goods-89.html" class="goodsimg">
+           <img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" />
            </a><br />
-           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+           <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥6.99                             </font> <br/>  
-               <font class="market">￥7.43</font> 
+                            ￥19.80                             </font> <br/>  
+               <font class="market">￥24.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1676,18 +1680,6 @@ width_three
         </p>
 <div class="show_best_area" class="clearfix cd_hot_area">
   <div class="goodsItem">   
-           <a href="goods-117.html" class="goodsimg">
-           <img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" />
-           </a><br />
-           <p class="f1"><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥11.00                             </font> <br/>  
-               <font class="market">￥150.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
            <a href="goods-93.html" class="goodsimg">
            <img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" />
            </a><br />
@@ -1696,6 +1688,18 @@ width_three
                <font class="f1 big_red">
                             ￥4999.00                             </font> <br/>  
                <font class="market">￥6000.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-103.html" class="goodsimg">
+           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
+           </a><br />
+           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥6.99                             </font> <br/>  
+               <font class="market">￥7.43</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1712,14 +1716,14 @@ width_three
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg">
-           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
+           <a href="goods-89.html" class="goodsimg">
+           <img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" />
            </a><br />
-           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+           <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥6.99                             </font> <br/>  
-               <font class="market">￥7.43</font> 
+                            ￥19.80                             </font> <br/>  
+               <font class="market">￥24.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1766,26 +1770,38 @@ width_three
 <div class="blank"></div>
 <div class="show_best_area" class="clearfix cd_hot_area">
       <div class="goodsItem">   
-           <a href="goods-130.html" class="goodsimg">
-           <img src="images/201403/thumb_img/130_thumb_G_1396209456972.jpg" alt="运动包" />
+           <a href="goods-125.html" class="goodsimg">
+           <img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" />
            </a><br />
-           <p class="f1"><a href="goods-130.html" title="运动包">运动包</a></p>
+           <p class="f1"><a href="goods-125.html" title="运动服">运动服</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥120.00                             </font> <br/>  
-               <font class="market">￥144.00</font> 
+                            ￥0.00                             </font> <br/>  
+               <font class="market">￥220.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     <div class="goodsItem">   
-           <a href="goods-121.html" class="goodsimg">
-           <img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" />
+           <a href="goods-124.html" class="goodsimg">
+           <img src="images/201403/thumb_img/124_thumb_G_1396209072261.jpg" alt="防水户外服装" />
            </a><br />
-           <p class="f1"><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
+           <p class="f1"><a href="goods-124.html" title="防水户外服装">防水户外服装</a></p>
 		   <p style="float:left; ">	      
                <font class="f1 big_red">
-                            ￥260.00                             </font> <br/>  
-               <font class="market">￥312.00</font> 
+                            ￥0.00                             </font> <br/>  
+               <font class="market">￥0.00</font> 
+           </p>
+           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-128.html" class="goodsimg">
+           <img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" />
+           </a><br />
+           <p class="f1"><a href="goods-128.html" title="运动包">运动包</a></p>
+		   <p style="float:left; ">	      
+               <font class="f1 big_red">
+                            ￥480.00                             </font> <br/>  
+               <font class="market">￥576.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -1798,18 +1814,6 @@ width_three
                <font class="f1 big_red">
                             ￥420.00                             </font> <br/>  
                <font class="market">￥504.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-127.html" class="goodsimg">
-           <img src="images/201403/thumb_img/127_thumb_G_1396209343614.jpg" alt="运动服" />
-           </a><br />
-           <p class="f1"><a href="goods-127.html" title="运动服">运动服</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥0.00                             </font> <br/>  
-               <font class="market">￥400.00</font> 
            </p>
            <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
@@ -2099,12 +2103,21 @@ width_three
 			         </ul>
     </div>
     <div class="cd_rqph">
-    										<a href='affiche.php?ad_id=2&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932814668241688.jpg' width='252' height='148'
-                border='0' /></a>																																			    </div>
+    	<div  style="padding-bottom:3px;">
+    										<a href='affiche.php?ad_id=23&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932156710341446.jpg' width='252' height='148'
+                border='0' /></a>																														        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        									<a href='affiche.php?ad_id=28&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932377717243471.jpg' width='252' height='148'
+                border='0' /></a>																														        </div>
+        <div style="padding-top:3px;">
+        									<a href='affiche.php?ad_id=29&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934615764194038.jpg' width='252' height='148'
+                border='0' /></a>																														        </div>
+    </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_2">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">2&nbsp;F</span>
@@ -2287,12 +2300,21 @@ width_three
 			         </ul>
     </div>
     <div class="cd_rqph">
-    																	<a href='affiche.php?ad_id=6&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932742203881873.jpg' width='252' height='148'
-                border='0' /></a>																												    </div>
+    	<div  style="padding-bottom:3px;">
+    																<a href='affiche.php?ad_id=24&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932190724128833.jpg' width='252' height='148'
+                border='0' /></a>																								        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        															<a href='affiche.php?ad_id=30&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934491258885006.jpg' width='252' height='148'
+                border='0' /></a>																								        </div>
+        <div style="padding-top:3px;">
+        															<a href='affiche.php?ad_id=34&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934647416948373.jpg' width='252' height='148'
+                border='0' /></a>																								        </div>
+    </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_3">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">3&nbsp;F</span>
@@ -2537,12 +2559,21 @@ width_three
 			         </ul>
     </div>
     <div class="cd_rqph">
-    																																						<a href='affiche.php?ad_id=12&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932753728973318.jpg' width='252' height='148'
-                border='0' /></a>							    </div>
+    	<div  style="padding-bottom:3px;">
+    																						<a href='affiche.php?ad_id=25&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932211590030684.jpg' width='252' height='148'
+                border='0' /></a>																		        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        																					<a href='affiche.php?ad_id=31&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934757159269625.jpg' width='252' height='148'
+                border='0' /></a>																		        </div>
+        <div style="padding-top:3px;">
+        																					<a href='affiche.php?ad_id=35&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934664632759777.jpg' width='252' height='148'
+                border='0' /></a>																		        </div>
+    </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_4">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">4&nbsp;F</span>
@@ -2773,12 +2804,21 @@ width_three
 			         </ul>
     </div>
     <div class="cd_rqph">
-    																															<a href='affiche.php?ad_id=11&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932762937969162.jpg' width='252' height='148'
-                border='0' /></a>														    </div>
+    	<div  style="padding-bottom:3px;">
+    																												<a href='affiche.php?ad_id=26&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932231223558578.jpg' width='252' height='148'
+                border='0' /></a>												        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        																											<a href='affiche.php?ad_id=32&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934523223413307.jpg' width='252' height='148'
+                border='0' /></a>												        </div>
+        <div style="padding-top:3px;">
+        																											<a href='affiche.php?ad_id=36&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934682313146012.jpg' width='252' height='148'
+                border='0' /></a>												        </div>
+    </div>
 </div>
-<div class="blank"></div>
-<div class="rs_idx_gl">
+<div class="blank"></div><div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_5">
         <div class="rs_igl_tit_img">
         	<span class="Hanzel_Bold">5&nbsp;F</span>
@@ -3079,12 +3119,21 @@ width_three
 			         </ul>
     </div>
     <div class="cd_rqph">
-    																								<a href='affiche.php?ad_id=10&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932773714084093.jpg' width='252' height='148'
-                border='0' /></a>																					    </div>
+    	<div  style="padding-bottom:3px;">
+    																																		<a href='affiche.php?ad_id=27&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413932252865704327.jpg' width='252' height='148'
+                border='0' /></a>						        </div>
+        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        																																	<a href='affiche.php?ad_id=33&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934541428283273.jpg' width='252' height='148'
+                border='0' /></a>						        </div>
+        <div style="padding-top:3px;">
+        																																	<a href='affiche.php?ad_id=37&amp;uri='
+                target='_blank'><img src='data/afficheimg/1413934701601418144.jpg' width='252' height='148'
+                border='0' /></a>						        </div>
+    </div>
 </div>
-<div class="blank"></div>
-554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
+<div class="blank"></div>554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
 </div>
 </div>
 <script>
@@ -3303,5 +3352,5 @@ return; //结束函式
 document.getElementById("divMenu").style.display = "block";
 document.getElementById("divOnline").style.display = "none";
 }
-</script></body>
+</script> </body>
 </html>

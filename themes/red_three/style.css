@@ -3892,7 +3892,9 @@ text-align:right;
 	border-collapse: collapse;
 }
 /*人气排行*/
-.cd_rqph{ height:460px; width:255px; overflow:hidden; background:#99C;}
+.cd_rqph{ height:460px; width:255px; overflow:hidden;}
+.cd_rqph a{ display:block;width:252px; height:148px; overflow:hidden;}
+
 .cd_rqph_tit{height:25px; font-size:14px; font-weight:bold; line-height:25px; background:#f4f4f4;}
 .cd_rqph li{ height:72px; border-bottom:1px dotted #CCCCCC; padding:10px 15px;}
 .cd_rqph li p{ width:140px; overflow:hidden;}
