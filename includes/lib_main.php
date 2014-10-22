@@ -1687,9 +1687,9 @@ function assign_template($ctype = '', $catlist = array())
                 'LEFT JOIN ' . $GLOBALS['ecs']->table('ad') . ' AS a ON a.position_id = p.position_id ' .
     			
                 "WHERE a.enabled = 1 AND a.start_time <= '" . $time . "' AND a.end_time >= '" . $time . "' ".
-    			"AND p.position_name in ('idx_step_left','idx_step_mid','idx_step_right') ".
+    			"AND p.position_name in ('idx_step_left','idx_step_mid','idx_step_right','top_1','top_2','top_3') ".
                 'ORDER BY ad_id ';
-    //die($sql);
+//     die($sql);
     $rs_ads = array();
     $res = $GLOBALS['db']->GetAll($sql);
     foreach ($res as $row) {
@@ -1727,6 +1727,9 @@ function assign_template($ctype = '', $catlist = array())
         }
     }
     $GLOBALS['smarty']->assign('rs_idx_ads', $rs_ads);
+//     echo "<pre>";
+//     print_r($rs_ads);
+//     echo "<pre/>";exit();
     /***************************************************************************************/
 }
 
