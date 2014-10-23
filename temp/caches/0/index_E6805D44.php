@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414031147;s:8:"maketime";i:1414027547;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:11:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:7;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:8;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:10;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414059464;s:8:"maketime";i:1414055864;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -83,7 +83,7 @@ function s_h(id){
        
       <a href="search-promotion.html"  > 限时抢购 <span></span> </a> 
        
-      <a href="search-hot.html"  > 团购专区 <span></span> </a> 
+      <a href="group_buy.php"  > 团购专区 <span></span> </a> 
        
       <a href="article_cat-5.html"  > 经销商展区 <span></span> </a> 
        
@@ -121,8 +121,7 @@ function s_h(id){
 <div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
         
         <div style="float:left; width:1350px;"> 
-         
-<style type="text/css"> 
+        <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 .container{width:1350px; height:355px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
@@ -339,8 +338,7 @@ window.onload=function(){
 	}
 	*/
 }
-</script>
-        </div>
+</script>        </div>
     
 </div>
 <div class="blank"></div>
@@ -381,25 +379,29 @@ function countDown(time, elemId){
 </script>
 <script>
 $(function(){
-	$(".show_best_area:eq(1)").hide();
-	$(".show_best_area:eq(2)").hide();
+	$(".search_more:eq(0)").show();
 })
 function change(id){
 	if(id==1){
-		$(".best_hot").css("color","#333");
-		$("#best").css("color","#b22825");
+		$(".search_more").hide();
+		$(".search_more:eq(0)").show();
 		$(".show_best_area").hide();
 		$(".show_best_area:eq(0)").show();
 	}else if(id==2){ 
-		$(".best_hot").css("color","#333");
-		$("#hot").css("color","#b22825");
+		$(".search_more").hide();
+		$(".search_more:eq(1)").show();
 		$(".show_best_area").hide();
 		$(".show_best_area:eq(1)").show();
-	}else{
-		$(".best_hot").css("color","#333");
-		$("#hot").css("color","#b22825");
+	}else if(id==3){
+		$(".search_more").hide();
+		$(".search_more:eq(2)").show();
 		$(".show_best_area").hide();
 		$(".show_best_area:eq(2)").show();	
+	}else{ 
+		$(".search_more").hide();
+		$(".search_more:eq(3)").show();
+		$(".show_best_area").hide();
+		$(".show_best_area:eq(3)").show();	
 	}
 }
 /* 横排三个广告中间距离 */
@@ -1595,9 +1597,8 @@ width_three
 </div>
 	 
 </dl>
-</div>
-	
-	<div class="rs_bnr_box">
+</div>	
+<div class="rs_bnr_box">
 		<div class="rs_bnr_boxtit">
 			<h2><a href="article_cat-4.html">商城资讯</a></h2>
 			<div class="cd_more"><a href="article_cat-4.html">更多&nbsp;&gt;&gt;</a></div>
@@ -1613,214 +1614,243 @@ width_three
 							</ul>
 	</div>    
     </div>
-    
     <div class="cd_right">
-    	
-        <p class="rs_pbox_tit">
-            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
-            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
-        </p>
-<div class="show_best_area" class="clearfix cd_hot_area">
-  <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg">
-           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
-           </a><br />
-           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥6.99                             </font> <br/>  
-               <font class="market">￥7.43</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-89.html" class="goodsimg">
-           <img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" />
-           </a><br />
-           <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥19.80                             </font> <br/>  
-               <font class="market">￥24.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-122.html" class="goodsimg">
-           <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
-           </a><br />
-           <p class="f1"><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥11.00                             </font> <br/>  
-               <font class="market">￥432.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-104.html" class="goodsimg">
-           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
-           </a><br />
-           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥199.00                             </font> <br/>  
-               <font class="market">￥240.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-  </div>
-<div class="blank"></div>
         
-        <p class="rs_pbox_tit">
-            <a class="best_hot" id="promo" onclick="change(1)">显示抢购</a>　
-            <a class="best_hot" id="hot" onclick="change(2)">热卖商品</a>
-            <a class="best_hot" id="group" onclick="change(3)">团购商品</a>
-            <span style="float:right;"><a href="search-best.html" style="color:#cc0001;">更多>></a></span>
+      <p class="rs_pbox_sxsc">
+            <a id="sxsc">生鲜蔬菜</a>　
+            <span style="float:right;"><a href="search-best.html">更多>></a></span>
         </p>
-<div class="show_best_area" class="clearfix cd_hot_area">
+	  <div class="show_best_area" class="clearfix cd_hot_area">
   <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg">
-           <img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " />
-           </a><br />
-           <p class="f1"><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥6.99                             </font> <br/>  
-               <font class="market">￥7.43</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+           <a href="goods-93.html" class="goodsimg"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" height="170px" /></a>
+           <p><a href="goods-93.html" title="项链">项链</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥4999.00                             </font> 
+               <font class="market">￥6000.00</font> 
+               <a href="goods-93.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
     <div class="goodsItem">   
-           <a href="goods-89.html" class="goodsimg">
-           <img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" />
-           </a><br />
-           <p class="f1"><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥19.80                             </font> <br/>  
+           <a href="goods-89.html" class="goodsimg"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" height="170px" /></a>
+           <p><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥19.80                             </font> 
                <font class="market">￥24.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+               <a href="goods-89.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
     <div class="goodsItem">   
-           <a href="goods-122.html" class="goodsimg">
-           <img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" />
-           </a><br />
-           <p class="f1"><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥11.00                             </font> <br/>  
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
                <font class="market">￥432.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
     <div class="goodsItem">   
-           <a href="goods-104.html" class="goodsimg">
-           <img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" />
-           </a><br />
-           <p class="f1"><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥199.00                             </font> <br/>  
+           <a href="goods-104.html" class="goodsimg"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" height="170px" /></a>
+           <p><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥199.00                             </font> 
                <font class="market">￥240.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+               <a href="goods-104.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
-  </div>
-<div class="blank"></div>
-<div class="show_best_area" class="clearfix cd_hot_area">
-    <div class="goodsItem">   
-           <a href="group_buy-3.html" class="goodsimg">
-           <img src="images/201403/thumb_img/18_thumb_G_1396205074979.jpg" alt="" />
-           </a><br />
-           <p class="f1"><a href="group_buy-3.html" title=""></a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                                                         </font> <br/>  
-               <font class="market"></font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="group_buy-2.html" class="goodsimg">
-           <img src="images/201403/thumb_img/7_thumb_G_1396204465855.jpg" alt="" />
-           </a><br />
-           <p class="f1"><a href="group_buy-2.html" title=""></a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                                                         </font> <br/>  
-               <font class="market"></font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="group_buy-1.html" class="goodsimg">
-           <img src="images/201403/thumb_img/1_thumb_G_1396121017928.jpg" alt="" />
-           </a><br />
-           <p class="f1"><a href="group_buy-1.html" title=""></a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                                                         </font> <br/>  
-               <font class="market"></font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-  </div>
-<div class="blank"></div>
-<div class="show_best_area" class="clearfix cd_hot_area">
-      <div class="goodsItem">   
-           <a href="goods-121.html" class="goodsimg">
-           <img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" />
-           </a><br />
-           <p class="f1"><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥260.00                             </font> <br/>  
-               <font class="market">￥312.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-128.html" class="goodsimg">
-           <img src="images/201403/thumb_img/128_thumb_G_1396209400408.jpg" alt="运动包" />
-           </a><br />
-           <p class="f1"><a href="goods-128.html" title="运动包">运动包</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥480.00                             </font> <br/>  
-               <font class="market">￥576.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-114.html" class="goodsimg">
-           <img src="images/201403/thumb_img/114_thumb_G_1396208578955.jpg" alt="李宁" />
-           </a><br />
-           <p class="f1"><a href="goods-114.html" title="李宁">李宁</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥450.00                             </font> <br/>  
-               <font class="market">￥540.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-1.html" class="goodsimg">
-           <img src="images/201403/thumb_img/1_thumb_G_1396121017928.jpg" alt="青岛崂山啤酒 330ml" />
-           </a><br />
-           <p class="f1"><a href="goods-1.html" title="青岛崂山啤酒 330ml">青岛崂山啤酒 330ml</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
-                            ￥2.80                             </font> <br/>  
-               <font class="market">￥3.00</font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
   </div>
     </div>
-<div class="blank"></div>
-  554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"8";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"9";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"10";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
+    
+    <div class="cd_right">
+        
+        <p class="rs_pbox_tit">
+            <a class="best_hot" id="promo" onclick="change(1)">限时抢购</a>　
+            <a class="best_hot" id="new" onclick="change(2)">最新上架</a>　
+            <a class="best_hot" id="hot" onclick="change(3)">热卖商品</a>
+            <a class="best_hot" id="group" onclick="change(4)">团购商品</a>
+          <span style="float:right;">
+       	  <a href="search-promotion.html" class="search_more">更多>></a>
+          <a href="search-new.html" class="search_more">更多>></a>
+          <a href="search-hot.html" class="search_more">更多>></a>
+          <a href="group_buy.php" class="search_more">更多>></a>
+          </span>
+        </p>
+		<div class="show_best_area" class="clearfix cd_hot_area">
+  <div class="goodsItem">   
+           <a href="goods-93.html" class="goodsimg"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" height="170px" /></a>
+           <p><a href="goods-93.html" title="项链">项链</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥4999.00                             </font> 
+               <font class="market">￥6000.00</font> 
+               <a href="goods-93.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-89.html" class="goodsimg"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" height="170px" /></a>
+           <p><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥19.80                             </font> 
+               <font class="market">￥24.00</font> 
+               <a href="goods-89.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-104.html" class="goodsimg"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" height="170px" /></a>
+           <p><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥199.00                             </font> 
+               <font class="market">￥240.00</font> 
+               <a href="goods-104.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+  </div>
+        <div class="show_best_area" class="clearfix cd_hot_area">
+  <div class="goodsItem">   
+           <a href="goods-93.html" class="goodsimg"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" height="170px" /></a>
+           <p><a href="goods-93.html" title="项链">项链</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥4999.00                             </font> 
+               <font class="market">￥6000.00</font> 
+               <a href="goods-93.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-89.html" class="goodsimg"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" height="170px" /></a>
+           <p><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥19.80                             </font> 
+               <font class="market">￥24.00</font> 
+               <a href="goods-89.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-104.html" class="goodsimg"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" height="170px" /></a>
+           <p><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥199.00                             </font> 
+               <font class="market">￥240.00</font> 
+               <a href="goods-104.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+  </div>
+		<div class="show_best_area" class="clearfix cd_hot_area">
+    <div class="goodsItem">   
+           <a href="goods-121.html" class="goodsimg"><img src="images/201403/thumb_img/121_thumb_G_1396208953228.jpg" alt="户外鞋" height="170px" /></a>
+           <p><a href="goods-121.html" title="户外鞋">户外鞋</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥260.00                             </font> 
+               <font class="market">￥312.00</font> 
+               <a href="goods-121.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-125.html" class="goodsimg"><img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" height="170px" /></a>
+           <p><a href="goods-125.html" title="运动服">运动服</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥0.00                             </font> 
+               <font class="market">￥220.00</font> 
+               <a href="goods-125.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-126.html" class="goodsimg"><img src="images/201403/thumb_img/126_thumb_G_1396209328116.jpg" alt="运动服" height="170px" /></a>
+           <p><a href="goods-126.html" title="运动服">运动服</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥0.00                             </font> 
+               <font class="market">￥360.00</font> 
+               <a href="goods-126.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+  </div>
+      <div class="show_best_area" class="clearfix cd_hot_area">
+    <div class="goodsItem">   
+           <a href="group_buy-4.html" class="goodsimg"><img src="images/no_picture.gif" alt="" height="170px" /></a>
+           <p><a href="group_buy-4.html" title="">225g贝因美DHA蔬菜营...</a></p>
+		   <p style="float:left; width:220px;">	      
+               <font class="r_b">
+              ￥12.00               </font> 
+               <font class="market"></font> 
+               <a href="group_buy-4.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="group_buy-3.html" class="goodsimg"><img src="images/201403/thumb_img/18_thumb_G_1396205074979.jpg" alt="" height="170px" /></a>
+           <p><a href="group_buy-3.html" title="">208g贝因美黑芝麻营养面...</a></p>
+		   <p style="float:left; width:220px;">	      
+               <font class="r_b">
+              ￥10.00               </font> 
+               <font class="market"></font> 
+               <a href="group_buy-3.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="group_buy-2.html" class="goodsimg"><img src="images/201403/thumb_img/7_thumb_G_1396204465855.jpg" alt="" height="170px" /></a>
+           <p><a href="group_buy-2.html" title="">900g美赞臣安婴妈妈A+</a></p>
+		   <p style="float:left; width:220px;">	      
+               <font class="r_b">
+              ￥100.00               </font> 
+               <font class="market"></font> 
+               <a href="group_buy-2.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="group_buy-1.html" class="goodsimg"><img src="images/201403/thumb_img/1_thumb_G_1396121017928.jpg" alt="" height="170px" /></a>
+           <p><a href="group_buy-1.html" title="">青岛崂山啤酒 330ml</a></p>
+		   <p style="float:left; width:220px;">	      
+               <font class="r_b">
+              ￥12.00               </font> 
+               <font class="market"></font> 
+               <a href="group_buy-1.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+  </div>
+    </div> 
+    <div class="width_three_box">
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"8";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"9";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:2:"10";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
 	</div>
+	
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"6";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca<script>
 $(function(){
 	$(".rs_iglr_ul li:eq(1)").addClass("lf_border");
@@ -2156,7 +2186,8 @@ $(function(){
                 border='0' /></a>																								        </div>
     </div>
 </div>
-<div class="blank"></div><script>
+<div class="blank"></div>
+<script>
 $(function(){
 	$(".rs_iglr_ul li:eq(1)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(4)").addClass("lf_border");
@@ -2312,7 +2343,8 @@ $(function(){
                 border='0' /></a>																		        </div>
     </div>
 </div>
-<div class="blank"></div><script>
+<div class="blank"></div>
+<script>
 $(function(){
 	$(".rs_iglr_ul li:eq(1)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(4)").addClass("lf_border");
@@ -2454,259 +2486,50 @@ $(function(){
                 border='0' /></a>												        </div>
     </div>
 </div>
-<div class="blank"></div><script>
-$(function(){
-	$(".rs_iglr_ul li:eq(1)").addClass("lf_border");
-	$(".rs_iglr_ul li:eq(4)").addClass("lf_border");
-	$(".rs_iglr_ul li:eq(7)").addClass("lf_border");
-	$(".rs_iglr_ul li:eq(10)").addClass("lf_border");
-	$(".rs_iglr_ul li:eq(13)").addClass("lf_border");
-})
-</script>
-<div class="rs_idx_gl">
-    <div class="rs_igl_tit rs_jq_gl_5">
-        <div class="rs_igl_tit_img">
-        	<span class="Hanzel_Bold">5&nbsp;F</span>
-            <span class="floot_name">家居百货</span>
-        </div>
-        <a href="category-5-b0.html" class="floor_more">更多+</a>
-    </div>
-    <div class="rs_igl_l">
-		<ul class="rs_igll_cate">
-																																																<li><a href="category-19-b0.html">餐具餐饮</a></li>
-																			<li><a href="category-283-b0.html">塑料水杯</a></li>
-																									<li><a href="category-284-b0.html">口杯</a></li>
-																									<li><a href="category-285-b0.html">玻璃杯</a></li>
-																									<li><a href="category-286-b0.html">保温杯/保温饭盒</a></li>
-																									<li><a href="category-287-b0.html">茶壶/咖啡壶</a></li>
-																									<li><a href="category-288-b0.html">套装茶具/咖啡具</a></li>
-																									<li><a href="category-289-b0.html">碗/碟/盘</a></li>
-																									<li><a href="category-290-b0.html">餐刀/叉/汤匙/筷子</a></li>
-																									<li><a href="category-291-b0.html">保鲜盒/饭盒</a></li>
-																									<li><a href="category-292-b0.html">套装餐具</a></li>
-																									<li><a href="category-293-b0.html">套装酒具/配件</a></li>
-																									<li><a href="category-294-b0.html">餐桌配件</a></li>
-																									<li><a href="category-295-b0.html">烟灰缸</a></li>
-																																	<li><a href="category-25-b0.html">珠宝黄金</a></li>
-																			<li><a href="category-44-b0.html">胸花</a></li>
-																									<li><a href="category-45-b0.html">戒指</a></li>
-																									<li><a href="category-46-b0.html">项链</a></li>
-																									<li><a href="category-57-b0.html">耳饰</a></li>
-																																	<li><a href="category-20-b0.html">厨房用品</a></li>
-																			<li><a href="category-296-b0.html">炒锅</a></li>
-																									<li><a href="category-297-b0.html">煎锅/平底锅</a></li>
-																									<li><a href="category-298-b0.html">水壶</a></li>
-																									<li><a href="category-299-b0.html">压力锅</a></li>
-																									<li><a href="category-300-b0.html">汤锅</a></li>
-																									<li><a href="category-301-b0.html">煲锅</a></li>
-																									<li><a href="category-302-b0.html">蒸锅</a></li>
-																									<li><a href="category-303-b0.html">奶锅</a></li>
-																									<li><a href="category-304-b0.html">套装锅</a></li>
-																									<li><a href="category-305-b0.html">锅具配件</a></li>
-																																	<li><a href="category-104-b0.html">文体玩具</a></li>
-																			<li><a href="category-105-b0.html">学生用品</a></li>
-																									<li><a href="category-106-b0.html">办公用品</a></li>
-																									<li><a href="category-107-b0.html">装裱/邮政用品</a></li>
-																									<li><a href="category-108-b0.html">图书</a></li>
-																									<li><a href="category-109-b0.html">影视/音乐</a></li>
-																									<li><a href="category-110-b0.html">玩具</a></li>
-																									<li><a href="category-111-b0.html">体育用品</a></li>
-																																	<li><a href="category-77-b0.html">锅具水壶</a></li>
-																			<li><a href="category-573-b0.html">炒锅</a></li>
-																									<li><a href="category-574-b0.html">煎锅/平面锅</a></li>
-																									<li><a href="category-575-b0.html">水壶</a></li>
-																									<li><a href="category-576-b0.html">压力锅</a></li>
-																									<li><a href="category-577-b0.html">汤锅</a></li>
-																									<li><a href="category-578-b0.html">煲锅</a></li>
-																									<li><a href="category-579-b0.html">蒸锅</a></li>
-																									<li><a href="category-580-b0.html">奶锅</a></li>
-																									<li><a href="category-581-b0.html">套装锅</a></li>
-																									<li><a href="category-582-b0.html">锅具配件</a></li>
-																																	<li><a href="category-78-b0.html">生活日用品</a></li>
-																			<li><a href="category-306-b0.html">雨伞/雨衣</a></li>
-																									<li><a href="category-307-b0.html">粘钩及挂钩</a></li>
-																									<li><a href="category-308-b0.html">香薰及附件</a></li>
-																									<li><a href="category-309-b0.html">碳净化</a></li>
-																									<li><a href="category-310-b0.html">干鞋器</a></li>
-																									<li><a href="category-311-b0.html">蜡烛</a></li>
-																									<li><a href="category-312-b0.html">针线/缝纫</a></li>
-																									<li><a href="category-313-b0.html">尘刷</a></li>
-																									<li><a href="category-331-b0.html">拖鞋</a></li>
-																									<li><a href="category-332-b0.html">鞋垫</a></li>
-																									<li><a href="category-334-b0.html">配饰及其他</a></li>
-																																	<li><a href="category-79-b0.html">收纳洗晒</a></li>
-																			<li><a href="category-314-b0.html">收纳用品</a></li>
-																									<li><a href="category-315-b0.html">购物收纳</a></li>
-																									<li><a href="category-316-b0.html">收纳层架</a></li>
-																									<li><a href="category-317-b0.html">衣架</a></li>
-																									<li><a href="category-318-b0.html">晾衣架</a></li>
-																									<li><a href="category-319-b0.html">多头晒衣架</a></li>
-																									<li><a href="category-320-b0.html">晾衣夹/绳</a></li>
-																									<li><a href="category-321-b0.html">洗衣篮/收纳篮/晒衣篮</a></li>
-																									<li><a href="category-322-b0.html">整理箱/抽屉柜</a></li>
-																									<li><a href="category-323-b0.html">压缩袋/泵</a></li>
-																									<li><a href="category-324-b0.html">其他洗纳工具</a></li>
-																																	<li><a href="category-80-b0.html">家纺日用品</a></li>
-																			<li><a href="category-325-b0.html">毛巾</a></li>
-																									<li><a href="category-326-b0.html">浴巾</a></li>
-																									<li><a href="category-327-b0.html">沙发垫</a></li>
-																									<li><a href="category-328-b0.html">靠垫/坐垫</a></li>
-																									<li><a href="category-329-b0.html">桌布/台布</a></li>
-																									<li><a href="category-330-b0.html">围裙/橡胶手套</a></li>
-																									<li><a href="category-333-b0.html">腰带</a></li>
-																																	<li><a href="category-81-b0.html">床上用品</a></li>
-																			<li><a href="category-335-b0.html">床品单件</a></li>
-																									<li><a href="category-336-b0.html">床品套件</a></li>
-																									<li><a href="category-337-b0.html">春秋被</a></li>
-																									<li><a href="category-338-b0.html">夏凉被</a></li>
-																									<li><a href="category-339-b0.html">枕头/枕芯</a></li>
-																									<li><a href="category-340-b0.html">毯子/毛巾毯</a></li>
-																									<li><a href="category-341-b0.html">床垫</a></li>
-																									<li><a href="category-342-b0.html">凉席/凉枕</a></li>
-																																	<li><a href="category-82-b0.html">家居家装</a></li>
-																			<li><a href="category-343-b0.html">照明灯具</a></li>
-																									<li><a href="category-344-b0.html">电脑桌</a></li>
-																									<li><a href="category-345-b0.html">座椅凳</a></li>
-																									<li><a href="category-346-b0.html">衣橱/衣柜</a></li>
-																									<li><a href="category-347-b0.html">鞋架/鞋柜</a></li>
-																									<li><a href="category-348-b0.html">层架/层柜</a></li>
-																																	<li><a href="category-83-b0.html">五金工具</a></li>
-																			<li><a href="category-349-b0.html">手电筒/小夜灯</a></li>
-																									<li><a href="category-350-b0.html">节能灯泡</a></li>
-																									<li><a href="category-351-b0.html">插座</a></li>
-																									<li><a href="category-352-b0.html">手工具</a></li>
-																									<li><a href="category-353-b0.html">家用五金/五金零件</a></li>
-																									<li><a href="category-354-b0.html">家居保护垫</a></li>
-																																	<li><a href="category-84-b0.html">园艺宠物</a></li>
-																			<li><a href="category-355-b0.html">猫粮</a></li>
-																									<li><a href="category-356-b0.html">狗粮</a></li>
-																																	<li><a href="category-85-b0.html">汽车用品</a></li>
-																			<li><a href="category-357-b0.html">汽车坐垫/靠垫</a></li>
-																									<li><a href="category-358-b0.html">空气清新剂</a></li>
-																									<li><a href="category-359-b0.html">汽车清洁用品</a></li>
-																									<li><a href="category-360-b0.html">蜡/抛光产品</a></li>
-																									<li><a href="category-361-b0.html">汽车玻璃清洁剂</a></li>
-																									<li><a href="category-362-b0.html">内部配件</a></li>
-																																	<li><a href="category-86-b0.html">户外用品</a></li>
-																			<li><a href="category-363-b0.html">烧烤工具</a></li>
-																									<li><a href="category-364-b0.html">户外帐篷</a></li>
-																																																																																 </ul>
-         <img src="themes/red_three/images/5f.jpg" width="255" height="302">   
-	</div>
-    <div class="rs_igl_r">
-        <div class="rs_iglr_ad">
-			<div class="rs_iglr_ad">
-																																								<a href='affiche.php?ad_id=16&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413847574586669204.jpg' width='670' height='200'
-                border='0' /></a>										</div>
-        </div>
-        <ul class="rs_iglr_ul">
-        					<li>
-					<div class="rs_iglr_img">
-						<a href="goods-96.html" target="_blank"><img src="images/201403/thumb_img/96_thumb_G_1396207764125.jpg" border="0" alt="耳饰" /></a>
-					</div>
-					<div class="rs_iglr_n">
-						<a href="goods-96.html" title="耳饰" target="_blank">耳饰</a>
-					</div>
-					<div class="rs_iglr_p">
-                    <p style="float:left;">
-						<span class="rs_pp">
-														￥1300.00													</span><br>
-						<del>￥1560.00</del>
-					</p>
-                    	
-					</div>
-				</li>
-			 				<li>
-					<div class="rs_iglr_img">
-						<a href="goods-94.html" target="_blank"><img src="images/201403/thumb_img/94_thumb_G_1396207733790.jpg" border="0" alt="戒指" /></a>
-					</div>
-					<div class="rs_iglr_n">
-						<a href="goods-94.html" title="戒指" target="_blank">戒指</a>
-					</div>
-					<div class="rs_iglr_p">
-                    <p style="float:left;">
-						<span class="rs_pp">
-														￥1500.00													</span><br>
-						<del>￥1800.00</del>
-					</p>
-                    	
-					</div>
-				</li>
-			 				<li>
-					<div class="rs_iglr_img">
-						<a href="goods-93.html" target="_blank"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" border="0" alt="项链" /></a>
-					</div>
-					<div class="rs_iglr_n">
-						<a href="goods-93.html" title="项链" target="_blank">项链</a>
-					</div>
-					<div class="rs_iglr_p">
-                    <p style="float:left;">
-						<span class="rs_pp">
-														￥4999.00													</span><br>
-						<del>￥6000.00</del>
-					</p>
-                    	
-					</div>
-				</li>
-			         </ul>
-    </div>
-    <div class="cd_rqph">
-    	<div  style="padding-bottom:3px;">
-    																																		<a href='affiche.php?ad_id=27&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413932252865704327.jpg' width='252' height='148'
-                border='0' /></a>						        </div>
-        <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
-        																																	<a href='affiche.php?ad_id=33&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413934541428283273.jpg' width='252' height='148'
-                border='0' /></a>						        </div>
-        <div style="padding-top:3px;">
-        																																	<a href='affiche.php?ad_id=37&amp;uri='
-                target='_blank'><img src='data/afficheimg/1413934701601418144.jpg' width='252' height='148'
-                border='0' /></a>						        </div>
-    </div>
-</div>
-<div class="blank"></div>554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
+<div class="blank"></div>
+554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:1:"7";s:3:"num";s:1:"0";}554fcae493e564ee0dc75bdf2ebf94ca
 </div>
 </div>
 <script>
 $(function(){
-	$(".ft_service_link dl").hover(
-		function()	)
+	$(".bg_url:eq(1)").css("background-position","-165px 0px");
+	$(".bg_url:eq(2)").css("background-position","-350px 0px");
+	$(".bg_url:eq(3)").css("background-position","-530px 0px");
+	$(".bg_url:eq(4)").css("background-position","-710px 0px");
 })
 </script>
 <div id="footerServiceLinkId">
   <div class="ft_service_link clearfix">
     <div class="ft_help_list clearfix" id="bottomHelpLinkId"> 
             <dl>
-      	<dt class="bg_url"></dt>
+      	<span class="bg_url"></span>
         <dt><a href='article_cat-12.html' title="新手入门" class="on_yellow">新手入门</a></dt>
                 <dd><a href="article-64.html" title="购物须知" class="on_red">购物须知</a></dd>
                 <dd><a href="article-65.html" title="会员注册" class="on_red">会员注册</a></dd>
                 <dd><a href="article-66.html" title="会员登录" class="on_red">会员登录</a></dd>
               </dl>
             <dl>
-      	<dt class="bg_url"></dt>
+      	<span class="bg_url"></span>
         <dt><a href='article_cat-6.html' title="购物指南" class="on_yellow">购物指南</a></dt>
                 <dd><a href="article-67.html" title="购物说明" class="on_red">购物说明</a></dd>
                 <dd><a href="article-68.html" title="购物流程" class="on_red">购物流程</a></dd>
               </dl>
             <dl>
-      	<dt class="bg_url"></dt>
+      	<span class="bg_url"></span>
         <dt><a href='article_cat-8.html' title="支付方式" class="on_yellow">支付方式</a></dt>
                 <dd><a href="article-69.html" title="货到付款或刷卡" class="on_red">货到付款或刷卡</a></dd>
                 <dd><a href="article-70.html" title="电子券支付" class="on_red">电子券支付</a></dd>
                 <dd><a href="article-71.html" title="网上支付" class="on_red">网上支付</a></dd>
               </dl>
             <dl>
-      	<dt class="bg_url"></dt>
+      	<span class="bg_url"></span>
         <dt><a href='article_cat-10.html' title="配送方式" class="on_yellow">配送方式</a></dt>
                 <dd><a href="article-63.html" title="运费说明" class="on_red">运费说明</a></dd>
                 <dd><a href="article-72.html" title="订单受理时间" class="on_red">订单受理时间</a></dd>
                 <dd><a href="article-73.html" title="商品验货与签收" class="on_red">商品验货与签收</a></dd>
               </dl>
             <dl>
-      	<dt class="bg_url"></dt>
+      	<span class="bg_url"></span>
         <dt><a href='article_cat-7.html' title="售后服务" class="on_yellow">售后服务</a></dt>
                 <dd><a href="article-74.html" title="退货说明" class="on_red">退货说明</a></dd>
                 <dd><a href="article-75.html" title="退货地址" class="on_red">退货地址</a></dd>

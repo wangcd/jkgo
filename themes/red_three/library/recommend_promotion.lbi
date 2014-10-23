@@ -3,23 +3,20 @@
 <div class="show_best_area" class="clearfix cd_hot_area">
 <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
   <div class="goodsItem">   
-           <a href="{$goods.url}" class="goodsimg">
-           <img src="{$goods.thumb}" alt="{$goods.name|escape:html}" />
-           </a><br />
-           <p class="f1"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
+           <a href="{$goods.url}" class="goodsimg"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" height="170px" /></a>
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
               <!-- {if $goods.promote_price neq ""} -->
               {$goods.promote_price}
               <!-- {else}-->
               {$goods.shop_price}
               <!--{/if}-->
-               </font> <br/>  
+               </font> 
                <font class="market">{$goods.market_price}</font> 
-           </p>
-           <a href="" style="float:right"><img src="images/qgm.png" width="80" height="30"></a>   
+               <a href="{$goods.url}"><img src="../images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
   <!--{/foreach}-->
 </div>
-<div class="blank"></div>
 <!-- {/if} -->

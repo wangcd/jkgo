@@ -6,23 +6,20 @@ if ($this->_foreach['promotion_foreach']['total'] > 0):
         $this->_foreach['promotion_foreach']['iteration']++;
 ?>
   <div class="goodsItem">   
-           <a href="<?php echo $this->_var['goods']['url']; ?>" class="goodsimg">
-           <img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" />
-           </a><br />
-           <p class="f1"><a href="<?php echo $this->_var['goods']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>"><?php echo htmlspecialchars($this->_var['goods']['name']); ?></a></p>
-		   <p style="float:left; ">	      
-               <font class="f1 big_red">
+           <a href="<?php echo $this->_var['goods']['url']; ?>" class="goodsimg"><img src="<?php echo $this->_var['goods']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" height="170px" /></a>
+           <p><a href="<?php echo $this->_var['goods']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>"><?php echo htmlspecialchars($this->_var['goods']['name']); ?></a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
               <?php if ($this->_var['goods']['promote_price'] != ""): ?>
               <?php echo $this->_var['goods']['promote_price']; ?>
               <?php else: ?>
               <?php echo $this->_var['goods']['shop_price']; ?>
               <?php endif; ?>
-               </font> <br/>  
+               </font> 
                <font class="market"><?php echo $this->_var['goods']['market_price']; ?></font> 
-           </p>
-           <a href="" style="float:right"><img src="themes/red_three/images/qgm.png" width="80" height="30"></a>   
+               <a href="<?php echo $this->_var['goods']['url']; ?>"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
   <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 </div>
-<div class="blank"></div>
 <?php endif; ?>

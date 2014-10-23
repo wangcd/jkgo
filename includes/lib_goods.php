@@ -804,6 +804,10 @@ function assign_cat_goods($cat_id, $num = 0, $from = 'web', $order_rule = '')
     if ($from == 'web')
     {
         $GLOBALS['smarty']->assign('cat_goods_' . $cat_id, $goods);
+//         echo "<pre>";
+//         print_r($goods);
+//         echo "</pre>";
+//         exit();
     }
     elseif ($from == 'wap')
     {

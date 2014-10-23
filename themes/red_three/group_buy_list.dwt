@@ -15,25 +15,89 @@
 {* 包含脚本文件 *}
 {insert_scripts files='common.js'}
 </head>
-<body>
+<body class="index_page">
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 <div class="block clearfix">
   <!--left start-->
-  <div class="AreaL">
+  <div class="cd_category_tree_box">
+  <div id="cd_all_category"></div>
+  <div class="cd_category_tree">
     <!-- TemplateBeginEditable name="左边区域" -->
-  
-    <!-- #BeginLibraryItem "/library/category_tree.lbi" --><!-- #EndLibraryItem -->
-    <!-- TemplateEndEditable -->
+<!-- #BeginLibraryItem "/library/category_tree.lbi" -->
+
+<div id="category_tree">
+  <div class="cd_category_tree">所有类目</div>
+  <img src="images/btn_unfold.gif" style="display:none;">
+	  <dl class="clearfix" >
+		   <div class="box1 cate" id="cate">
+			<!--{foreach from=$categories item=cat name=no}-->
+			<h1 onclick="tab({$smarty.foreach.no.index})"  		
+                <!-- {if $smarty.foreach.no.first} -->
+                style="border-top:none"
+                <!-- {/if} --> 	>		 		
+                <span class="f_l">
+                <img src="images/btn_fold.gif" style="padding-top:10px;padding-right:6px;cursor:pointer;">
+                </span>
+                <a href="{$cat.url}" class="  f_l">{$cat.name|escape:html}</a>
+			</h1>
+			<ul style="display:none" >
+                <!--{foreach from=$cat.cat_id item=child}-->
+                 <a class="over_2" href="{$child.url}">{$child.name|escape:html}</a>  
+                <div class="clearfix">
+                <!--{foreach from=$child.cat_id item=childer}-->
+                <a class="over_3" href="{$childer.url}">{$childer.name|escape:html}</a>
+                <!--{/foreach}-->
+                </div>   
+                <!--{/foreach}-->
+			</ul>
+			<div style="clear:both"></div>
+			<!--{/foreach}--> 
+			</div>
+		</dl>
+</div>
+<div class="blank"></div>
+
+
+
+
+
+
+
+
+
+ 
+<script type="text/javascript">
+obj_h4 = document.getElementById("cate").getElementsByTagName("h4")
+obj_ul = document.getElementById("cate").getElementsByTagName("ul")
+obj_img = document.getElementById("cate").getElementsByTagName("img")
+function tab(id)
+{ 
+		if(obj_ul.item(id).style.display == "none")
+		{
+			obj_ul.item(id).style.display = " block"
+			obj_img.item(id).src = "images/btn_unfold.gif"
+			return false;
+		}
+		else(obj_ul.item(id).style.display == "block")
+		{
+			obj_ul.item(id).style.display = "none"
+			obj_img.item(id).src = "images/btn_fold.gif"
+		}
+}
+</script>
+ <!-- #EndLibraryItem -->
+ 
+<!-- TemplateEndEditable -->
+</div>
     <!-- TemplateBeginEditable name="左边广告区域（宽200px）" -->
-    <!-- TemplateEndEditable -->
+<!-- TemplateEndEditable -->
     <!--AD end-->
     <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
   </div>
   <!--left end-->
   <!--right start-->
-  <div class="AreaR">
+<div class="AreaR">
+	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 	 <!-- TemplateBeginEditable name="右边通栏广告（宽750px）" -->
    <!-- TemplateEndEditable -->
    <div class="box">
@@ -73,7 +137,7 @@
   </div>
   <div class="blank5"></div>
   <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
-  </div>
+  </div>  
   <!--right end-->
 </div>
 

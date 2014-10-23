@@ -13,14 +13,15 @@
 {* 包含脚本文件 *}
 {insert_scripts files='common.js,shopping_flow.js'}
 </head>
-<body>
+<body class="index_page">
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <!--当前位置 start-->
 
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+
 
  
 <div class="block table">
+  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
   <!-- {if $step eq "cart"} -->
 
   <!-- 购物车内容 -->

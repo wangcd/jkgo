@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <ul class="rs_iglr_ul">
+        	<!--{foreach from=$cat_goods item=goods name="goods_foreach"}-->
+
+				<li>
+					<div class="rs_iglr_img">
+						<a href="{$goods.url}" target="_blank"><img src="{$goods.thumb}" border="0" alt="{$goods.name|escape:html}" /></a>
+					</div>
+					<div class="rs_iglr_n">
+						<a href="{$goods.url}" title="{$goods.name|escape:html}" target="_blank">{$goods.name|escape:html}</a>
+					</div>
+					<div class="rs_iglr_p">
+                    <p style="float:left;">
+						<span class="rs_pp">
+							<!-- {if $goods.promote_price neq ""} -->
+							{$goods.promote_price}
+							<!-- {else}-->
+							{$goods.shop_price}
+							<!--{/if}-->
+						</span><br>
+						<del>{$goods.market_price}</del>
+					</p>
+                    	
+					</div>
+				</li>
+
+			 <!--{/foreach}-->
+        </ul>
+ 

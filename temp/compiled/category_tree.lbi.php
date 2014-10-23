@@ -1,5 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-{insert_scripts files='jquery.ztree.core-3.5.min.js'}
+<?php echo $this->smarty_insert_scripts(array('files'=>'jquery.ztree.core-3.5.min.js')); ?>
 <SCRIPT type="text/javascript" >
 <!--
 var zTree;
@@ -32,7 +31,7 @@ var setting = {
 		}
 	}
 };
-var zNodes ={$menu_json};
+var zNodes =<?php echo $this->_var['menu_json']; ?>;
 $(document).ready(function(){
 	var t = $("#tree");
 	t = $.fn.zTree.init(t, setting, zNodes);

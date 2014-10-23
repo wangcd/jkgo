@@ -13,7 +13,7 @@
 {* 包含脚本文件 *}
 {insert_scripts files='common.js'}
 </head>
-<body>
+<body class="index_page">
 <div class="top_adv">
 <!-- TemplateBeginEditable name="头部广告" -->
 <!-- #BeginLibraryItem "/library/ad_position.lbi" -->

@@ -1,16 +1,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $new_goods} -->
-<!-- {if $cat_rec_sign neq 1} -->
-<div id="show_new_area" class="clearfix">
-  <!-- {/if} -->
+<div class="show_best_area" class="clearfix cd_hot_area">
   <!--{foreach from=$new_goods item=goods}-->
-  <div class="goods_show_Item">
-           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" width="215" /></a><br />  
+  <div class="goodsItem">   
+           <a href="{$goods.url}" class="goodsimg"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" height="170px" /></a>
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></p>
+		   <p style="float:left; width:220px; ">	      
+               <font class="r_b">
+              <!-- {if $goods.promote_price neq ""} -->
+              {$goods.promote_price}
+              <!-- {else}-->
+              {$goods.shop_price}
+              <!--{/if}-->
+               </font> 
+               <font class="market">{$goods.market_price}</font> 
+               <a href="{$goods.url}"><img src="../images/ljq.jpg" style="float:right;"></a>
+           </p>  
   </div>
   <!--{/foreach}-->
- 
-  <!-- {if $cat_rec_sign neq 1} -->
 </div>
-<div class="blank"></div>
-  <!-- {/if} -->
 <!-- {/if} -->

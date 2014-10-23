@@ -78,6 +78,9 @@ if ($_REQUEST['act'] == 'list')
         $smarty->assign('cfg', $_CFG);
         assign_template();
         $position = assign_ur_here();
+		$data= get__tree();
+    	$menu_json = json_encode($data);
+    	$smarty->assign('menu_json', $menu_json);
         $smarty->assign('page_title', $position['title']);    // 页面标题
         $smarty->assign('ur_here',    $position['ur_here']);  // 当前位置
         $smarty->assign('categories', get_categories_tree()); // 分类树
@@ -152,7 +155,10 @@ elseif ($_REQUEST['act'] == 'view')
         //模板赋值
         $smarty->assign('cfg', $_CFG);
         assign_template();
-
+		$data= get__tree();
+    	$menu_json = json_encode($data);
+    	$smarty->assign('menu_json', $menu_json);
+		
         $position = assign_ur_here(0, $goods['goods_name']);
         $smarty->assign('page_title', $position['title']);    // 页面标题
         $smarty->assign('ur_here',    $position['ur_here']);  // 当前位置
@@ -371,5 +377,23 @@ function group_buy_list($size, $page)
 
     return $gb_list;
 }
+/*获取商品分类列表*/
+function get__tree()
+{
 
+        $sql = 'SELECT cat_id as id,parent_id as pId,cat_name as name FROM ' . $GLOBALS['ecs']->table('category');
+        $res = $GLOBALS['db']->getAll($sql);
+//              echo "<pre>";
+//              print_r($res);
+//              echo "</pre>";exit();  
+		$i=0;      
+        foreach ($res as $row)
+        {	   $cat_arr[$i]['id']   = $row['id'];
+        	   $cat_arr[$i]['pId']   = $row['pId'];
+               $cat_arr[$i]['name'] = $row['name'];	
+               $cat_arr[$i]['url']  = build_uri('category', array('cid' => $row['id']), $row['name']);
+               $i++;
+        }
+         return $cat_arr;
+}
 ?>
