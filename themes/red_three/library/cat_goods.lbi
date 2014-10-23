@@ -1,5 +1,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+<script>
+$(function(){
+	$(".rs_iglr_ul li:eq(1)").addClass("lf_border");
+	$(".rs_iglr_ul li:eq(4)").addClass("lf_border");
+	$(".rs_iglr_ul li:eq(7)").addClass("lf_border");
+	$(".rs_iglr_ul li:eq(10)").addClass("lf_border");
+	$(".rs_iglr_ul li:eq(13)").addClass("lf_border");
+})
+</script>
 <div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_{$goods_cat.id}">
         <div class="rs_igl_tit_img">
@@ -57,7 +65,7 @@
 						</span><br>
 						<del>{$goods.market_price}</del>
 					</p>
-                    	<a href="{$goods.url}" style="float:right;" title="{$goods.name|escape:html}" target="_blank"><img src="images/gwc.jpg" /></a>
+                    	
 					</div>
 				</li>
 			 <!--{/foreach}-->
