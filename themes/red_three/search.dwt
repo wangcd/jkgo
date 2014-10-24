@@ -298,7 +298,7 @@ function tab(id)
               <div class="clearfix goodsBox cd_goodsBox">
                 <!--{foreach from=$goods_list item=goods}-->
                 <!-- {if $goods.goods_id} -->
-                 <div class="goodsItem_search" style="border:0px;">
+                 <div class="goodsItem_search">
                        <a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" class="goodsimg" /></a><br />
                        <!-- {if $show_marketprice} -->
                         <font class="market_s">{$goods.market_price}</font><br />

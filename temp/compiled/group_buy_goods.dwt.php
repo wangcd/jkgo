@@ -8,13 +8,19 @@
 
 <title><?php echo $this->_var['page_title']; ?></title>
 
-
-
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="<?php echo $this->_var['ecs_css_path']; ?>" rel="stylesheet" type="text/css" />
 
-<?php echo $this->smarty_insert_scripts(array('files'=>'common.js')); ?>
+
+<?php echo $this->smarty_insert_scripts(array('files'=>'common.js,lefttime.js')); ?>
+<script type="text/javascript">
+  <?php $_from = $this->_var['lang']['js_languages']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item']):
+?>
+    var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item']; ?>";
+  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+</script>
 </head>
 <body class="index_page">
 <?php echo $this->fetch('library/page_header.lbi'); ?>
@@ -34,7 +40,7 @@
     <?php echo $this->fetch('library/history.lbi'); ?>
   </div>
   
-  
+    
   <div class="AreaR">
   <?php echo $this->fetch('library/ur_here.lbi'); ?>
    
@@ -90,7 +96,7 @@
       <?php echo $this->_var['lang']['gbs_pre_start']; ?>
       <?php elseif ($this->_var['group_buy']['status'] == 1): ?>
       <font class="f4"><?php echo $this->_var['lang']['gbs_under_way']; ?>
-      <span id="leftTime"><?php echo $this->_var['lang']['please_waiting']; ?></span></font><br />
+     <font id="leftTime" class="f1"><?php echo $this->_var['lang']['please_waiting']; ?></font><br />
       <?php echo $this->_var['lang']['gb_cur_price']; ?> <?php echo $this->_var['group_buy']['formated_cur_price']; ?><br />
       <?php echo $this->_var['lang']['gb_valid_goods']; ?> <?php echo $this->_var['group_buy']['valid_goods']; ?><br />
       <?php elseif ($this->_var['group_buy']['status'] == 2): ?>
@@ -175,4 +181,25 @@
 
 <?php echo $this->fetch('library/page_footer.lbi'); ?>
 </body>
+<script type="text/javascript">
+var gmt_end_time = "<?php echo empty($this->_var['group_buy']['gmt_end_date']) ? '0' : $this->_var['group_buy']['gmt_end_date']; ?>";
+<?php $_from = $this->_var['lang']['goods_js']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'item');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['item']):
+?>
+var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item']; ?>";
+<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+var now_time = <?php echo $this->_var['now_time']; ?>;
+
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+
+</script>
 </html>

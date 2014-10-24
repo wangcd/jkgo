@@ -15,7 +15,7 @@ $db_pass   = "";
 //$db_pass   = "MWNwYmN1QTNmJmY";
 
 // table prefix
-$prefix    = "sw_";
+$prefix    = "jk_";
 
 $timezone    = "PRC";
 

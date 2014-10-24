@@ -146,7 +146,9 @@ a {
 }
 .shop_s {
 	color: #E60012;
-	font-weight: bold
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 20px;
 }
 /*按钮部分*/
 .bnt_blue {
@@ -300,7 +302,7 @@ margin-top: -40px;
 	float: right;
 }
 .AreaR h3{ background:#f4f4f4;}
-.AreaR h3 span{ background:#8F8989; width:200px; padding-left:20px; color:#fff;}
+.AreaR h3 span{ width:200px; padding-left:20px; color:#fff;}
 /* ====================
      导航部分
 ==================== */
@@ -903,7 +905,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 
 /*----------------*/
 #category_tree .rs_cate_li a {
-	color: #300;
+	color: #000;
 	display: block;
 }
 #category_tree .current {
@@ -1462,7 +1464,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	font-size: 12px;
 	float: left;
 	color: #fff;
-	background: #352E2F;
+	background: #cc0001;
 	margin-right: 5px;
 }
 .history .h2bg {
@@ -3202,7 +3204,7 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 	margin: 0 auto;
 	white-space: nowrap;
 	overflow: hidden;
-	background:url(images/footer_bg.jpg) 20px no-repeat;
+	background:url(images/footer_bg.jpg) 20px -10px no-repeat;
 }
 .ft_help_list dt {
 	white-space: normal;
@@ -3210,7 +3212,6 @@ ul.shoppingMes li.welcomeVjia .loginvjia {
 .ft_service_link dl {
 	width: 160px;
 	margin: 0 10px;
-	padding-top:10px;
 }
 .mini_cart {
 	width: 207px;
@@ -3969,7 +3970,7 @@ border-bottom: 1px dotted #CCCCCC;
 padding: 10px 15px;}
 /*品牌列表*/
 .pinp{
-	padding:30px;
+
 /*	border: 1px solid #ddd;*/
 	background-color: #fff;
 }
@@ -4157,10 +4158,59 @@ ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height
 /*帮助中心，文章标题 颜色*/
 .on_red:hover{ color:#ba0c0d;}
 
-.bg_url{ 	background:url(images/footer.jpg); width:60px; display:block; height:35px !important;}
+.bg_url{ 
+background: url(images/footer.jpg);
+width: 70px;
+float: left;
+display: block;
+margin-left: 30px;
+height: 35px !important;
+margin-right: 80px;
+
+}
 /*楼层商品展示 左右边距*/
 .lf_border{ margin-left:5px; margin-right:5px;}
 /*最新，热卖，限时，团购*/
 .search_more{ color:#000; display:none; margin-right:10px;}
 
 #logo_areaID{ width:374px;}
+
+/*商品分类显示页面*/
+.cat_goods{
+	width: 210px;
+	margin-left: 20px;
+	height:270px;
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+	text-align: left;
+	line-height: 20px;
+}
+.page_header_cd{
+
+	width:770px;
+	float:left;
+	overflow:hidden;
+}
+.top_bg_1,.top_bg_2,.top_bg_3{
+	width: 100px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	background: url(images/top.png) 20px no-repeat;
+	z-index: 999;
+}
+
+
+.foot_left{
+	width: 900px;
+	height: 200px;
+	overflow: hidden;
+	float: left;}
+.foot_right{
+	width: 300px;
+	height: 200px;
+	float: left;
+}	

@@ -1,35 +1,57 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script>
 $(function(){
-	$(".bg_url:eq(1)").css("background-position","-165px 0px");
+	$(".bg_url:eq(1)").css("background-position","-175px 0px");
 	$(".bg_url:eq(2)").css("background-position","-350px 0px");
-	$(".bg_url:eq(3)").css("background-position","-530px 0px");
-	$(".bg_url:eq(4)").css("background-position","-710px 0px");
+	$(".bg_url:eq(3)").css("background-position","-525px 0px");
+	$(".bg_url:eq(4)").css("background-position","-700px 0px");
+	
+	$(".bg_url").hover(
+		function(){
+			var num=$(this).index();
+			var sum=num*175;
+			$(this).css("background-position","-"+sum+"px 38px");
+		},
+		function(){
+			var num=$(this).index();
+			var sum=num*175;
+			$(this).css("background-position","-"+sum+"px 0px");
+		}
+	)
 })
-
 </script>
 <!--{if $helps}-->
 <div id="footerServiceLinkId">
   <div class="ft_service_link clearfix">
-    <div class="ft_help_list clearfix" id="bottomHelpLinkId"> 
-      <!-- {foreach from=$helps item=help_cat name=foo key=key} -->
-      <dl>
-      	<span class="bg_url"></span>
-        <dt><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}" class="on_yellow">{$help_cat.cat_name}</a></dt>
-        <!-- {foreach from=$help_cat.article item=item} -->
-        <dd><a href="{$item.url}" title="{$item.title|escape:html}" class="on_red">{$item.short_title}</a></dd>
-        <!-- {/foreach} -->
-      </dl>
-      <!-- {/foreach} --> 
-     <span class="cd_phone">
-     	<span style="color:#ba0c0d;">客服热线 HOTLINE</span><br><span style="font-size:28px">{$service_phone}</span>
-     </span><br>	
-     <span class="cd_qq">
-     	<span style="color:#fea500;">客服QQ ONLINE</span><br><span>{$im}</span>
-     </span><br>
-     <span class="cd_address">
-     	<span style="color:#154edd;">公司地址 ADDRESS</span><br><span>河南省 三门峡市</span>
-     </span><br>
+    <div class="ft_help_list clearfix" id="bottomHelpLinkId">
+		<div class="foot_left">
+            <p style="width: 900px;height:35px;">
+                <span class="bg_url"></span>
+                <span class="bg_url"></span>
+                <span class="bg_url"></span>
+                <span class="bg_url"></span>
+                <span class="bg_url"></span>
+            </p> 
+          <!-- {foreach from=$helps item=help_cat name=foo key=key} -->
+          <dl class="bg_url_dl">
+            <dt><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}" class="on_yellow">{$help_cat.cat_name}</a></dt>
+            <!-- {foreach from=$help_cat.article item=item} -->
+            <dd><a href="{$item.url}" title="{$item.title|escape:html}" class="on_red">{$item.short_title}</a></dd>
+            <!-- {/foreach} -->
+          </dl>
+          <!-- {/foreach} --> 
+     	</div>
+        <div class="foot_right">
+            <span class="cd_phone">
+             <span style="color:#ba0c0d;">客服热线 HOTLINE</span><br><span style="font-size:28px">{$service_phone}</span>
+             </span><br>	
+             <span class="cd_qq">
+                <span style="color:#fea500;">客服QQ ONLINE</span><br><span>{$im}</span>
+             </span><br>
+             <span class="cd_address">
+                <span style="color:#154edd;">公司地址 ADDRESS</span><br><span>河南省 三门峡市</span>
+             </span><br>        
+        </div>
     </div>
   </div>
 </div>

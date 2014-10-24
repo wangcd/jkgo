@@ -14,15 +14,7 @@
 {insert_scripts files='common.js'}
 </head>
 <body class="index_page">
-<div class="top_adv">
-<!-- TemplateBeginEditable name="头部广告" -->
-<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
-
-{insert name='ads' id=$ads_id num=$ads_num}
- <!-- #EndLibraryItem -->
-<!-- TemplateEndEditable -->
-</div>
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_header_cd.lbi" --><!-- #EndLibraryItem -->
 
 
 <div class="block clearfix">

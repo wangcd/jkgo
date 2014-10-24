@@ -6,7 +6,11 @@ $(function(){
 	$(".rs_iglr_ul li:eq(7)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(10)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(13)").addClass("lf_border");
+	
+	$(".top_bg_2").css("background-position","-150px 0px");
+	$(".top_bg_3").css("background-position","-325px 0px");
 })
+
 </script>
 <div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_{$goods_cat.id}">
@@ -73,6 +77,7 @@ $(function(){
     </div>
     <div class="cd_rqph">
     	<div  style="padding-bottom:3px;">
+        <span class="top_bg_1"></span>
     	<!--{foreach from=$rs_idx_ads['top_1'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
 					{$ads[0]}
@@ -80,6 +85,7 @@ $(function(){
 		<!--{/foreach}-->
         </div>
         <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        <span class="top_bg_2"></span>
         <!--{foreach from=$rs_idx_ads['top_2'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
 					{$ads[0]}
@@ -87,6 +93,7 @@ $(function(){
 		<!--{/foreach}-->
         </div>
         <div style="padding-top:3px;">
+        <span class="top_bg_3"></span>
         <!--{foreach from=$rs_idx_ads['top_3'] item=ads key=adkey name="ads_foreach"}-->
 				<!-- {if $adkey eq $goods_cat.id} -->
 					{$ads[0]}

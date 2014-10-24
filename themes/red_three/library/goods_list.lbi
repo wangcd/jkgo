@@ -68,16 +68,17 @@
     <div class="clearfix goodsBox cd_goodsBox" style=" padding:11px 0 10px 0px;">
     <!--{foreach from=$goods_list item=goods}-->
     <!-- {if $goods.goods_id} -->
-                 <div class="goodsItem" style="border:0px;">
+                 <div class="cat_goods">
                        <a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}" class="goodsimg" /></a><br />
-                       <!-- {if $show_marketprice} -->
-                        <font class="market_s">{$goods.market_price}</font><br />
-                        <!-- {/if} -->
                         <!--{if $goods.promote_price neq "" } -->
                         <font class="shop_s">{$goods.promote_price}</font><br />
                         <!--{else}-->
-                        <font class="shop_s">{$goods.shop_price}</font><br />
+                        <font class="shop_s">{$goods.shop_price}</font>
                         <!--{/if}-->
+                        <!-- {if $show_marketprice} -->
+                        <font class="market_s">{$goods.market_price}</font>
+                        <!-- {/if} --><br />
+                        
 						<p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.goods_name}</a></p>
                         <p style="text-align:center;"><a href="{$goods.url}" title=""><img src="images/qgm.jpg" /></a></p>
 						<!-- 
@@ -85,7 +86,7 @@
     <a href="javascript:collect({$goods.goods_id});"><img src="../images/shoucang.gif"></a> 
 	-->
 	
-                    </div>
+                 </div>
     <!--{/if}-->
     <!--{/foreach}-->
     </div>

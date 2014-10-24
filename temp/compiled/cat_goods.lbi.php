@@ -5,7 +5,11 @@ $(function(){
 	$(".rs_iglr_ul li:eq(7)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(10)").addClass("lf_border");
 	$(".rs_iglr_ul li:eq(13)").addClass("lf_border");
+	
+	$(".top_bg_2").css("background-position","-150px 0px");
+	$(".top_bg_3").css("background-position","-325px 0px");
 })
+
 </script>
 <div class="rs_idx_gl">
     <div class="rs_igl_tit rs_jq_gl_<?php echo $this->_var['goods_cat']['id']; ?>">
@@ -61,28 +65,28 @@ if ($this->_foreach['ads_foreach']['total'] > 0):
 			</div>
         </div>
         <ul class="rs_iglr_ul">
-        	<?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_51022900_1414055864');$this->_foreach['goods_foreach'] = array('total' => count($_from), 'iteration' => 0);
+        	<?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_37173400_1414139046');$this->_foreach['goods_foreach'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods_foreach']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_51022900_1414055864']):
+    foreach ($_from AS $this->_var['goods_0_37173400_1414139046']):
         $this->_foreach['goods_foreach']['iteration']++;
 ?>
 				<li>
 					<div class="rs_iglr_img">
-						<a href="<?php echo $this->_var['goods_0_51022900_1414055864']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['goods_0_51022900_1414055864']['thumb']; ?>" border="0" alt="<?php echo htmlspecialchars($this->_var['goods_0_51022900_1414055864']['name']); ?>" /></a>
+						<a href="<?php echo $this->_var['goods_0_37173400_1414139046']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['goods_0_37173400_1414139046']['thumb']; ?>" border="0" alt="<?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?>" /></a>
 					</div>
 					<div class="rs_iglr_n">
-						<a href="<?php echo $this->_var['goods_0_51022900_1414055864']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_51022900_1414055864']['name']); ?>" target="_blank"><?php echo htmlspecialchars($this->_var['goods_0_51022900_1414055864']['name']); ?></a>
+						<a href="<?php echo $this->_var['goods_0_37173400_1414139046']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?>" target="_blank"><?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?></a>
 					</div>
 					<div class="rs_iglr_p">
                     <p style="float:left;">
 						<span class="rs_pp">
-							<?php if ($this->_var['goods_0_51022900_1414055864']['promote_price'] != ""): ?>
-							<?php echo $this->_var['goods_0_51022900_1414055864']['promote_price']; ?>
+							<?php if ($this->_var['goods_0_37173400_1414139046']['promote_price'] != ""): ?>
+							<?php echo $this->_var['goods_0_37173400_1414139046']['promote_price']; ?>
 							<?php else: ?>
-							<?php echo $this->_var['goods_0_51022900_1414055864']['shop_price']; ?>
+							<?php echo $this->_var['goods_0_37173400_1414139046']['shop_price']; ?>
 							<?php endif; ?>
 						</span><br>
-						<del><?php echo $this->_var['goods_0_51022900_1414055864']['market_price']; ?></del>
+						<del><?php echo $this->_var['goods_0_37173400_1414139046']['market_price']; ?></del>
 					</p>
                     	
 					</div>
@@ -92,6 +96,7 @@ if ($this->_foreach['goods_foreach']['total'] > 0):
     </div>
     <div class="cd_rqph">
     	<div  style="padding-bottom:3px;">
+        <span class="top_bg_1"></span>
     	<?php $_from = $this->_var['rs_idx_ads']['top_1']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('adkey', 'ads');$this->_foreach['ads_foreach'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['ads_foreach']['total'] > 0):
     foreach ($_from AS $this->_var['adkey'] => $this->_var['ads']):
@@ -103,6 +108,7 @@ if ($this->_foreach['ads_foreach']['total'] > 0):
 		<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
         </div>
         <div style="padding-top:4px; padding-bottom:4px; border-bottom:1px dashed #ccc; border-top:1px dashed #ccc;">
+        <span class="top_bg_2"></span>
         <?php $_from = $this->_var['rs_idx_ads']['top_2']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('adkey', 'ads');$this->_foreach['ads_foreach'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['ads_foreach']['total'] > 0):
     foreach ($_from AS $this->_var['adkey'] => $this->_var['ads']):
@@ -114,6 +120,7 @@ if ($this->_foreach['ads_foreach']['total'] > 0):
 		<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
         </div>
         <div style="padding-top:3px;">
+        <span class="top_bg_3"></span>
         <?php $_from = $this->_var['rs_idx_ads']['top_3']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('adkey', 'ads');$this->_foreach['ads_foreach'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['ads_foreach']['total'] > 0):
     foreach ($_from AS $this->_var['adkey'] => $this->_var['ads']):

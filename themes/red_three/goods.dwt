@@ -134,6 +134,8 @@ function tab(id)
   <!--right start-->
   <div class="AreaR">
     <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+    
+    
    <!--商品详情start-->
    <div id="goodsInfo" class="clearfix">
     
@@ -192,11 +194,11 @@ function tab(id)
        <dd>
  
        <!--本店售价-->
-       <strong>售价: </strong><font class="shop" id="ECS_SHOPPRICE">{$goods.shop_price_formated}</font> 
+       <strong>{$lang.shop_price}</strong><font class="shop" id="ECS_SHOPPRICE">{$goods.shop_price_formated}</font> 
    
 	   
 	   <!-- {if $cfg.show_marketprice} 市场价格-->
-       <font class="market"></font> 
+       <font class="market">{$goods.market_price}</font> 
        <!-- {/if} -->
        </dd>
        </li>
@@ -207,7 +209,7 @@ function tab(id)
        <!-- {if $cfg.show_goodssn} 显示商品货号-->
       <li class="clearfix">
        <dd>
-       <strong>货号: </strong>{$goods.goods_sn}
+       <strong>{$lang.goods_sn}</strong>{$goods.goods_sn}
       
        </dd>
        </li> 
@@ -257,7 +259,7 @@ function tab(id)
        <li class="clearfix">
        <dd>
        <!--点击数-->
-       <strong>点击数量: </strong>{$goods.click_count}
+       <strong>{$lang.goods_click_count}：</strong>{$goods.click_count}
        </dd>
       </li>
 	  </ul>
@@ -294,6 +296,20 @@ function tab(id)
       </li>
       <!--{/if}-->
   
+  
+  <li class="clearfix">
+       <dd >
+  
+       <!-- {foreach from=$rank_prices item=rank_price key=key} 会员等级对应的价格-->
+       {$rank_price.rank_name}：<font class="f1" id="ECS_RANKPRICE_{$key}" style=" padding-right:10px;">{$rank_price.price}</font> 
+       <!--{/foreach}-->
+       
+        <a href="javascript:collect({$goods.goods_id})">收藏</a> |  
+        <!-- {if $affiliate.on} -->
+      <a href="user.php?act=affiliate&amp;goodsid={$goods.goods_id}" >推荐</a>
+      <!-- {/if} -->
+   </dd>
+      </li>
   
        <!-- {if $goods.give_integral > 0} 购买此商品赠送积分-->
        <li class="clearfix">
@@ -360,10 +376,10 @@ function tab(id)
       <!-- {/foreach} -->
       <!-- {* 结束循环可选属性 *} -->
       
-           <li class="clearfix" style="border-bottom:1px solid #CCC;">
+           <li class="clearfix">
        <dd>
        <strong>{$lang.number}：</strong>
-        <input name="number" type="text" id="number" value="1" size="4" onblur="changePrice()" style="border:1px solid #ccc; height:30px; "/>
+        <input name="number" type="text" id="number" value="1" size="4" onblur="changePrice()" style="border:1px solid #ccc; "/> <strong>{$lang.amount}：</strong><font id="ECS_GOODS_AMOUNT" class="f1"></font>
        </dd>
        </li>
       
@@ -378,6 +394,8 @@ function tab(id)
    </div>
    <div class="blank"></div>
    <!--商品详情end-->
+   
+   
    <!--商品描述，商品属性 START-->
      <div class="box info_message">
  

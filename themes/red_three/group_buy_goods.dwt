@@ -6,14 +6,18 @@
 <meta name="Description" content="{$description}" />
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>{$page_title}</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+
 {* 包含脚本文件 *}
-{insert_scripts files='common.js'}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
 </head>
 <body class="index_page">
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
@@ -95,7 +99,7 @@ function tab(id)
     <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
   </div>
   <!--left end-->
-  <!--right start-->
+    <!--right start-->
   <div class="AreaR">
   <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
    <!-- TemplateBeginEditable name="右边通栏广告（宽750px）" -->
@@ -149,7 +153,7 @@ function tab(id)
       {$lang.gbs_pre_start}
       <!-- {elseif $group_buy.status eq 1} 进行中 -->
       <font class="f4">{$lang.gbs_under_way}
-      <span id="leftTime">{$lang.please_waiting}</span></font><br />
+     <font id="leftTime" class="f1">{$lang.please_waiting}</font><br />
       {$lang.gb_cur_price} {$group_buy.formated_cur_price}<br />
       {$lang.gb_valid_goods} {$group_buy.valid_goods}<br />
       <!-- {elseif $group_buy.status eq 2} 已结束 -->
@@ -228,4 +232,23 @@ function tab(id)
 
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 </body>
+<script type="text/javascript">
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var now_time = {$now_time};
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
 </html>
