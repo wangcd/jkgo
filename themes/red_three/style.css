@@ -3821,7 +3821,7 @@ text-align:right;
 }
 /*楼层展示商品*/
 .rs_iglr_ul li {
-	width: 218px;
+	width: 217px;
 	height: 253px;
 	border-collapse: collapse;
 	float: left;
@@ -4214,3 +4214,4 @@ margin-right: 80px;
 	height: 200px;
 	float: left;
 }	
+.cd_bannan{ width:1343px; margin:0px auto; overflow:hidden; float:left;}

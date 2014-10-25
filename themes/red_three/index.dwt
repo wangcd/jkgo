@@ -26,9 +26,9 @@
 <!-- TemplateEndEditable -->
 </div>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+<div class="clearfix" style="width: 1343px;margin: 0 auto;"> 
         <!-- bannan -->
-        <div style="float:left; width:1350px;"> 
+        <div class="cd_bannan"> 
         <!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
         </div>
     

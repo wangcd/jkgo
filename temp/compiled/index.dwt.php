@@ -24,9 +24,9 @@
 
 </div>
 <?php echo $this->fetch('library/page_header.lbi'); ?>
-<div class="clearfix" style="width: 1350px;margin: 0 auto;"> 
+<div class="clearfix" style="width: 1343px;margin: 0 auto;"> 
         
-        <div style="float:left; width:1350px;"> 
+        <div class="cd_bannan"> 
         <?php echo $this->fetch('library/index_ad.lbi'); ?>
         </div>
     
