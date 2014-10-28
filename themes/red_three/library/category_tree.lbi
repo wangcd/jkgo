@@ -53,7 +53,7 @@ function loadReady() {
 //-->
 </SCRIPT>
 
-<TABLE border=0  align="center" border="1px solid">
+<TABLE border=0  align="left">
 	<TR>
 		<TD align=left valign=top>
 			<ul id="tree" class="ztree" style="overflow:auto;"></ul>

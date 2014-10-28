@@ -65,28 +65,28 @@ if ($this->_foreach['ads_foreach']['total'] > 0):
 			</div>
         </div>
         <ul class="rs_iglr_ul">
-        	<?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_37173400_1414139046');$this->_foreach['goods_foreach'] = array('total' => count($_from), 'iteration' => 0);
+        	<?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_90032800_1414207014');$this->_foreach['goods_foreach'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods_foreach']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_37173400_1414139046']):
+    foreach ($_from AS $this->_var['goods_0_90032800_1414207014']):
         $this->_foreach['goods_foreach']['iteration']++;
 ?>
 				<li>
 					<div class="rs_iglr_img">
-						<a href="<?php echo $this->_var['goods_0_37173400_1414139046']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['goods_0_37173400_1414139046']['thumb']; ?>" border="0" alt="<?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?>" /></a>
+						<a href="<?php echo $this->_var['goods_0_90032800_1414207014']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['goods_0_90032800_1414207014']['thumb']; ?>" border="0" alt="<?php echo htmlspecialchars($this->_var['goods_0_90032800_1414207014']['name']); ?>" /></a>
 					</div>
 					<div class="rs_iglr_n">
-						<a href="<?php echo $this->_var['goods_0_37173400_1414139046']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?>" target="_blank"><?php echo htmlspecialchars($this->_var['goods_0_37173400_1414139046']['name']); ?></a>
+						<a href="<?php echo $this->_var['goods_0_90032800_1414207014']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods_0_90032800_1414207014']['name']); ?>" target="_blank"><?php echo htmlspecialchars($this->_var['goods_0_90032800_1414207014']['name']); ?></a>
 					</div>
 					<div class="rs_iglr_p">
                     <p style="float:left;">
 						<span class="rs_pp">
-							<?php if ($this->_var['goods_0_37173400_1414139046']['promote_price'] != ""): ?>
-							<?php echo $this->_var['goods_0_37173400_1414139046']['promote_price']; ?>
+							<?php if ($this->_var['goods_0_90032800_1414207014']['promote_price'] != ""): ?>
+							<?php echo $this->_var['goods_0_90032800_1414207014']['promote_price']; ?>
 							<?php else: ?>
-							<?php echo $this->_var['goods_0_37173400_1414139046']['shop_price']; ?>
+							<?php echo $this->_var['goods_0_90032800_1414207014']['shop_price']; ?>
 							<?php endif; ?>
 						</span><br>
-						<del><?php echo $this->_var['goods_0_37173400_1414139046']['market_price']; ?></del>
+						<del><?php echo $this->_var['goods_0_90032800_1414207014']['market_price']; ?></del>
 					</p>
                     	
 					</div>

@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:54:"F:/wamp/www/jkgo/themes/red_three/library/cat_sxsc.lbi";i:7;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:10;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:11;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414202491;s:8:"maketime";i:1414198891;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:54:"F:/wamp/www/jkgo/themes/red_three/library/cat_sxsc.lbi";i:7;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:10;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:11;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414376873;s:8:"maketime";i:1414373273;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -1712,6 +1712,16 @@ width_three
            </p>  
   </div>
     <div class="goodsItem">   
+           <a href="goods-117.html" class="goodsimg"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" height="170px" /></a>
+           <p><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥150.00</font> 
+               <a href="goods-117.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
            <a href="goods-89.html" class="goodsimg"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" height="170px" /></a>
            <p><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
 		   <p style="float:left;  width:220px;">	      
@@ -1722,23 +1732,13 @@ width_three
            </p>  
   </div>
     <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " height="170px" /></a>
-           <p><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+           <a href="goods-104.html" class="goodsimg"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" height="170px" /></a>
+           <p><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
 		   <p style="float:left;  width:220px;">	      
                <font class="r_b">
-                            ￥6.99                             </font> 
-               <font class="market">￥7.43</font> 
-               <a href="goods-103.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
-           </p>  
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-93.html" class="goodsimg"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" height="170px" /></a>
-           <p><a href="goods-93.html" title="项链">项链</a></p>
-		   <p style="float:left;  width:220px;">	      
-               <font class="r_b">
-                            ￥4999.00                             </font> 
-               <font class="market">￥6000.00</font> 
-               <a href="goods-93.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+                            ￥199.00                             </font> 
+               <font class="market">￥240.00</font> 
+               <a href="goods-104.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
   </div>
@@ -1754,6 +1754,16 @@ width_three
            </p>  
   </div>
     <div class="goodsItem">   
+           <a href="goods-117.html" class="goodsimg"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" height="170px" /></a>
+           <p><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥150.00</font> 
+               <a href="goods-117.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
            <a href="goods-89.html" class="goodsimg"><img src="images/201403/thumb_img/89_thumb_G_1396207224557.jpg" alt="紫丁香优质酱醋瓶" height="170px" /></a>
            <p><a href="goods-89.html" title="紫丁香优质酱醋瓶">紫丁香优质酱醋瓶</a></p>
 		   <p style="float:left;  width:220px;">	      
@@ -1764,23 +1774,13 @@ width_three
            </p>  
   </div>
     <div class="goodsItem">   
-           <a href="goods-103.html" class="goodsimg"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " height="170px" /></a>
-           <p><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
+           <a href="goods-104.html" class="goodsimg"><img src="images/201403/thumb_img/104_thumb_G_1396208107449.jpg" alt="拉杆箱" height="170px" /></a>
+           <p><a href="goods-104.html" title="拉杆箱">拉杆箱</a></p>
 		   <p style="float:left;  width:220px;">	      
                <font class="r_b">
-                            ￥6.99                             </font> 
-               <font class="market">￥7.43</font> 
-               <a href="goods-103.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
-           </p>  
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-93.html" class="goodsimg"><img src="images/201403/thumb_img/93_thumb_G_1396207699660.jpg" alt="项链" height="170px" /></a>
-           <p><a href="goods-93.html" title="项链">项链</a></p>
-		   <p style="float:left;  width:220px;">	      
-               <font class="r_b">
-                            ￥4999.00                             </font> 
-               <font class="market">￥6000.00</font> 
-               <a href="goods-93.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+                            ￥199.00                             </font> 
+               <font class="market">￥240.00</font> 
+               <a href="goods-104.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
   </div>
