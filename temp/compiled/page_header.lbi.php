@@ -76,7 +76,7 @@ $k = array (
 );
 echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 ?></span>
-  <img src="themes/red_three/images/two.jpg" style="float:left;">
+  <img src="themes/red_three/images/weixin.png" style="float:left;" width="75" height="75">
 </div>
 
 <div class="menu_box clearfix">

@@ -1,10 +1,10 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:54:"F:\wamp\www\jkgo\phone/themes/default/category_all.dwt";i:1;s:61:"F:\wamp\www\jkgo\phone/themes/default/library/page_header.lbi";i:2;s:56:"F:\wamp\www\jkgo\phone/themes/default/library/search.lbi";i:3;s:61:"F:\wamp\www\jkgo\phone/themes/default/library/page_footer.lbi";}s:7:"expires";i:1414471088;s:8:"maketime";i:1414467488;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:54:"F:\wamp\www\jkgo\phone/themes/default/category_all.dwt";i:1;s:61:"F:\wamp\www\jkgo\phone/themes/default/library/page_header.lbi";i:2;s:56:"F:\wamp\www\jkgo\phone/themes/default/library/search.lbi";i:3;s:61:"F:\wamp\www\jkgo\phone/themes/default/library/page_footer.lbi";}s:7:"expires";i:1414642014;s:8:"maketime";i:1414638414;}<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>所有分类_今客快购</title>
+<title>所有分类_今客快购 - Powered by ECTouch.cn 触屏版</title>
 <link rel="stylesheet" href="/jkgo/phone/data/common/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="/jkgo/phone/data/common/bootstrap/css/font-awesome.min.css">
 <link rel="stylesheet" href="/jkgo/phone/themes/default/css/ectouch.css">
@@ -17,28 +17,6 @@
 <div class="panel panel-default ect-category-all ect-border-radius0">
     <ul>
           <li>
-     	<div class="media panel-body">
-            <img class="pull-left" src="/jkgo/phone/data/common/images/no_picture.gif">
-            <div class="pull-left ect-category-right">
-                <h3>生鲜蔬菜</h3>
-                <h5>                                     新鲜蔬菜 
-                                                /            新鲜水果 
-                                                /            精品肉类 
-                                                                                                </h5>
-            </div>
-            <i class="fa fa-angle-down ect-transition05"></i>
-        </div>
-        <div class="ect-category-child">
-        	            <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=59">新鲜蔬菜</a>
-                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=60">新鲜水果</a>
-                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=61">精品肉类</a>
-                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=62">营养蛋类</a>
-                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=63">海鲜鱼类</a>
-                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=64">加工/糕点</a>
-             
-        </div>
-      </li>
-           <li>
      	<div class="media panel-body">
             <img class="pull-left" src="/jkgo/phone/data/common/images/no_picture.gif">
             <div class="pull-left ect-category-right">
@@ -197,21 +175,6 @@
      	<div class="media panel-body">
             <img class="pull-left" src="/jkgo/phone/data/common/images/no_picture.gif">
             <div class="pull-left ect-category-right">
-                <h3>箱包</h3>
-                <h5>                                     旅行箱包 
-                        </h5>
-            </div>
-            <i class="fa fa-angle-down ect-transition05"></i>
-        </div>
-        <div class="ect-category-child">
-        	            <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=26">旅行箱包</a>
-             
-        </div>
-      </li>
-           <li>
-     	<div class="media panel-body">
-            <img class="pull-left" src="/jkgo/phone/data/common/images/no_picture.gif">
-            <div class="pull-left ect-category-right">
                 <h3>清洁护理</h3>
                 <h5>                                     家居清洁 
                                                 /            清洁用品 
@@ -250,6 +213,28 @@
                         <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=29">男装</a>
                         <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=119">箱包</a>
                         <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=120">婴童服装</a>
+             
+        </div>
+      </li>
+           <li>
+     	<div class="media panel-body">
+            <img class="pull-left" src="/jkgo/phone/data/common/images/no_picture.gif">
+            <div class="pull-left ect-category-right">
+                <h3>生鲜蔬菜</h3>
+                <h5>                                     新鲜蔬菜 
+                                                /            新鲜水果 
+                                                /            精品肉类 
+                                                                                                </h5>
+            </div>
+            <i class="fa fa-angle-down ect-transition05"></i>
+        </div>
+        <div class="ect-category-child">
+        	            <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=59">新鲜蔬菜</a>
+                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=60">新鲜水果</a>
+                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=61">精品肉类</a>
+                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=62">营养蛋类</a>
+                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=63">海鲜鱼类</a>
+                        <a href="/jkgo/phone/index.php?m=default&c=category&a=index&id=64">加工/糕点</a>
              
         </div>
       </li>
@@ -330,6 +315,8 @@
 			effect : "left",
 			autoPlay : true, // 自动播放
 			autoPage : true, // 自动分页
+			delayTime: 200, // 毫秒；切换效果持续时间（执行一次效果用多少毫秒）
+			interTime: 2500, // 毫秒；自动运行间隔（隔多少毫秒后执行下一个效果）
 			switchLoad : "_src" // 切换加载，真实图片路径为"_src"
 		});
 	/*弹出评论层并隐藏其他层*/

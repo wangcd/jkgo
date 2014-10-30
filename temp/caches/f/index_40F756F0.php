@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:54:"F:/wamp/www/jkgo/themes/red_three/library/cat_sxsc.lbi";i:7;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:10;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:11;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414376873;s:8:"maketime";i:1414373273;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:12:{i:0;s:43:"F:/wamp/www/jkgo/themes/red_three/index.dwt";i:1;s:57:"F:/wamp/www/jkgo/themes/red_three/library/ad_position.lbi";i:2;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_header.lbi";i:3;s:54:"F:/wamp/www/jkgo/themes/red_three/library/index_ad.lbi";i:4;s:65:"F:/wamp/www/jkgo/themes/red_three/library/category_tree_index.lbi";i:5;s:58:"F:/wamp/www/jkgo/themes/red_three/library/cat_articles.lbi";i:6;s:54:"F:/wamp/www/jkgo/themes/red_three/library/cat_sxsc.lbi";i:7;s:65:"F:/wamp/www/jkgo/themes/red_three/library/recommend_promotion.lbi";i:8;s:59:"F:/wamp/www/jkgo/themes/red_three/library/recommend_hot.lbi";i:9;s:55:"F:/wamp/www/jkgo/themes/red_three/library/group_buy.lbi";i:10;s:55:"F:/wamp/www/jkgo/themes/red_three/library/cat_goods.lbi";i:11;s:57:"F:/wamp/www/jkgo/themes/red_three/library/page_footer.lbi";}s:7:"expires";i:1414640381;s:8:"maketime";i:1414636781;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="101BL v2.0" />
@@ -72,7 +72,7 @@ function s_h(id){
   </div>
   
   <span id="ECS_CARTINFO">554fcae493e564ee0dc75bdf2ebf94cacart_info|a:1:{s:4:"name";s:9:"cart_info";}554fcae493e564ee0dc75bdf2ebf94ca</span>
-  <img src="themes/red_three/images/two.jpg" style="float:left;">
+  <img src="themes/red_three/images/weixin.png" style="float:left;" width="75" height="75">
 </div>
 <div class="menu_box clearfix">
   <div class="block" style="position:relative;">
@@ -121,8 +121,7 @@ function s_h(id){
 <div class="clearfix" style="width: 1343px;margin: 0 auto;"> 
         
         <div class="cd_bannan"> 
-         
-<style type="text/css"> 
+        <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 .container{width:1350px; height:355px; overflow:hidden;position:relative;}
 .slider{position:absolute;}
@@ -277,7 +276,7 @@ window.onload=function(){
 	
 	var objs = $$("idNum").getElementsByTagName("li");
 	
-	var tv = new TransformView("idTransformView", "idSlider", 355, 3, {
+	var tv = new TransformView("idTransformView", "idSlider", 355,objs.length, {
 		onStart : function(){ Each(objs, function(o, i){o.className = tv.Index == i ? "on" : "";}) }//按钮样式
 	});
 	
@@ -339,8 +338,7 @@ window.onload=function(){
 	}
 	*/
 }
-</script>
-        </div>
+</script>        </div>
     
 </div>
 <div class="blank"></div>
@@ -439,105 +437,6 @@ width_three
 <dl class="clearfix" >
      <div  class="dt"  onMouseOver="sw_nav2(1,1);" onMouseOut="sw_nav2(1,0);" >
                 <div id="HandleLI2_1" class="rs_cate_li rs_cate_li_1" style="">
-                <a class="rs_cate_tit" href="category-58-b0.html">
-                    生鲜蔬菜                </a>
-                <span class="rs_cate_jt">&gt;</span>
-                                <a class="rs_cate_a" href="category-59-b0.html">
-                                        新鲜蔬菜                </a>
-                                <a class="rs_cate_a" href="category-60-b0.html">
-                                        、
-                                        新鲜水果                </a>
-                                <a class="rs_cate_a" href="category-61-b0.html">
-                                        、
-                                        精品肉类                </a>
-                                <a class="rs_cate_a" href="category-62-b0.html">
-                                        、
-                                        营养蛋类                </a>
-                                <a class="rs_cate_a" href="category-63-b0.html">
-                                        、
-                                        海鲜鱼类                </a>
-                                <a class="rs_cate_a" href="category-64-b0.html">
-                                        、
-                                        加工/糕点                </a>
-                                <hr/>
-                </div>
-                <dd  id=DisSub2_1 style="display:none"> 
-                                 <a class="over_2" href="category-59-b0.html">新鲜蔬菜</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-121-b0.html">叶菜类</a>
-                                <a class="over_3" href="category-122-b0.html">根菜类</a>
-                                <a class="over_3" href="category-123-b0.html">茄果/瓜菜类</a>
-                                <a class="over_3" href="category-124-b0.html">椒菜类</a>
-                                <a class="over_3" href="category-125-b0.html">食用菌</a>
-                                <a class="over_3" href="category-126-b0.html">豆荚类</a>
-                                <a class="over_3" href="category-127-b0.html">芽苗类</a>
-                                <a class="over_3" href="category-128-b0.html">花菜类</a>
-                                <a class="over_3" href="category-129-b0.html">水产类</a>
-                                </div>   
-                       
-                                 <a class="over_2" href="category-60-b0.html">新鲜水果</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-130-b0.html">苹果</a>
-                                <a class="over_3" href="category-131-b0.html">梨</a>
-                                <a class="over_3" href="category-132-b0.html">桃</a>
-                                <a class="over_3" href="category-133-b0.html">香蕉</a>
-                                <a class="over_3" href="category-134-b0.html">枣/核桃</a>
-                                <a class="over_3" href="category-135-b0.html">菠萝/草莓</a>
-                                <a class="over_3" href="category-136-b0.html">西瓜</a>
-                                <a class="over_3" href="category-137-b0.html">哈密瓜/甜瓜</a>
-                                <a class="over_3" href="category-138-b0.html">柑橘/橙子</a>
-                                <a class="over_3" href="category-139-b0.html">葡萄/提子</a>
-                                <a class="over_3" href="category-140-b0.html">芒果</a>
-                                <a class="over_3" href="category-141-b0.html">时令水果</a>
-                                <a class="over_3" href="category-142-b0.html">洋果</a>
-                                </div>   
-                       
-                                 <a class="over_2" href="category-61-b0.html">精品肉类</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-143-b0.html">猪肉</a>
-                                <a class="over_3" href="category-144-b0.html">鸡肉</a>
-                                <a class="over_3" href="category-145-b0.html">鸭肉</a>
-                                <a class="over_3" href="category-146-b0.html">羊肉</a>
-                                <a class="over_3" href="category-147-b0.html">牛肉</a>
-                                <a class="over_3" href="category-148-b0.html">兔肉</a>
-                                <a class="over_3" href="category-149-b0.html">腌制肉类</a>
-                                </div>   
-                       
-                                 <a class="over_2" href="category-62-b0.html">营养蛋类</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-150-b0.html">鸡蛋</a>
-                                <a class="over_3" href="category-151-b0.html">鹌鹑蛋</a>
-                                <a class="over_3" href="category-152-b0.html">鸭蛋</a>
-                                <a class="over_3" href="category-153-b0.html">卤蛋</a>
-                                <a class="over_3" href="category-154-b0.html">皮蛋</a>
-                                </div>   
-                       
-                                 <a class="over_2" href="category-63-b0.html">海鲜鱼类</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-155-b0.html">鱼类</a>
-                                <a class="over_3" href="category-156-b0.html">虾类</a>
-                                <a class="over_3" href="category-157-b0.html">贝类</a>
-                                <a class="over_3" href="category-158-b0.html">其他海鲜</a>
-                                </div>   
-                       
-                                 <a class="over_2" href="category-64-b0.html">加工/糕点</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-159-b0.html">面条</a>
-                                <a class="over_3" href="category-160-b0.html">馒头</a>
-                                <a class="over_3" href="category-161-b0.html">豆制品</a>
-                                <a class="over_3" href="category-162-b0.html">加工净菜</a>
-                                </div>   
-                       
-                                </dd> 
-</div>
-	<div  class="dt"  onMouseOver="sw_nav2(2,1);" onMouseOut="sw_nav2(2,0);" >
-                <div id="HandleLI2_2" class="rs_cate_li rs_cate_li_2" style="">
                 <a class="rs_cate_tit" href="category-1-b0.html">
                     食品零食                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -581,7 +480,7 @@ width_three
                                         进口食品                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_2 style="display:none"> 
+                <dd  id=DisSub2_1 style="display:none"> 
                                  <a class="over_2" href="category-9-b0.html">罐头食品</a>  
                 
                 <div class="clearfix">
@@ -734,8 +633,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(3,1);" onMouseOut="sw_nav2(3,0);" >
-                <div id="HandleLI2_3" class="rs_cate_li rs_cate_li_3" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(2,1);" onMouseOut="sw_nav2(2,0);" >
+                <div id="HandleLI2_2" class="rs_cate_li rs_cate_li_2" style="">
                 <a class="rs_cate_tit" href="category-71-b0.html">
                     酒水饮料                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -755,7 +654,7 @@ width_three
                                         咖啡茶叶                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_3 style="display:none"> 
+                <dd  id=DisSub2_2 style="display:none"> 
                                  <a class="over_2" href="category-72-b0.html">酒水</a>  
                 
                 <div class="clearfix">
@@ -823,8 +722,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(4,1);" onMouseOut="sw_nav2(4,0);" >
-                <div id="HandleLI2_4" class="rs_cate_li rs_cate_li_4" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(3,1);" onMouseOut="sw_nav2(3,0);" >
+                <div id="HandleLI2_3" class="rs_cate_li rs_cate_li_3" style="">
                 <a class="rs_cate_tit" href="category-5-b0.html">
                     家居百货                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -871,7 +770,7 @@ width_three
                                         户外用品                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_4 style="display:none"> 
+                <dd  id=DisSub2_3 style="display:none"> 
                                  <a class="over_2" href="category-19-b0.html">餐具餐饮</a>  
                 
                 <div class="clearfix">
@@ -1047,8 +946,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(5,1);" onMouseOut="sw_nav2(5,0);" >
-                <div id="HandleLI2_5" class="rs_cate_li rs_cate_li_5" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(4,1);" onMouseOut="sw_nav2(4,0);" >
+                <div id="HandleLI2_4" class="rs_cate_li rs_cate_li_4" style="">
                 <a class="rs_cate_tit" href="category-4-b0.html">
                     母婴中心                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1080,7 +979,7 @@ width_three
                                         妈妈用品                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_5 style="display:none"> 
+                <dd  id=DisSub2_4 style="display:none"> 
                                  <a class="over_2" href="category-16-b0.html">奶粉</a>  
                 
                 <div class="clearfix">
@@ -1166,8 +1065,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(6,1);" onMouseOut="sw_nav2(6,0);" >
-                <div id="HandleLI2_6" class="rs_cate_li rs_cate_li_6" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(5,1);" onMouseOut="sw_nav2(5,0);" >
+                <div id="HandleLI2_5" class="rs_cate_li rs_cate_li_5" style="">
                 <a class="rs_cate_tit" href="category-2-b0.html">
                     美容美妆                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1208,7 +1107,7 @@ width_three
                                         香水                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_6 style="display:none"> 
+                <dd  id=DisSub2_5 style="display:none"> 
                                  <a class="over_2" href="category-12-b0.html">口腔护理</a>  
                 
                 <div class="clearfix">
@@ -1306,8 +1205,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(7,1);" onMouseOut="sw_nav2(7,0);" >
-                <div id="HandleLI2_7" class="rs_cate_li rs_cate_li_7" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(6,1);" onMouseOut="sw_nav2(6,0);" >
+                <div id="HandleLI2_6" class="rs_cate_li rs_cate_li_6" style="">
                 <a class="rs_cate_tit" href="category-6-b0.html">
                     数码家电                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1330,7 +1229,7 @@ width_three
                                         数码                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_7 style="display:none"> 
+                <dd  id=DisSub2_6 style="display:none"> 
                                  <a class="over_2" href="category-21-b0.html">家电</a>  
                 
                 <div class="clearfix">
@@ -1387,27 +1286,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(8,1);" onMouseOut="sw_nav2(8,0);" >
-                <div id="HandleLI2_8" class="rs_cate_li rs_cate_li_8" style="">
-                <a class="rs_cate_tit" href="category-7-b0.html">
-                    箱包                </a>
-                <span class="rs_cate_jt">&gt;</span>
-                                <a class="rs_cate_a" href="category-26-b0.html">
-                                        旅行箱包                </a>
-                                <hr/>
-                </div>
-                <dd  id=DisSub2_8 style="display:none"> 
-                                 <a class="over_2" href="category-26-b0.html">旅行箱包</a>  
-                
-                <div class="clearfix">
-                                <a class="over_3" href="category-52-b0.html">拉杆箱</a>
-                                <a class="over_3" href="category-53-b0.html">旅行包</a>
-                                </div>   
-                       
-                                </dd> 
-</div>
-	<div  class="dt"  onMouseOver="sw_nav2(9,1);" onMouseOut="sw_nav2(9,0);" >
-                <div id="HandleLI2_9" class="rs_cate_li rs_cate_li_9" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(7,1);" onMouseOut="sw_nav2(7,0);" >
+                <div id="HandleLI2_7" class="rs_cate_li rs_cate_li_7" style="">
                 <a class="rs_cate_tit" href="category-3-b0.html">
                     清洁护理                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1436,7 +1316,7 @@ width_three
                                         护理用品                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_9 style="display:none"> 
+                <dd  id=DisSub2_7 style="display:none"> 
                                  <a class="over_2" href="category-14-b0.html">家居清洁</a>  
                 
                 <div class="clearfix">
@@ -1532,8 +1412,8 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(10,1);" onMouseOut="sw_nav2(10,0);" >
-                <div id="HandleLI2_10" class="rs_cate_li rs_cate_li_10" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(8,1);" onMouseOut="sw_nav2(8,0);" >
+                <div id="HandleLI2_8" class="rs_cate_li rs_cate_li_8" style="">
                 <a class="rs_cate_tit" href="category-8-b0.html">
                     服装服饰                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1553,7 +1433,7 @@ width_three
                                         婴童服装                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_10 style="display:none"> 
+                <dd  id=DisSub2_8 style="display:none"> 
                                  <a class="over_2" href="category-27-b0.html">内衣</a>  
                 
                 <div class="clearfix">
@@ -1597,8 +1477,107 @@ width_three
                        
                                 </dd> 
 </div>
-	<div  class="dt"  onMouseOver="sw_nav2(11,1);" onMouseOut="sw_nav2(11,0);" >
-                <div id="HandleLI2_11" class="rs_cate_li rs_cate_li_11" style="">
+	<div  class="dt"  onMouseOver="sw_nav2(9,1);" onMouseOut="sw_nav2(9,0);" >
+                <div id="HandleLI2_9" class="rs_cate_li rs_cate_li_9" style="">
+                <a class="rs_cate_tit" href="category-58-b0.html">
+                    生鲜蔬菜                </a>
+                <span class="rs_cate_jt">&gt;</span>
+                                <a class="rs_cate_a" href="category-59-b0.html">
+                                        新鲜蔬菜                </a>
+                                <a class="rs_cate_a" href="category-60-b0.html">
+                                        、
+                                        新鲜水果                </a>
+                                <a class="rs_cate_a" href="category-61-b0.html">
+                                        、
+                                        精品肉类                </a>
+                                <a class="rs_cate_a" href="category-62-b0.html">
+                                        、
+                                        营养蛋类                </a>
+                                <a class="rs_cate_a" href="category-63-b0.html">
+                                        、
+                                        海鲜鱼类                </a>
+                                <a class="rs_cate_a" href="category-64-b0.html">
+                                        、
+                                        加工/糕点                </a>
+                                <hr/>
+                </div>
+                <dd  id=DisSub2_9 style="display:none"> 
+                                 <a class="over_2" href="category-59-b0.html">新鲜蔬菜</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-121-b0.html">叶菜类</a>
+                                <a class="over_3" href="category-122-b0.html">根菜类</a>
+                                <a class="over_3" href="category-123-b0.html">茄果/瓜菜类</a>
+                                <a class="over_3" href="category-124-b0.html">椒菜类</a>
+                                <a class="over_3" href="category-125-b0.html">食用菌</a>
+                                <a class="over_3" href="category-126-b0.html">豆荚类</a>
+                                <a class="over_3" href="category-127-b0.html">芽苗类</a>
+                                <a class="over_3" href="category-128-b0.html">花菜类</a>
+                                <a class="over_3" href="category-129-b0.html">水产类</a>
+                                </div>   
+                       
+                                 <a class="over_2" href="category-60-b0.html">新鲜水果</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-130-b0.html">苹果</a>
+                                <a class="over_3" href="category-131-b0.html">梨</a>
+                                <a class="over_3" href="category-132-b0.html">桃</a>
+                                <a class="over_3" href="category-133-b0.html">香蕉</a>
+                                <a class="over_3" href="category-134-b0.html">枣/核桃</a>
+                                <a class="over_3" href="category-135-b0.html">菠萝/草莓</a>
+                                <a class="over_3" href="category-136-b0.html">西瓜</a>
+                                <a class="over_3" href="category-137-b0.html">哈密瓜/甜瓜</a>
+                                <a class="over_3" href="category-138-b0.html">柑橘/橙子</a>
+                                <a class="over_3" href="category-139-b0.html">葡萄/提子</a>
+                                <a class="over_3" href="category-140-b0.html">芒果</a>
+                                <a class="over_3" href="category-141-b0.html">时令水果</a>
+                                <a class="over_3" href="category-142-b0.html">洋果</a>
+                                </div>   
+                       
+                                 <a class="over_2" href="category-61-b0.html">精品肉类</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-143-b0.html">猪肉</a>
+                                <a class="over_3" href="category-144-b0.html">鸡肉</a>
+                                <a class="over_3" href="category-145-b0.html">鸭肉</a>
+                                <a class="over_3" href="category-146-b0.html">羊肉</a>
+                                <a class="over_3" href="category-147-b0.html">牛肉</a>
+                                <a class="over_3" href="category-148-b0.html">兔肉</a>
+                                <a class="over_3" href="category-149-b0.html">腌制肉类</a>
+                                </div>   
+                       
+                                 <a class="over_2" href="category-62-b0.html">营养蛋类</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-150-b0.html">鸡蛋</a>
+                                <a class="over_3" href="category-151-b0.html">鹌鹑蛋</a>
+                                <a class="over_3" href="category-152-b0.html">鸭蛋</a>
+                                <a class="over_3" href="category-153-b0.html">卤蛋</a>
+                                <a class="over_3" href="category-154-b0.html">皮蛋</a>
+                                </div>   
+                       
+                                 <a class="over_2" href="category-63-b0.html">海鲜鱼类</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-155-b0.html">鱼类</a>
+                                <a class="over_3" href="category-156-b0.html">虾类</a>
+                                <a class="over_3" href="category-157-b0.html">贝类</a>
+                                <a class="over_3" href="category-158-b0.html">其他海鲜</a>
+                                </div>   
+                       
+                                 <a class="over_2" href="category-64-b0.html">加工/糕点</a>  
+                
+                <div class="clearfix">
+                                <a class="over_3" href="category-159-b0.html">面条</a>
+                                <a class="over_3" href="category-160-b0.html">馒头</a>
+                                <a class="over_3" href="category-161-b0.html">豆制品</a>
+                                <a class="over_3" href="category-162-b0.html">加工净菜</a>
+                                </div>   
+                       
+                                </dd> 
+</div>
+	<div  class="dt"  onMouseOver="sw_nav2(10,1);" onMouseOut="sw_nav2(10,0);" >
+                <div id="HandleLI2_10" class="rs_cate_li rs_cate_li_10" style="">
                 <a class="rs_cate_tit" href="category-583-b0.html">
                     礼品                </a>
                 <span class="rs_cate_jt">&gt;</span>
@@ -1606,7 +1585,7 @@ width_three
                                         生日礼物                </a>
                                 <hr/>
                 </div>
-                <dd  id=DisSub2_11 style="display:none"> 
+                <dd  id=DisSub2_10 style="display:none"> 
                                  <a class="over_2" href="category-584-b0.html">生日礼物</a>  
                 
                 <div class="clearfix">
@@ -1702,23 +1681,13 @@ width_three
         </p>
 		<div class="show_best_area" class="clearfix cd_hot_area">
   <div class="goodsItem">   
-           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
-           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+           <a href="goods-103.html" class="goodsimg"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " height="170px" /></a>
+           <p><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
 		   <p style="float:left;  width:220px;">	      
                <font class="r_b">
-                            ￥11.00                             </font> 
-               <font class="market">￥432.00</font> 
-               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
-           </p>  
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-117.html" class="goodsimg"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" height="170px" /></a>
-           <p><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
-		   <p style="float:left;  width:220px;">	      
-               <font class="r_b">
-                            ￥11.00                             </font> 
-               <font class="market">￥150.00</font> 
-               <a href="goods-117.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+                            ￥6.99                             </font> 
+               <font class="market">￥7.43</font> 
+               <a href="goods-103.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
     <div class="goodsItem">   
@@ -1729,6 +1698,16 @@ width_three
                             ￥19.80                             </font> 
                <font class="market">￥24.00</font> 
                <a href="goods-89.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
     <div class="goodsItem">   
@@ -1744,23 +1723,13 @@ width_three
   </div>
         <div class="show_best_area" class="clearfix cd_hot_area">
   <div class="goodsItem">   
-           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
-           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+           <a href="goods-103.html" class="goodsimg"><img src="images/201403/thumb_img/103_thumb_G_1396208096966.jpg" alt="117g农心辣白菜辛拉面（桶面） " height="170px" /></a>
+           <p><a href="goods-103.html" title="117g农心辣白菜辛拉面（桶面） ">117g农心辣白菜辛拉面（桶面） </a></p>
 		   <p style="float:left;  width:220px;">	      
                <font class="r_b">
-                            ￥11.00                             </font> 
-               <font class="market">￥432.00</font> 
-               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
-           </p>  
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-117.html" class="goodsimg"><img src="images/201403/thumb_img/117_thumb_G_1396208633212.jpg" alt="运动鞋" height="170px" /></a>
-           <p><a href="goods-117.html" title="运动鞋">运动鞋</a></p>
-		   <p style="float:left;  width:220px;">	      
-               <font class="r_b">
-                            ￥11.00                             </font> 
-               <font class="market">￥150.00</font> 
-               <a href="goods-117.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+                            ￥6.99                             </font> 
+               <font class="market">￥7.43</font> 
+               <a href="goods-103.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
     <div class="goodsItem">   
@@ -1771,6 +1740,16 @@ width_three
                             ￥19.80                             </font> 
                <font class="market">￥24.00</font> 
                <a href="goods-89.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
     <div class="goodsItem">   
@@ -1796,6 +1775,16 @@ width_three
            </p>  
   </div>
     <div class="goodsItem">   
+           <a href="goods-122.html" class="goodsimg"><img src="images/201403/thumb_img/122_thumb_G_1396208973477.jpg" alt="冲锋衣" height="170px" /></a>
+           <p><a href="goods-122.html" title="冲锋衣">冲锋衣</a></p>
+		   <p style="float:left;  width:220px;">	      
+               <font class="r_b">
+                            ￥11.00                             </font> 
+               <font class="market">￥432.00</font> 
+               <a href="goods-122.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
+           </p>  
+  </div>
+    <div class="goodsItem">   
            <a href="goods-124.html" class="goodsimg"><img src="images/201403/thumb_img/124_thumb_G_1396209072261.jpg" alt="防水户外服装" height="170px" /></a>
            <p><a href="goods-124.html" title="防水户外服装">防水户外服装</a></p>
 		   <p style="float:left;  width:220px;">	      
@@ -1803,16 +1792,6 @@ width_three
                             ￥0.00                             </font> 
                <font class="market">￥0.00</font> 
                <a href="goods-124.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
-           </p>  
-  </div>
-    <div class="goodsItem">   
-           <a href="goods-125.html" class="goodsimg"><img src="images/201403/thumb_img/125_thumb_G_1396209311682.jpg" alt="运动服" height="170px" /></a>
-           <p><a href="goods-125.html" title="运动服">运动服</a></p>
-		   <p style="float:left;  width:220px;">	      
-               <font class="r_b">
-                            ￥0.00                             </font> 
-               <font class="market">￥220.00</font> 
-               <a href="goods-125.html"><img src="themes/red_three/images/ljq.jpg" style="float:right;"></a>
            </p>  
   </div>
     <div class="goodsItem">   
@@ -1895,7 +1874,7 @@ $(function(){
     </div>
     <div class="rs_igl_l">
 		<ul class="rs_igll_cate">
-																																<li><a href="category-9-b0.html">罐头食品</a></li>
+																								<li><a href="category-9-b0.html">罐头食品</a></li>
 																			<li><a href="category-203-b0.html">鱼雷罐头</a></li>
 																									<li><a href="category-204-b0.html">肉类罐头</a></li>
 																									<li><a href="category-205-b0.html">八宝粥/绿豆粥</a></li>
@@ -2095,7 +2074,7 @@ $(function(){
     </div>
     <div class="rs_igl_l">
 		<ul class="rs_igll_cate">
-																																																																<li><a href="category-12-b0.html">口腔护理</a></li>
+																																																								<li><a href="category-12-b0.html">口腔护理</a></li>
 																			<li><a href="category-42-b0.html">牙膏</a></li>
 																									<li><a href="category-395-b0.html">牙刷/牙线</a></li>
 																									<li><a href="category-396-b0.html">漱口水</a></li>
@@ -2244,7 +2223,7 @@ $(function(){
     </div>
     <div class="rs_igl_l">
 		<ul class="rs_igll_cate">
-																																																																																								<li><a href="category-14-b0.html">家居清洁</a></li>
+																																																																								<li><a href="category-14-b0.html">家居清洁</a></li>
 																			<li><a href="category-510-b0.html">家居清洁剂/蜡</a></li>
 																									<li><a href="category-511-b0.html">洗洁精</a></li>
 																									<li><a href="category-512-b0.html">洁厕剂</a></li>
@@ -2305,7 +2284,7 @@ $(function(){
 																									<li><a href="category-554-b0.html">家庭护理</a></li>
 																									<li><a href="category-555-b0.html">成人尿裤/尿垫</a></li>
 																									<li><a href="category-556-b0.html">计生保健</a></li>
-																																																 </ul>
+																																																								 </ul>
          <img src="themes/red_three/images/3f.jpg" width="255" height="302">   
 	</div>
     <div class="rs_igl_r">
@@ -2407,7 +2386,7 @@ $(function(){
     </div>
     <div class="rs_igl_l">
 		<ul class="rs_igll_cate">
-																																																								<li><a href="category-16-b0.html">奶粉</a></li>
+																																																<li><a href="category-16-b0.html">奶粉</a></li>
 																			<li><a href="category-30-b0.html">幼婴配方奶粉</a></li>
 																									<li><a href="category-32-b0.html">孕产奶粉</a></li>
 																																	<li><a href="category-17-b0.html">营养品</a></li>
@@ -2556,7 +2535,7 @@ $(function(){
     </div>
     <div class="rs_igl_l">
 		<ul class="rs_igll_cate">
-																																																<li><a href="category-19-b0.html">餐具餐饮</a></li>
+																																								<li><a href="category-19-b0.html">餐具餐饮</a></li>
 																			<li><a href="category-283-b0.html">塑料水杯</a></li>
 																									<li><a href="category-284-b0.html">口杯</a></li>
 																									<li><a href="category-285-b0.html">玻璃杯</a></li>
